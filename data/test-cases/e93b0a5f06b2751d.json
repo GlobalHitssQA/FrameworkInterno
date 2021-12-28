@@ -1,12 +1,12 @@
 {
-  "uid" : "ccf9111f34951289",
+  "uid" : "e93b0a5f06b2751d",
   "name" : "Test Login | {\"user\":\"username\",\"password\":\"password\"}",
   "fullName" : "My First Login with Data Provider:.Test Login | {\"user\":\"username\",\"password\":\"password\"}",
   "historyId" : "23086291cb2490be829c521356871409",
   "time" : {
-    "start" : 1640671150764,
-    "stop" : 1640671153555,
-    "duration" : 2791
+    "start" : 1640671595803,
+    "stop" : 1640671597740,
+    "duration" : 1937
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -23,9 +23,9 @@
     "steps" : [ {
       "name" : "I am on page ",
       "time" : {
-        "start" : 1640671150868,
-        "stop" : 1640671152519,
-        "duration" : 1651
+        "start" : 1640671595910,
+        "stop" : 1640671596857,
+        "duration" : 947
       },
       "status" : "passed",
       "steps" : [ ],
@@ -38,9 +38,9 @@
     }, {
       "name" : "I see \"Log in to ZeroBank\"",
       "time" : {
-        "start" : 1640671152520,
-        "stop" : 1640671152533,
-        "duration" : 13
+        "start" : 1640671596858,
+        "stop" : 1640671596870,
+        "duration" : 12
       },
       "status" : "passed",
       "steps" : [ ],
@@ -53,9 +53,9 @@
     }, {
       "name" : "I fill field \"#user_login\", \"username\"",
       "time" : {
-        "start" : 1640671152534,
-        "stop" : 1640671152804,
-        "duration" : 270
+        "start" : 1640671596871,
+        "stop" : 1640671597139,
+        "duration" : 268
       },
       "status" : "passed",
       "steps" : [ ],
@@ -68,9 +68,9 @@
     }, {
       "name" : "I fill field \"#user_password\", \"password\"",
       "time" : {
-        "start" : 1640671152804,
-        "stop" : 1640671153077,
-        "duration" : 273
+        "start" : 1640671597139,
+        "stop" : 1640671597404,
+        "duration" : 265
       },
       "status" : "passed",
       "steps" : [ ],
@@ -83,9 +83,9 @@
     }, {
       "name" : "I click \"Sign in\"",
       "time" : {
-        "start" : 1640671153077,
-        "stop" : 1640671153554,
-        "duration" : 477
+        "start" : 1640671597405,
+        "stop" : 1640671597739,
+        "duration" : 334
       },
       "status" : "passed",
       "steps" : [ ],
@@ -97,17 +97,17 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "5d1fb60c1cfbc2df",
+      "uid" : "56ca02a5dd3a5248",
       "name" : "Execution Video",
-      "source" : "5d1fb60c1cfbc2df.webm",
+      "source" : "56ca02a5dd3a5248.webm",
       "type" : "video/webm",
-      "size" : 71118
+      "size" : 69649
     }, {
-      "uid" : "f5a1f28a55a93bbe",
+      "uid" : "b79701fe4b52597",
       "name" : "TRACE",
-      "source" : "f5a1f28a55a93bbe.zip",
+      "source" : "b79701fe4b52597.zip",
       "type" : "application/zip",
-      "size" : 939431
+      "size" : 869716
     } ],
     "parameters" : [ ],
     "stepsCount" : 5,
@@ -142,6 +142,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ccf9111f34951289.json",
+  "source" : "e93b0a5f06b2751d.json",
   "parameterValues" : [ ]
 }
