@@ -1,0 +1,147 @@
+{
+  "uid" : "ccf9111f34951289",
+  "name" : "Test Login | {\"user\":\"username\",\"password\":\"password\"}",
+  "fullName" : "My First Login with Data Provider:.Test Login | {\"user\":\"username\",\"password\":\"password\"}",
+  "historyId" : "23086291cb2490be829c521356871409",
+  "time" : {
+    "start" : 1640671150764,
+    "stop" : 1640671153555,
+    "duration" : 2791
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "I am on page ",
+      "time" : {
+        "start" : 1640671150868,
+        "stop" : 1640671152519,
+        "duration" : 1651
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I see \"Log in to ZeroBank\"",
+      "time" : {
+        "start" : 1640671152520,
+        "stop" : 1640671152533,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I fill field \"#user_login\", \"username\"",
+      "time" : {
+        "start" : 1640671152534,
+        "stop" : 1640671152804,
+        "duration" : 270
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I fill field \"#user_password\", \"password\"",
+      "time" : {
+        "start" : 1640671152804,
+        "stop" : 1640671153077,
+        "duration" : 273
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I click \"Sign in\"",
+      "time" : {
+        "start" : 1640671153077,
+        "stop" : 1640671153554,
+        "duration" : 477
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "5d1fb60c1cfbc2df",
+      "name" : "Execution Video",
+      "source" : "5d1fb60c1cfbc2df.webm",
+      "type" : "video/webm",
+      "size" : 71118
+    }, {
+      "uid" : "f5a1f28a55a93bbe",
+      "name" : "TRACE",
+      "source" : "f5a1f28a55a93bbe.zip",
+      "type" : "application/zip",
+      "size" : 939431
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "My First Login with Data Provider:"
+  }, {
+    "name" : "testClass",
+    "value" : "My First Login with Data Provider:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test Login | {\"user\":\"username\",\"password\":\"password\"}"
+  }, {
+    "name" : "package",
+    "value" : "My First Login with Data Provider:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ccf9111f34951289.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,11 @@
+[ {
+  "uid" : "ccf9111f34951289",
+  "name" : "Test Login | {\"user\":\"username\",\"password\":\"password\"}",
+  "time" : {
+    "start" : 1640671150764,
+    "stop" : 1640671153555,
+    "duration" : 2791
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
