@@ -1,2 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Dec 28 06:06:35 UTC 2021","Tue Dec 28 06:06:37 UTC 2021","1937","","My First Login with Data Provider:","","My First Login with Data Provider:","Test Login | {""user"":""username"",""password"":""password""}","Test Login | {""user"":""username"",""password"":""password""}",""
