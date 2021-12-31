@@ -1,5 +1,5 @@
 {
-  "total" : 3,
+  "total" : 4,
   "items" : [ {
     "uid" : "b9543f73043e82fbb09c83c931844a89",
     "name" : "Pruebas de backend APIs REST y GRAPHQL con assertions:",
@@ -30,6 +30,17 @@
       "broken" : 0,
       "skipped" : 0,
       "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "63895b5a0b6eb56620256513dc067161",
+    "name" : "Visual testing:",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }

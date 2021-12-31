@@ -1,0 +1,102 @@
+{
+  "uid" : "50a6ca7e8693f552",
+  "name" : "Test of backend REST DELETE",
+  "fullName" : "Pruebas de backend APIs REST y GRAPHQL con assertions:.Test of backend REST DELETE",
+  "historyId" : "cb55b63064bc6c05c0a3edaa8b26b771",
+  "time" : {
+    "start" : 1640929642252,
+    "stop" : 1640929642642,
+    "duration" : 390
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "I send delete request \"https://reqres.in/api/users/2\"",
+      "time" : {
+        "start" : 1640929642304,
+        "stop" : 1640929642641,
+        "duration" : 337
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal 204, 204",
+      "time" : {
+        "start" : 1640929642642,
+        "stop" : 1640929642642,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "1084c34a5538886a",
+      "name" : "Execution Video",
+      "source" : "1084c34a5538886a.webm",
+      "type" : "video/webm",
+      "size" : 2062
+    }, {
+      "uid" : "b4f6752504f51f82",
+      "name" : "TRACE",
+      "source" : "b4f6752504f51f82.zip",
+      "type" : "application/zip",
+      "size" : 1365
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "testClass",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test of backend REST DELETE"
+  }, {
+    "name" : "package",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "50a6ca7e8693f552.json",
+  "parameterValues" : [ ]
+}

@@ -1,111 +1,121 @@
 [ {
-  "uid" : "4ea3ffe8999cd892",
-  "name" : "Test Login | {\"user\":\"username\",\"password\":\"password\"}",
-  "time" : {
-    "start" : 1640925152548,
-    "stop" : 1640925155406,
-    "duration" : 2858
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "cc401fe592530a96",
-  "name" : "Test of backend REST DELETE",
-  "time" : {
-    "start" : 1640925149808,
-    "stop" : 1640925150076,
-    "duration" : 268
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "22ac88c5f31bc794",
-  "name" : "Validar el Insert de un registro en la base de datos",
-  "time" : {
-    "start" : 1640925151128,
-    "stop" : 1640925151857,
-    "duration" : 729
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b74a219c7302a092",
-  "name" : "Test of backend REST PATCH",
-  "time" : {
-    "start" : 1640925149062,
-    "stop" : 1640925149361,
-    "duration" : 299
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6f98a329a3d94e5a",
-  "name" : "Validar que se borre la informacion de la base de datos metida en el scenario pasado",
-  "time" : {
-    "start" : 1640925151993,
-    "stop" : 1640925152272,
-    "duration" : 279
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ad709e758428d46a",
-  "name" : "Test of backend REST PUT",
-  "time" : {
-    "start" : 1640925148680,
-    "stop" : 1640925148997,
-    "duration" : 317
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bec75f8bebbb63d7",
-  "name" : "Test of backend GRAPHQL GET with variables",
-  "time" : {
-    "start" : 1640925150656,
-    "stop" : 1640925150984,
-    "duration" : 328
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "137f8d4aec2e12d",
-  "name" : "Test of backend REST POST",
-  "time" : {
-    "start" : 1640925149426,
-    "stop" : 1640925149742,
-    "duration" : 316
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7ab2b44bef55aadf",
-  "name" : "Test of backend GRAPHQL GET",
-  "time" : {
-    "start" : 1640925150134,
-    "stop" : 1640925150570,
-    "duration" : 436
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "49cfc830a4737e9",
+  "uid" : "3f463b84c2831222",
   "name" : "Test of backend REST GET",
   "time" : {
-    "start" : 1640925148451,
-    "stop" : 1640925148630,
-    "duration" : 179
+    "start" : 1640929640395,
+    "stop" : 1640929640720,
+    "duration" : 325
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "843d5206fbcb25e",
+  "uid" : "d224165c8478db62",
   "name" : "Test of backend GRAPHQL Mutation with variables",
   "time" : {
-    "start" : 1640925151058,
-    "stop" : 1640925151058,
+    "start" : 1640929644149,
+    "stop" : 1640929644149,
     "duration" : 0
   },
   "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ade86ea25516d276",
+  "name" : "Test of backend REST POST",
+  "time" : {
+    "start" : 1640929641780,
+    "stop" : 1640929642175,
+    "duration" : 395
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86b6ceeae522172e",
+  "name" : "Test of backend GRAPHQL GET",
+  "time" : {
+    "start" : 1640929642722,
+    "stop" : 1640929643455,
+    "duration" : 733
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b6ab133f9f36473",
+  "name" : "Test Login | {\"user\":\"username\",\"password\":\"password\"}",
+  "time" : {
+    "start" : 1640929646490,
+    "stop" : 1640929649859,
+    "duration" : 3369
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f281e28eaf27b06",
+  "name" : "Validar que se borre la informacion de la base de datos metida en el scenario pasado",
+  "time" : {
+    "start" : 1640929645651,
+    "stop" : 1640929646050,
+    "duration" : 399
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6f0ee00e6239f1e",
+  "name" : "Test of backend REST PUT",
+  "time" : {
+    "start" : 1640929640809,
+    "stop" : 1640929641211,
+    "duration" : 402
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccc3cacccb04ab0f",
+  "name" : "Test of backend REST PATCH",
+  "time" : {
+    "start" : 1640929641302,
+    "stop" : 1640929641696,
+    "duration" : 394
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b18d0ae5d596be3",
+  "name" : "Validar el Insert de un registro en la base de datos",
+  "time" : {
+    "start" : 1640929644237,
+    "stop" : 1640929645428,
+    "duration" : 1191
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50a6ca7e8693f552",
+  "name" : "Test of backend REST DELETE",
+  "time" : {
+    "start" : 1640929642252,
+    "stop" : 1640929642642,
+    "duration" : 390
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e5296b7530866c4",
+  "name" : "Primer scenario pasando la prueba de visual testing",
+  "time" : {
+    "start" : 1640929650008,
+    "stop" : 1640929650008,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "27ab2e644efe7e1d",
+  "name" : "Test of backend GRAPHQL GET with variables",
+  "time" : {
+    "start" : 1640929643603,
+    "stop" : 1640929644053,
+    "duration" : 450
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

@@ -1,0 +1,117 @@
+{
+  "uid" : "27ab2e644efe7e1d",
+  "name" : "Test of backend GRAPHQL GET with variables",
+  "fullName" : "Pruebas de backend APIs REST y GRAPHQL con assertions:.Test of backend GRAPHQL GET with variables",
+  "historyId" : "1f83e7a4f9d9a84b912549c307a6afb0",
+  "time" : {
+    "start" : 1640929643603,
+    "stop" : 1640929644053,
+    "duration" : 450
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "I send query \"\n                    \t\t\t query getEpisodes($ids:[ID!]!) {\n                    \t\t\t\tepisodesByIds(ids: $ids) {\n                    \t\t\t\t\tname\n                    \t\t\t\t\tcharacters {\n                    \t\t\t\t\t  name\n                    \t\t\t\t\t}\n                    \t\t\t\t}\n                    \t\t  }\n                      \", {\"ids\":[1,2]}",
+      "time" : {
+        "start" : 1640929643660,
+        "stop" : 1640929644051,
+        "duration" : 391
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal 200, 200",
+      "time" : {
+        "start" : 1640929644051,
+        "stop" : 1640929644052,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal \"Pilot\", \"Pilot\"",
+      "time" : {
+        "start" : 1640929644052,
+        "stop" : 1640929644053,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "af5be718cf7ff238",
+      "name" : "Execution Video",
+      "source" : "af5be718cf7ff238.webm",
+      "type" : "video/webm",
+      "size" : 2225
+    }, {
+      "uid" : "a5ce40411b4687ae",
+      "name" : "TRACE",
+      "source" : "a5ce40411b4687ae.zip",
+      "type" : "application/zip",
+      "size" : 1364
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "testClass",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test of backend GRAPHQL GET with variables"
+  }, {
+    "name" : "package",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "27ab2e644efe7e1d.json",
+  "parameterValues" : [ ]
+}
