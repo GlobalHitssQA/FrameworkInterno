@@ -1,0 +1,204 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Pruebas de backend APIs REST y GRAPHQL con assertions:",
+    "children" : [ {
+      "name" : "Test of backend REST GET",
+      "uid" : "49cfc830a4737e9",
+      "parentUid" : "b9543f73043e82fbb09c83c931844a89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640925148451,
+        "stop" : 1640925148630,
+        "duration" : 179
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test of backend REST PUT",
+      "uid" : "ad709e758428d46a",
+      "parentUid" : "b9543f73043e82fbb09c83c931844a89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640925148680,
+        "stop" : 1640925148997,
+        "duration" : 317
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test of backend REST PATCH",
+      "uid" : "b74a219c7302a092",
+      "parentUid" : "b9543f73043e82fbb09c83c931844a89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640925149062,
+        "stop" : 1640925149361,
+        "duration" : 299
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test of backend REST POST",
+      "uid" : "137f8d4aec2e12d",
+      "parentUid" : "b9543f73043e82fbb09c83c931844a89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640925149426,
+        "stop" : 1640925149742,
+        "duration" : 316
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test of backend REST DELETE",
+      "uid" : "cc401fe592530a96",
+      "parentUid" : "b9543f73043e82fbb09c83c931844a89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640925149808,
+        "stop" : 1640925150076,
+        "duration" : 268
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test of backend GRAPHQL GET",
+      "uid" : "7ab2b44bef55aadf",
+      "parentUid" : "b9543f73043e82fbb09c83c931844a89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640925150134,
+        "stop" : 1640925150570,
+        "duration" : 436
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test of backend GRAPHQL GET with variables",
+      "uid" : "bec75f8bebbb63d7",
+      "parentUid" : "b9543f73043e82fbb09c83c931844a89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640925150656,
+        "stop" : 1640925150984,
+        "duration" : 328
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test of backend GRAPHQL Mutation with variables",
+      "uid" : "843d5206fbcb25e",
+      "parentUid" : "b9543f73043e82fbb09c83c931844a89",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1640925151058,
+        "stop" : 1640925151058,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b9543f73043e82fbb09c83c931844a89"
+  }, {
+    "name" : "Pruebas de bases de datos:",
+    "children" : [ {
+      "name" : "Validar el Insert de un registro en la base de datos",
+      "uid" : "22ac88c5f31bc794",
+      "parentUid" : "494c57095943d860864e0c4f64fbe413",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640925151128,
+        "stop" : 1640925151857,
+        "duration" : 729
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar que se borre la informacion de la base de datos metida en el scenario pasado",
+      "uid" : "6f98a329a3d94e5a",
+      "parentUid" : "494c57095943d860864e0c4f64fbe413",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640925151993,
+        "stop" : 1640925152272,
+        "duration" : 279
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "494c57095943d860864e0c4f64fbe413"
+  }, {
+    "name" : "My First Login with Data Provider:",
+    "children" : [ {
+      "name" : "Test Login | {\"user\":\"username\",\"password\":\"password\"}",
+      "uid" : "4ea3ffe8999cd892",
+      "parentUid" : "e54283d136905f6b9d6a3b91049e5087",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640925152548,
+        "stop" : 1640925155406,
+        "duration" : 2858
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e54283d136905f6b9d6a3b91049e5087"
+  } ],
+  "name" : "suites"
+}

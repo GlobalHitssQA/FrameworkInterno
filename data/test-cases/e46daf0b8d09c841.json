@@ -1,0 +1,50 @@
+{
+  "uid" : "e46daf0b8d09c841",
+  "name" : "Test of backend GRAPHQL Mutation with variables",
+  "fullName" : "Pruebas de backend APIs REST y GRAPHQL con assertions:.Test of backend GRAPHQL Mutation with variables",
+  "historyId" : "fadd07dba8d6177b741cd9689f2f844a",
+  "time" : {
+    "start" : 1640925148039,
+    "stop" : 1640925148039,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "testClass",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test of backend GRAPHQL Mutation with variables"
+  }, {
+    "name" : "package",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e46daf0b8d09c841.json",
+  "parameterValues" : [ ]
+}
