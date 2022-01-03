@@ -1,17 +1,17 @@
 {
-  "uid" : "dc73bd59ca639e2f",
-  "name" : "Primer scenario pasando la prueba de visual testing",
-  "fullName" : "Visual testing:.Primer scenario pasando la prueba de visual testing",
-  "historyId" : "12b3ae96baeff220b127e94ff8151d2b",
+  "uid" : "a50879d8c335ac2b",
+  "name" : "Pixel 5",
+  "fullName" : "Emulacion de dispositivos:.Pixel 5",
+  "historyId" : "631c004216ea6c6fc685a16cb2705193",
   "time" : {
-    "start" : 1640929650008,
-    "stop" : 1640929650008,
+    "start" : 1641252826917,
+    "stop" : 1641252826917,
     "duration" : 0
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "skipped",
-  "statusMessage" : "Test ignored",
+  "statusMessage" : "Skipped due to failure in 'before' hook",
   "statusTrace" : "undefined",
   "flaky" : false,
   "newFailed" : false,
@@ -23,28 +23,30 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Visual testing:"
+    "value" : "Emulacion de dispositivos:"
   }, {
     "name" : "testClass",
-    "value" : "Visual testing:"
+    "value" : "Emulacion de dispositivos:"
   }, {
     "name" : "testMethod",
-    "value" : "Primer scenario pasando la prueba de visual testing"
+    "value" : "Pixel 5"
   }, {
     "name" : "package",
-    "value" : "Visual testing:"
+    "value" : "Emulacion de dispositivos:"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : true,
-  "retry" : true,
+  "hidden" : false,
+  "retry" : false,
   "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "dc73bd59ca639e2f.json",
+  "source" : "a50879d8c335ac2b.json",
   "parameterValues" : [ ]
 }

@@ -1,0 +1,84 @@
+{
+  "uid" : "b19767764b05dc9c",
+  "name" : "BeforeSuite of suite Pruebas de bases de datos: failed.",
+  "fullName" : "Pruebas de bases de datos:.BeforeSuite of suite Pruebas de bases de datos: failed.",
+  "historyId" : "f064e6e3a5146a9d0092125e5ee46e85",
+  "time" : {
+    "start" : 1641252825187,
+    "stop" : 1641252825200,
+    "duration" : 13
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Database not found with the key testDB",
+  "statusTrace" : "Error: Database not found with the key testDB\n                    at DbHelper._keyNotFoundError (/home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs-dbhelper/index.js:158:16)\n                    at DbHelper.run (/home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs-dbhelper/index.js:108:24)\n                    at Step.run (/home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs/lib/step.js:122:47)\n                    at /home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs/lib/actor.js:134:23\n                    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Database not found with the key testDB",
+    "statusTrace" : "Error: Database not found with the key testDB\n                    at DbHelper._keyNotFoundError (/home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs-dbhelper/index.js:158:16)\n                    at DbHelper.run (/home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs-dbhelper/index.js:108:24)\n                    at Step.run (/home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs/lib/step.js:122:47)\n                    at /home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs/lib/actor.js:134:23\n                    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+    "steps" : [ {
+      "name" : "I run \"testDB\", \"DELETE FROM pruebas\"",
+      "time" : {
+        "start" : 1641252825198,
+        "stop" : 1641252825199,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "Error: Database not found with the key testDB\n                    at DbHelper._keyNotFoundError (/home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs-dbhelper/index.js:158:16)\n                    at DbHelper.run (/home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs-dbhelper/index.js:108:24)\n                    at Step.run (/home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs/lib/step.js:122:47)\n                    at /home/runner/work/FrameworkInterno/FrameworkInterno/node_modules/codeceptjs/lib/actor.js:134:23\n                    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Pruebas de bases de datos:"
+  }, {
+    "name" : "testClass",
+    "value" : "Pruebas de bases de datos:"
+  }, {
+    "name" : "testMethod",
+    "value" : "BeforeSuite of suite Pruebas de bases de datos: failed."
+  }, {
+    "name" : "package",
+    "value" : "Pruebas de bases de datos:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b19767764b05dc9c.json",
+  "parameterValues" : [ ]
+}

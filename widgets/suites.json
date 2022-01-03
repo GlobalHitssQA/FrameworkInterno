@@ -1,35 +1,46 @@
 {
-  "total" : 4,
+  "total" : 6,
   "items" : [ {
-    "uid" : "b9543f73043e82fbb09c83c931844a89",
-    "name" : "Pruebas de backend APIs REST y GRAPHQL con assertions:",
+    "uid" : "82893c1c0b0096e9fee2685dfaae0646",
+    "name" : "Emulacion de dispositivos:",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 7,
+      "skipped" : 3,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 8
+      "total" : 4
     }
   }, {
     "uid" : "494c57095943d860864e0c4f64fbe413",
     "name" : "Pruebas de bases de datos:",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 1
     }
   }, {
     "uid" : "e54283d136905f6b9d6a3b91049e5087",
     "name" : "My First Login with Data Provider:",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "2685677a43c3b1a0e5d0c6516aff904a",
+    "name" : "Prueba para usar la utilidad de mandar email:",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }
@@ -37,12 +48,23 @@
     "uid" : "63895b5a0b6eb56620256513dc067161",
     "name" : "Visual testing:",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
-      "skipped" : 1,
+      "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
+    }
+  }, {
+    "uid" : "b9543f73043e82fbb09c83c931844a89",
+    "name" : "Pruebas de backend APIs REST y GRAPHQL con assertions:",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 7,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 7
     }
   } ]
 }
