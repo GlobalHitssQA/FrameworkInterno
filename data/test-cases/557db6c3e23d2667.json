@@ -1,17 +1,17 @@
 {
-  "uid" : "388664b8e91ea762",
-  "name" : "Test of backend GRAPHQL GET with variables",
-  "fullName" : "Pruebas de backend APIs REST y GRAPHQL con assertions:.Test of backend GRAPHQL GET with variables",
-  "historyId" : "1f83e7a4f9d9a84b912549c307a6afb0",
+  "uid" : "557db6c3e23d2667",
+  "name" : "Test of backend GRAPHQL Mutation with variables",
+  "fullName" : "Pruebas de backend APIs REST y GRAPHQL con assertions:.Test of backend GRAPHQL Mutation with variables",
+  "historyId" : "fadd07dba8d6177b741cd9689f2f844a",
   "time" : {
-    "start" : 1641252824342,
-    "stop" : 1641252824342,
+    "start" : 1641273319640,
+    "stop" : 1641273319640,
     "duration" : 0
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "skipped",
-  "statusMessage" : "Skipped due to failure in 'before' hook",
+  "statusMessage" : "Test ignored",
   "statusTrace" : "undefined",
   "flaky" : false,
   "newFailed" : false,
@@ -29,7 +29,7 @@
     "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
   }, {
     "name" : "testMethod",
-    "value" : "Test of backend GRAPHQL GET with variables"
+    "value" : "Test of backend GRAPHQL Mutation with variables"
   }, {
     "name" : "package",
     "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
@@ -39,14 +39,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "388664b8e91ea762.json",
+  "source" : "557db6c3e23d2667.json",
   "parameterValues" : [ ]
 }

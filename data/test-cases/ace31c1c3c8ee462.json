@@ -1,0 +1,102 @@
+{
+  "uid" : "ace31c1c3c8ee462",
+  "name" : "Desktop Safari",
+  "fullName" : "Emulacion de dispositivos:.Desktop Safari",
+  "historyId" : "aef5d0bba42aff064cc283cdf959bb76",
+  "time" : {
+    "start" : 1641273351382,
+    "stop" : 1641273357196,
+    "duration" : 5814
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "mobile user Desktop Safari: I am on page ",
+      "time" : {
+        "start" : 1641273351489,
+        "stop" : 1641273352091,
+        "duration" : 602
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "mobile user Desktop Safari: I wait 5",
+      "time" : {
+        "start" : 1641273352092,
+        "stop" : 1641273357092,
+        "duration" : 5000
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "8e351793fc4719ed",
+      "name" : "Execution Video",
+      "source" : "8e351793fc4719ed.webm",
+      "type" : "video/webm",
+      "size" : 14522
+    }, {
+      "uid" : "2b667201e25aba60",
+      "name" : "TRACE",
+      "source" : "2b667201e25aba60.zip",
+      "type" : "application/zip",
+      "size" : 1918
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "testClass",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Desktop Safari"
+  }, {
+    "name" : "package",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ace31c1c3c8ee462.json",
+  "parameterValues" : [ ]
+}

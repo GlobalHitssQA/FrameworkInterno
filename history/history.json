@@ -1,21 +1,20 @@
 {
-  "a2ef007716e396cf521218fbfafa0da6" : {
+  "23086291cb2490be829c521356871409" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "15e17ba8353a371d",
-      "status" : "skipped",
-      "statusDetails" : "Skipped due to failure in 'before' hook",
+      "uid" : "9dffee1c67bc448d",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252824340,
-        "stop" : 1641252824340,
-        "duration" : 0
+        "start" : 1641273326429,
+        "stop" : 1641273329991,
+        "duration" : 3562
       }
     } ]
   },
@@ -29,13 +28,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "838a450c3b76539a",
+      "uid" : "a3ba692a72618846",
       "status" : "skipped",
-      "statusDetails" : "Skipped due to failure in 'before' hook",
+      "statusDetails" : "Test ignored",
       "time" : {
-        "start" : 1641252824342,
-        "stop" : 1641252824342,
+        "start" : 1641273324037,
+        "stop" : 1641273324037,
         "duration" : 0
+      }
+    } ]
+  },
+  "a2ef007716e396cf521218fbfafa0da6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ef06075f936ba76f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641273321670,
+        "stop" : 1641273322082,
+        "duration" : 412
       }
     } ]
   },
@@ -43,59 +61,56 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a50879d8c335ac2b",
-      "status" : "skipped",
-      "statusDetails" : "Skipped due to failure in 'before' hook",
+      "uid" : "4e6f924b317b5fff",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252826917,
-        "stop" : 1641252826917,
-        "duration" : 0
+        "start" : 1641273337213,
+        "stop" : 1641273343029,
+        "duration" : 5816
       }
     } ]
   },
-  "6cad3ecfcdf24a2d5ddb0fd8918cd73f" : {
+  "61825cd93d7adb97d7d850072dae50c8" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1549c9fb7a97cbed",
-      "status" : "failed",
-      "statusDetails" : "browserType.launch: Browser closed.\n                ==================== Browser output: ====================\n                <launching> /home/runner/.cache/ms-playwright/chromium-939194/chrome-linux/chrome --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,AcceptCHFrame --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-flHHtH --remote-debugging-pipe --no-startup-window\n                <launched> pid=4554\n                [pid=4554][err] [4554:4554:0103/233345.481476:FATAL:ozone_platform_x11.cc(238)] Check failed: x11::Connection::Get()->Ready(). Missing X server or $DISPLAY\n                [pid=4554][err] #0 0x561a31159239 base::debug::CollectStackTrace()\n                [pid=4554][err] #1 0x561a310c0d63 base::debug::StackTrace::StackTrace()\n                [pid=4554][err] #2 0x561a310d4010 logging::LogMessage::~LogMessage()\n                [pid=4554][err] #3 0x561a310d4b5e logging::LogMessage::~LogMessage()\n                [pid=4554][err] #4 0x561a2e33f4a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4554][err] #5 0x561a2e2db867 ui::OzonePlatform::InitializeForUI()\n                [pid=4554][err] #6 0x561a32842bde aura::Env::Init()\n                [pid=4554][err] #7 0x561a32842b7a aura::Env::CreateInstance()\n                [pid=4554][err] #8 0x561a2eca1cea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4554][err] #9 0x561a2eca260d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4554][err] #10 0x561a2ec9eb7b content::BrowserMain()\n                [pid=4554][err] #11 0x561a30c5aeb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4554][err] #12 0x561a30c5a977 content::ContentMainRunnerImpl::Run()\n                [pid=4554][err] #13 0x561a30c581e5 content::RunContentProcess()\n                [pid=4554][err] #14 0x561a30c58cbe content::ContentMain()\n                [pid=4554][err] #15 0x561a2d9f3f66 ChromeMain\n                [pid=4554][err] #16 0x7f45ddadb0b3 __libc_start_main\n                [pid=4554][err] #17 0x561a2d9f3d6a _start\n                [pid=4554][err] Crash keys:\n                [pid=4554][err]   \"io_scheduler_async_stack\" = \"0x561A2EAC3CC4 0x0\"\n                [pid=4554][err]   \"gwp-asan-partitionalloc\" = \"1f9200218c00\"\n                [pid=4554][err]   \"gwp-asan-malloc\" = \"1f9200218d00\"\n                [pid=4554][err]   \"variations\" = \"19ebe09a-720b026c,23a898eb-fc93cf74,5f2c0f7c-3f4a17df,e4a357e9-3f4a17df,\"\n                [pid=4554][err]   \"num-experiments\" = \"4\"\n                [pid=4554][err]   \"switch-30\" = \"--enable-crashpad\"\n                [pid=4554][err]   \"switch-29\" = \"--no-startup-window\"\n                [pid=4554][err]   \"switch-28\" = \"--remote-debugging-pipe\"\n                [pid=4554][err]   \"switch-27\" = \"--user-data-dir=/tmp/playwright_chromiumdev_profile-flHHtH\"\n                [pid=4554][err]   \"switch-26\" = \"--no-sandbox\"\n                [pid=4554][err]   \"switch-25\" = \"--no-service-autorun\"\n                [pid=4554][err]   \"switch-24\" = \"--use-mock-keychain\"\n                [pid=4554][err]   \"switch-23\" = \"--password-store=basic\"\n                [pid=4554][err]   \"switch-22\" = \"--enable-automation\"\n                [pid=4554][err]   \"switch-21\" = \"--no-first-run\"\n                [pid=4554][err]   \"switch-20\" = \"--metrics-recording-only\"\n                [pid=4554][err]   \"switch-19\" = \"--force-color-profile=srgb\"\n                [pid=4554][err]   \"switch-18\" = \"--disable-sync\"\n                [pid=4554][err]   \"switch-17\" = \"--disable-renderer-backgrounding\"\n                [pid=4554][err]   \"switch-16\" = \"--disable-prompt-on-repost\"\n                [pid=4554][err]   \"switch-15\" = \"--disable-popup-blocking\"\n                [pid=4554][err]   \"switch-14\" = \"--disable-ipc-flooding-protection\"\n                [pid=4554][err]   \"switch-13\" = \"--disable-hang-monitor\"\n                [pid=4554][err]   \"switch-12\" = \"--allow-pre-commit-input\"\n                [pid=4554][err]   \"switch-11\" = \"--disable-features=ImprovedCookieControls,LazyFrameLoading,Globa\"\n                [pid=4554][err]   \"switch-10\" = \"--disable-extensions\"\n                [pid=4554][err]   \"switch-9\" = \"--disable-dev-shm-usage\"\n                [pid=4554][err]   \"switch-8\" = \"--disable-default-apps\"\n                [pid=4554][err]   \"switch-7\" = \"--disable-component-extensions-with-background-pages\"\n                [pid=4554][err]   \"switch-6\" = \"--disable-client-side-phishing-detection\"\n                [pid=4554][err]   \"switch-5\" = \"--disable-breakpad\"\n                [pid=4554][err]   \"switch-4\" = \"--disable-backgrounding-occluded-windows\"\n                [pid=4554][err]   \"switch-3\" = \"--disable-background-timer-throttling\"\n                [pid=4554][err]   \"switch-2\" = \"--enable-features=NetworkService,NetworkServiceInProcess\"\n                [pid=4554][err]   \"switch-1\" = \"--disable-background-networking\"\n                [pid=4554][err]   \"num-switches\" = \"30\"\n                [pid=4554][err]   \"osarch\" = \"x86_64\"\n                [pid=4554][err]   \"pid\" = \"4554\"\n                [pid=4554][err]   \"ptype\" = \"browser\"\n                [pid=4554][err] \n                [pid=4554][err] [0103/233345.643936:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)\n                [pid=4554][err] [0103/233345.644004:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)\n                [pid=4554][err] Received signal 6\n                [pid=4554][err] #0 0x561a31159239 base::debug::CollectStackTrace()\n                [pid=4554][err] #1 0x561a310c0d63 base::debug::StackTrace::StackTrace()\n                [pid=4554][err] #2 0x561a31158d11 base::debug::(anonymous namespace)::StackDumpSignalHandler()\n                [pid=4554][err] #3 0x7f45de9ac3c0 (/usr/lib/x86_64-linux-gnu/libpthread-2.31.so+0x153bf)\n                [pid=4554][err] #4 0x7f45ddafa18b gsignal\n                [pid=4554][err] #5 0x7f45ddad9859 abort\n                [pid=4554][err] #6 0x561a31157fa5 base::debug::BreakDebuggerAsyncSafe()\n                [pid=4554][err] #7 0x561a310d443f logging::LogMessage::~LogMessage()\n                [pid=4554][err] #8 0x561a310d4b5e logging::LogMessage::~LogMessage()\n                [pid=4554][err] #9 0x561a2e33f4a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4554][err] #10 0x561a2e2db867 ui::OzonePlatform::InitializeForUI()\n                [pid=4554][err] #11 0x561a32842bde aura::Env::Init()\n                [pid=4554][err] #12 0x561a32842b7a aura::Env::CreateInstance()\n                [pid=4554][err] #13 0x561a2eca1cea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4554][err] #14 0x561a2eca260d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4554][err] #15 0x561a2ec9eb7b content::BrowserMain()\n                [pid=4554][err] #16 0x561a30c5aeb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4554][err] #17 0x561a30c5a977 content::ContentMainRunnerImpl::Run()\n                [pid=4554][err] #18 0x561a30c581e5 content::RunContentProcess()\n                [pid=4554][err] #19 0x561a30c58cbe content::ContentMain()\n                [pid=4554][err] #20 0x561a2d9f3f66 ChromeMain\n                [pid=4554][err] #21 0x7f45ddadb0b3 __libc_start_main\n                [pid=4554][err] #22 0x561a2d9f3d6a _start\n                [pid=4554][err]   r8: 0000000000000000  r9: 00007ffff9bbcb40 r10: 0000000000000008 r11: 0000000000000246\n                [pid=4554][err]  r12: 00001f92002b8640 r13: 00007ffff9bbcda0 r14: 00001f92002b8650 r15: aaaaaaaaaaaaaaaa\n                [pid=4554][err]   di: 0000000000000002  si: 00007ffff9bbcb40  bp: 00007ffff9bbcd90  bx: 00007f45dc915e00\n                [pid=4554][err]   dx: 0000000000000000  ax: 0000000000000000  cx: 00007f45ddafa18b  sp: 00007ffff9bbcb40\n                [pid=4554][err]   ip: 00007f45ddafa18b efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000\n                [pid=4554][err]  trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000\n                [pid=4554][err] [end of stack trace]\n                =========================== logs ===========================\n                <launching> /home/runner/.cache/ms-playwright/chromium-939194/chrome-linux/chrome --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,AcceptCHFrame --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-flHHtH --remote-debugging-pipe --no-startup-window\n                <launched> pid=4554\n                [pid=4554][err] [4554:4554:0103/233345.481476:FATAL:ozone_platform_x11.cc(238)] Check failed: x11::Connection::Get()->Ready(). Missing X server or $DISPLAY\n                [pid=4554][err] #0 0x561a31159239 base::debug::CollectStackTrace()\n                [pid=4554][err] #1 0x561a310c0d63 base::debug::StackTrace::StackTrace()\n                [pid=4554][err] #2 0x561a310d4010 logging::LogMessage::~LogMessage()\n                [pid=4554][err] #3 0x561a310d4b5e logging::LogMessage::~LogMessage()\n                [pid=4554][err] #4 0x561a2e33f4a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4554][err] #5 0x561a2e2db867 ui::OzonePlatform::InitializeForUI()\n                [pid=4554][err] #6 0x561a32842bde aura::Env::Init()\n                [pid=4554][err] #7 0x561a32842b7a aura::Env::CreateInstance()\n                [pid=4554][err] #8 0x561a2eca1cea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4554][err] #9 0x561a2eca260d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4554][err] #10 0x561a2ec9eb7b content::BrowserMain()\n                [pid=4554][err] #11 0x561a30c5aeb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4554][err] #12 0x561a30c5a977 content::ContentMainRunnerImpl::Run()\n                [pid=4554][err] #13 0x561a30c581e5 content::RunContentProcess()\n                [pid=4554][err] #14 0x561a30c58cbe content::ContentMain()\n                [pid=4554][err] #15 0x561a2d9f3f66 ChromeMain\n                [pid=4554][err] #16 0x7f45ddadb0b3 __libc_start_main\n                [pid=4554][err] #17 0x561a2d9f3d6a _start\n                [pid=4554][err] Crash keys:\n                [pid=4554][err]   \"io_scheduler_async_stack\" = \"0x561A2EAC3CC4 0x0\"\n                [pid=4554][err]   \"gwp-asan-partitionalloc\" = \"1f9200218c00\"\n                [pid=4554][err]   \"gwp-asan-malloc\" = \"1f9200218d00\"\n                [pid=4554][err]   \"variations\" = \"19ebe09a-720b026c,23a898eb-fc93cf74,5f2c0f7c-3f4a17df,e4a357e9-3f4a17df,\"\n                [pid=4554][err]   \"num-experiments\" = \"4\"\n                [pid=4554][err]   \"switch-30\" = \"--enable-crashpad\"\n                [pid=4554][err]   \"switch-29\" = \"--no-startup-window\"\n                [pid=4554][err]   \"switch-28\" = \"--remote-debugging-pipe\"\n                [pid=4554][err]   \"switch-27\" = \"--user-data-dir=/tmp/playwright_chromiumdev_profile-flHHtH\"\n                [pid=4554][err]   \"switch-26\" = \"--no-sandbox\"\n                [pid=4554][err]   \"switch-25\" = \"--no-service-autorun\"\n                [pid=4554][err]   \"switch-24\" = \"--use-mock-keychain\"\n                [pid=4554][err]   \"switch-23\" = \"--password-store=basic\"\n                [pid=4554][err]   \"switch-22\" = \"--enable-automation\"\n                [pid=4554][err]   \"switch-21\" = \"--no-first-run\"\n                [pid=4554][err]   \"switch-20\" = \"--metrics-recording-only\"\n                [pid=4554][err]   \"switch-19\" = \"--force-color-profile=srgb\"\n                [pid=4554][err]   \"switch-18\" = \"--disable-sync\"\n                [pid=4554][err]   \"switch-17\" = \"--disable-renderer-backgrounding\"\n                [pid=4554][err]   \"switch-16\" = \"--disable-prompt-on-repost\"\n                [pid=4554][err]   \"switch-15\" = \"--disable-popup-blocking\"\n                [pid=4554][err]   \"switch-14\" = \"--disable-ipc-flooding-protection\"\n                [pid=4554][err]   \"switch-13\" = \"--disable-hang-monitor\"\n                [pid=4554][err]   \"switch-12\" = \"--allow-pre-commit-input\"\n                [pid=4554][err]   \"switch-11\" = \"--disable-features=ImprovedCookieControls,LazyFrameLoading,Globa\"\n                [pid=4554][err]   \"switch-10\" = \"--disable-extensions\"\n                [pid=4554][err]   \"switch-9\" = \"--disable-dev-shm-usage\"\n                [pid=4554][err]   \"switch-8\" = \"--disable-default-apps\"\n                [pid=4554][err]   \"switch-7\" = \"--disable-component-extensions-with-background-pages\"\n                [pid=4554][err]   \"switch-6\" = \"--disable-client-side-phishing-detection\"\n                [pid=4554][err]   \"switch-5\" = \"--disable-breakpad\"\n                [pid=4554][err]   \"switch-4\" = \"--disable-backgrounding-occluded-windows\"\n                [pid=4554][err]   \"switch-3\" = \"--disable-background-timer-throttling\"\n                [pid=4554][err]   \"switch-2\" = \"--enable-features=NetworkService,NetworkServiceInProcess\"\n                [pid=4554][err]   \"switch-1\" = \"--disable-background-networking\"\n                [pid=4554][err]   \"num-switches\" = \"30\"\n                [pid=4554][err]   \"osarch\" = \"x86_64\"\n                [pid=4554][err]   \"pid\" = \"4554\"\n                [pid=4554][err]   \"ptype\" = \"browser\"\n                [pid=4554][err] \n                [pid=4554][err] [0103/233345.643936:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)\n                [pid=4554][err] [0103/233345.644004:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)\n                [pid=4554][err] Received signal 6\n                [pid=4554][err] #0 0x561a31159239 base::debug::CollectStackTrace()\n                [pid=4554][err] #1 0x561a310c0d63 base::debug::StackTrace::StackTrace()\n                [pid=4554][err] #2 0x561a31158d11 base::debug::(anonymous namespace)::StackDumpSignalHandler()\n                [pid=4554][err] #3 0x7f45de9ac3c0 (/usr/lib/x86_64-linux-gnu/libpthread-2.31.so+0x153bf)\n                [pid=4554][err] #4 0x7f45ddafa18b gsignal\n                [pid=4554][err] #5 0x7f45ddad9859 abort\n                [pid=4554][err] #6 0x561a31157fa5 base::debug::BreakDebuggerAsyncSafe()\n                [pid=4554][err] #7 0x561a310d443f logging::LogMessage::~LogMessage()\n                [pid=4554][err] #8 0x561a310d4b5e logging::LogMessage::~LogMessage()\n                [pid=4554][err] #9 0x561a2e33f4a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4554][err] #10 0x561a2e2db867 ui::OzonePlatform::InitializeForUI()\n                [pid=4554][err] #11 0x561a32842bde aura::Env::Init()\n                [pid=4554][err] #12 0x561a32842b7a aura::Env::CreateInstance()\n                [pid=4554][err] #13 0x561a2eca1cea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4554][err] #14 0x561a2eca260d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4554][err] #15 0x561a2ec9eb7b content::BrowserMain()\n                [pid=4554][err] #16 0x561a30c5aeb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4554][err] #17 0x561a30c5a977 content::ContentMainRunnerImpl::Run()\n                [pid=4554][err] #18 0x561a30c581e5 content::RunContentProcess()\n                [pid=4554][err] #19 0x561a30c58cbe content::ContentMain()\n                [pid=4554][err] #20 0x561a2d9f3f66 ChromeMain\n                [pid=4554][err] #21 0x7f45ddadb0b3 __libc_start_main\n                [pid=4554][err] #22 0x561a2d9f3d6a _start\n                [pid=4554][err]   r8: 0000000000000000  r9: 00007ffff9bbcb40 r10: 0000000000000008 r11: 0000000000000246\n                [pid=4554][err]  r12: 00001f92002b8640 r13: 00007ffff9bbcda0 r14: 00001f92002b8650 r15: aaaaaaaaaaaaaaaa\n                [pid=4554][err]   di: 0000000000000002  si: 00007ffff9bbcb40  bp: 00007ffff9bbcd90  bx: 00007f45dc915e00\n                [pid=4554][err]   dx: 0000000000000000  ax: 0000000000000000  cx: 00007f45ddafa18b  sp: 00007ffff9bbcb40\n                [pid=4554][err]   ip: 00007f45ddafa18b efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000\n                [pid=4554][err]  trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000\n                [pid=4554][err] [end of stack trace]\n                ============================================================",
+      "uid" : "71e76e2ef15ee187",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252826029,
-        "stop" : 1641252826029,
-        "duration" : 0
+        "start" : 1641273325569,
+        "stop" : 1641273325974,
+        "duration" : 405
       }
     } ]
   },
-  "34e4b37881b75c2185bc9fc150abfdc0" : {
+  "e94bf5667d57147901d5955f5401bb46" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7753310c8126d170",
-      "status" : "failed",
-      "statusDetails" : "browserType.launch: Browser closed.\n                ==================== Browser output: ====================\n                <launching> /home/runner/.cache/ms-playwright/chromium-939194/chrome-linux/chrome --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,AcceptCHFrame --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-AJqeWG --remote-debugging-pipe --no-startup-window\n                <launched> pid=4839\n                [pid=4839][err] [4839:4839:0103/233347.210640:FATAL:ozone_platform_x11.cc(238)] Check failed: x11::Connection::Get()->Ready(). Missing X server or $DISPLAY\n                [pid=4839][err] #0 0x5599750d1239 base::debug::CollectStackTrace()\n                [pid=4839][err] #1 0x559975038d63 base::debug::StackTrace::StackTrace()\n                [pid=4839][err] #2 0x55997504c010 logging::LogMessage::~LogMessage()\n                [pid=4839][err] #3 0x55997504cb5e logging::LogMessage::~LogMessage()\n                [pid=4839][err] #4 0x5599722b74a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4839][err] #5 0x559972253867 ui::OzonePlatform::InitializeForUI()\n                [pid=4839][err] #6 0x5599767babde aura::Env::Init()\n                [pid=4839][err] #7 0x5599767bab7a aura::Env::CreateInstance()\n                [pid=4839][err] #8 0x559972c19cea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4839][err] #9 0x559972c1a60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4839][err] #10 0x559972c16b7b content::BrowserMain()\n                [pid=4839][err] #11 0x559974bd2eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4839][err] #12 0x559974bd2977 content::ContentMainRunnerImpl::Run()\n                [pid=4839][err] #13 0x559974bd01e5 content::RunContentProcess()\n                [pid=4839][err] #14 0x559974bd0cbe content::ContentMain()\n                [pid=4839][err] #15 0x55997196bf66 ChromeMain\n                [pid=4839][err] #16 0x7f3d274290b3 __libc_start_main\n                [pid=4839][err] #17 0x55997196bd6a _start\n                [pid=4839][err] Crash keys:\n                [pid=4839][err]   \"io_scheduler_async_stack\" = \"0x559972A3BCC4 0x0\"\n                [pid=4839][err]   \"variations\" = \"19ebe09a-4542122,23a898eb-fc93cf74,5f2c0f7c-3f4a17df,e4a357e9-3f4a17df,\"\n                [pid=4839][err]   \"num-experiments\" = \"4\"\n                [pid=4839][err]   \"switch-30\" = \"--enable-crashpad\"\n                [pid=4839][err]   \"switch-29\" = \"--no-startup-window\"\n                [pid=4839][err]   \"switch-28\" = \"--remote-debugging-pipe\"\n                [pid=4839][err]   \"switch-27\" = \"--user-data-dir=/tmp/playwright_chromiumdev_profile-AJqeWG\"\n                [pid=4839][err]   \"switch-26\" = \"--no-sandbox\"\n                [pid=4839][err]   \"switch-25\" = \"--no-service-autorun\"\n                [pid=4839][err]   \"switch-24\" = \"--use-mock-keychain\"\n                [pid=4839][err]   \"switch-23\" = \"--password-store=basic\"\n                [pid=4839][err]   \"switch-22\" = \"--enable-automation\"\n                [pid=4839][err]   \"switch-21\" = \"--no-first-run\"\n                [pid=4839][err]   \"switch-20\" = \"--metrics-recording-only\"\n                [pid=4839][err]   \"switch-19\" = \"--force-color-profile=srgb\"\n                [pid=4839][err]   \"switch-18\" = \"--disable-sync\"\n                [pid=4839][err]   \"switch-17\" = \"--disable-renderer-backgrounding\"\n                [pid=4839][err]   \"switch-16\" = \"--disable-prompt-on-repost\"\n                [pid=4839][err]   \"switch-15\" = \"--disable-popup-blocking\"\n                [pid=4839][err]   \"switch-14\" = \"--disable-ipc-flooding-protection\"\n                [pid=4839][err]   \"switch-13\" = \"--disable-hang-monitor\"\n                [pid=4839][err]   \"switch-12\" = \"--allow-pre-commit-input\"\n                [pid=4839][err]   \"switch-11\" = \"--disable-features=ImprovedCookieControls,LazyFrameLoading,Globa\"\n                [pid=4839][err]   \"switch-10\" = \"--disable-extensions\"\n                [pid=4839][err]   \"switch-9\" = \"--disable-dev-shm-usage\"\n                [pid=4839][err]   \"switch-8\" = \"--disable-default-apps\"\n                [pid=4839][err]   \"switch-7\" = \"--disable-component-extensions-with-background-pages\"\n                [pid=4839][err]   \"switch-6\" = \"--disable-client-side-phishing-detection\"\n                [pid=4839][err]   \"switch-5\" = \"--disable-breakpad\"\n                [pid=4839][err]   \"switch-4\" = \"--disable-backgrounding-occluded-windows\"\n                [pid=4839][err]   \"switch-3\" = \"--disable-background-timer-throttling\"\n                [pid=4839][err]   \"switch-2\" = \"--enable-features=NetworkService,NetworkServiceInProcess\"\n                [pid=4839][err]   \"switch-1\" = \"--disable-background-networking\"\n                [pid=4839][err]   \"num-switches\" = \"30\"\n                [pid=4839][err]   \"osarch\" = \"x86_64\"\n                [pid=4839][err]   \"pid\" = \"4839\"\n                [pid=4839][err]   \"ptype\" = \"browser\"\n                [pid=4839][err] \n                [pid=4839][err] [0103/233347.373093:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)\n                [pid=4839][err] [0103/233347.373152:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)\n                [pid=4839][err] Received signal 6\n                [pid=4839][err] #0 0x5599750d1239 base::debug::CollectStackTrace()\n                [pid=4839][err] #1 0x559975038d63 base::debug::StackTrace::StackTrace()\n                [pid=4839][err] #2 0x5599750d0d11 base::debug::(anonymous namespace)::StackDumpSignalHandler()\n                [pid=4839][err] #3 0x7f3d282fa3c0 (/usr/lib/x86_64-linux-gnu/libpthread-2.31.so+0x153bf)\n                [pid=4839][err] #4 0x7f3d2744818b gsignal\n                [pid=4839][err] #5 0x7f3d27427859 abort\n                [pid=4839][err] #6 0x5599750cffa5 base::debug::BreakDebuggerAsyncSafe()\n                [pid=4839][err] #7 0x55997504c43f logging::LogMessage::~LogMessage()\n                [pid=4839][err] #8 0x55997504cb5e logging::LogMessage::~LogMessage()\n                [pid=4839][err] #9 0x5599722b74a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4839][err] #10 0x559972253867 ui::OzonePlatform::InitializeForUI()\n                [pid=4839][err] #11 0x5599767babde aura::Env::Init()\n                [pid=4839][err] #12 0x5599767bab7a aura::Env::CreateInstance()\n                [pid=4839][err] #13 0x559972c19cea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4839][err] #14 0x559972c1a60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4839][err] #15 0x559972c16b7b content::BrowserMain()\n                [pid=4839][err] #16 0x559974bd2eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4839][err] #17 0x559974bd2977 content::ContentMainRunnerImpl::Run()\n                [pid=4839][err] #18 0x559974bd01e5 content::RunContentProcess()\n                [pid=4839][err] #19 0x559974bd0cbe content::ContentMain()\n                [pid=4839][err] #20 0x55997196bf66 ChromeMain\n                [pid=4839][err] #21 0x7f3d274290b3 __libc_start_main\n                [pid=4839][err] #22 0x55997196bd6a _start\n                [pid=4839][err]   r8: 0000000000000000  r9: 00007ffd82d0dde0 r10: 0000000000000008 r11: 0000000000000246\n                [pid=4839][err]  r12: 00003368002b8b40 r13: 00007ffd82d0e040 r14: 00003368002b8b50 r15: aaaaaaaaaaaaaaaa\n                [pid=4839][err]   di: 0000000000000002  si: 00007ffd82d0dde0  bp: 00007ffd82d0e030  bx: 00007f3d26263e00\n                [pid=4839][err]   dx: 0000000000000000  ax: 0000000000000000  cx: 00007f3d2744818b  sp: 00007ffd82d0dde0\n                [pid=4839][err]   ip: 00007f3d2744818b efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000\n                [pid=4839][err]  trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000\n                [pid=4839][err] [end of stack trace]\n                =========================== logs ===========================\n                <launching> /home/runner/.cache/ms-playwright/chromium-939194/chrome-linux/chrome --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,AcceptCHFrame --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-AJqeWG --remote-debugging-pipe --no-startup-window\n                <launched> pid=4839\n                [pid=4839][err] [4839:4839:0103/233347.210640:FATAL:ozone_platform_x11.cc(238)] Check failed: x11::Connection::Get()->Ready(). Missing X server or $DISPLAY\n                [pid=4839][err] #0 0x5599750d1239 base::debug::CollectStackTrace()\n                [pid=4839][err] #1 0x559975038d63 base::debug::StackTrace::StackTrace()\n                [pid=4839][err] #2 0x55997504c010 logging::LogMessage::~LogMessage()\n                [pid=4839][err] #3 0x55997504cb5e logging::LogMessage::~LogMessage()\n                [pid=4839][err] #4 0x5599722b74a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4839][err] #5 0x559972253867 ui::OzonePlatform::InitializeForUI()\n                [pid=4839][err] #6 0x5599767babde aura::Env::Init()\n                [pid=4839][err] #7 0x5599767bab7a aura::Env::CreateInstance()\n                [pid=4839][err] #8 0x559972c19cea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4839][err] #9 0x559972c1a60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4839][err] #10 0x559972c16b7b content::BrowserMain()\n                [pid=4839][err] #11 0x559974bd2eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4839][err] #12 0x559974bd2977 content::ContentMainRunnerImpl::Run()\n                [pid=4839][err] #13 0x559974bd01e5 content::RunContentProcess()\n                [pid=4839][err] #14 0x559974bd0cbe content::ContentMain()\n                [pid=4839][err] #15 0x55997196bf66 ChromeMain\n                [pid=4839][err] #16 0x7f3d274290b3 __libc_start_main\n                [pid=4839][err] #17 0x55997196bd6a _start\n                [pid=4839][err] Crash keys:\n                [pid=4839][err]   \"io_scheduler_async_stack\" = \"0x559972A3BCC4 0x0\"\n                [pid=4839][err]   \"variations\" = \"19ebe09a-4542122,23a898eb-fc93cf74,5f2c0f7c-3f4a17df,e4a357e9-3f4a17df,\"\n                [pid=4839][err]   \"num-experiments\" = \"4\"\n                [pid=4839][err]   \"switch-30\" = \"--enable-crashpad\"\n                [pid=4839][err]   \"switch-29\" = \"--no-startup-window\"\n                [pid=4839][err]   \"switch-28\" = \"--remote-debugging-pipe\"\n                [pid=4839][err]   \"switch-27\" = \"--user-data-dir=/tmp/playwright_chromiumdev_profile-AJqeWG\"\n                [pid=4839][err]   \"switch-26\" = \"--no-sandbox\"\n                [pid=4839][err]   \"switch-25\" = \"--no-service-autorun\"\n                [pid=4839][err]   \"switch-24\" = \"--use-mock-keychain\"\n                [pid=4839][err]   \"switch-23\" = \"--password-store=basic\"\n                [pid=4839][err]   \"switch-22\" = \"--enable-automation\"\n                [pid=4839][err]   \"switch-21\" = \"--no-first-run\"\n                [pid=4839][err]   \"switch-20\" = \"--metrics-recording-only\"\n                [pid=4839][err]   \"switch-19\" = \"--force-color-profile=srgb\"\n                [pid=4839][err]   \"switch-18\" = \"--disable-sync\"\n                [pid=4839][err]   \"switch-17\" = \"--disable-renderer-backgrounding\"\n                [pid=4839][err]   \"switch-16\" = \"--disable-prompt-on-repost\"\n                [pid=4839][err]   \"switch-15\" = \"--disable-popup-blocking\"\n                [pid=4839][err]   \"switch-14\" = \"--disable-ipc-flooding-protection\"\n                [pid=4839][err]   \"switch-13\" = \"--disable-hang-monitor\"\n                [pid=4839][err]   \"switch-12\" = \"--allow-pre-commit-input\"\n                [pid=4839][err]   \"switch-11\" = \"--disable-features=ImprovedCookieControls,LazyFrameLoading,Globa\"\n                [pid=4839][err]   \"switch-10\" = \"--disable-extensions\"\n                [pid=4839][err]   \"switch-9\" = \"--disable-dev-shm-usage\"\n                [pid=4839][err]   \"switch-8\" = \"--disable-default-apps\"\n                [pid=4839][err]   \"switch-7\" = \"--disable-component-extensions-with-background-pages\"\n                [pid=4839][err]   \"switch-6\" = \"--disable-client-side-phishing-detection\"\n                [pid=4839][err]   \"switch-5\" = \"--disable-breakpad\"\n                [pid=4839][err]   \"switch-4\" = \"--disable-backgrounding-occluded-windows\"\n                [pid=4839][err]   \"switch-3\" = \"--disable-background-timer-throttling\"\n                [pid=4839][err]   \"switch-2\" = \"--enable-features=NetworkService,NetworkServiceInProcess\"\n                [pid=4839][err]   \"switch-1\" = \"--disable-background-networking\"\n                [pid=4839][err]   \"num-switches\" = \"30\"\n                [pid=4839][err]   \"osarch\" = \"x86_64\"\n                [pid=4839][err]   \"pid\" = \"4839\"\n                [pid=4839][err]   \"ptype\" = \"browser\"\n                [pid=4839][err] \n                [pid=4839][err] [0103/233347.373093:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)\n                [pid=4839][err] [0103/233347.373152:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)\n                [pid=4839][err] Received signal 6\n                [pid=4839][err] #0 0x5599750d1239 base::debug::CollectStackTrace()\n                [pid=4839][err] #1 0x559975038d63 base::debug::StackTrace::StackTrace()\n                [pid=4839][err] #2 0x5599750d0d11 base::debug::(anonymous namespace)::StackDumpSignalHandler()\n                [pid=4839][err] #3 0x7f3d282fa3c0 (/usr/lib/x86_64-linux-gnu/libpthread-2.31.so+0x153bf)\n                [pid=4839][err] #4 0x7f3d2744818b gsignal\n                [pid=4839][err] #5 0x7f3d27427859 abort\n                [pid=4839][err] #6 0x5599750cffa5 base::debug::BreakDebuggerAsyncSafe()\n                [pid=4839][err] #7 0x55997504c43f logging::LogMessage::~LogMessage()\n                [pid=4839][err] #8 0x55997504cb5e logging::LogMessage::~LogMessage()\n                [pid=4839][err] #9 0x5599722b74a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4839][err] #10 0x559972253867 ui::OzonePlatform::InitializeForUI()\n                [pid=4839][err] #11 0x5599767babde aura::Env::Init()\n                [pid=4839][err] #12 0x5599767bab7a aura::Env::CreateInstance()\n                [pid=4839][err] #13 0x559972c19cea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4839][err] #14 0x559972c1a60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4839][err] #15 0x559972c16b7b content::BrowserMain()\n                [pid=4839][err] #16 0x559974bd2eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4839][err] #17 0x559974bd2977 content::ContentMainRunnerImpl::Run()\n                [pid=4839][err] #18 0x559974bd01e5 content::RunContentProcess()\n                [pid=4839][err] #19 0x559974bd0cbe content::ContentMain()\n                [pid=4839][err] #20 0x55997196bf66 ChromeMain\n                [pid=4839][err] #21 0x7f3d274290b3 __libc_start_main\n                [pid=4839][err] #22 0x55997196bd6a _start\n                [pid=4839][err]   r8: 0000000000000000  r9: 00007ffd82d0dde0 r10: 0000000000000008 r11: 0000000000000246\n                [pid=4839][err]  r12: 00003368002b8b40 r13: 00007ffd82d0e040 r14: 00003368002b8b50 r15: aaaaaaaaaaaaaaaa\n                [pid=4839][err]   di: 0000000000000002  si: 00007ffd82d0dde0  bp: 00007ffd82d0e030  bx: 00007f3d26263e00\n                [pid=4839][err]   dx: 0000000000000000  ax: 0000000000000000  cx: 00007f3d2744818b  sp: 00007ffd82d0dde0\n                [pid=4839][err]   ip: 00007f3d2744818b efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000\n                [pid=4839][err]  trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000\n                [pid=4839][err] [end of stack trace]\n                ============================================================",
+      "uid" : "8aa5a9ed8d7dd1fc",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252827762,
-        "stop" : 1641252827762,
-        "duration" : 0
+        "start" : 1641273324120,
+        "stop" : 1641273325287,
+        "duration" : 1167
       }
     } ]
   },
@@ -103,59 +118,76 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9c6b3f564a51c460",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641273320606,
+        "stop" : 1641273321043,
+        "duration" : 437
+      }
+    } ]
+  },
+  "3dca3305518dc051769dadbb0ae77327" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e4cc23116ea39601",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641273320164,
+        "stop" : 1641273320501,
+        "duration" : 337
+      }
+    } ]
+  },
+  "12b3ae96baeff220b127e94ff8151d2b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
       "skipped" : 1,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e7777e4432a0750b",
+      "uid" : "dd7381340a3baa0b",
       "status" : "skipped",
-      "statusDetails" : "Skipped due to failure in 'before' hook",
+      "statusDetails" : "Test ignored",
       "time" : {
-        "start" : 1641252824338,
-        "stop" : 1641252824338,
+        "start" : 1641273364338,
+        "stop" : 1641273364338,
         "duration" : 0
       }
     } ]
   },
-  "fc135ac840a25874d628d258ac3c5c72" : {
+  "22613722bec4a391ed412b3aae7bb330" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "887ebb194f16a40d",
-      "status" : "failed",
-      "statusDetails" : "browserType.launch: Browser closed.\n                ==================== Browser output: ====================\n                <launching> /home/runner/.cache/ms-playwright/chromium-939194/chrome-linux/chrome --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,AcceptCHFrame --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-trMEtH --remote-debugging-pipe --no-startup-window\n                <launched> pid=4696\n                [pid=4696][err] [4696:4696:0103/233346.334681:FATAL:ozone_platform_x11.cc(238)] Check failed: x11::Connection::Get()->Ready(). Missing X server or $DISPLAY\n                [pid=4696][err] #0 0x56475bf73239 base::debug::CollectStackTrace()\n                [pid=4696][err] #1 0x56475bedad63 base::debug::StackTrace::StackTrace()\n                [pid=4696][err] #2 0x56475beee010 logging::LogMessage::~LogMessage()\n                [pid=4696][err] #3 0x56475beeeb5e logging::LogMessage::~LogMessage()\n                [pid=4696][err] #4 0x5647591594a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4696][err] #5 0x5647590f5867 ui::OzonePlatform::InitializeForUI()\n                [pid=4696][err] #6 0x56475d65cbde aura::Env::Init()\n                [pid=4696][err] #7 0x56475d65cb7a aura::Env::CreateInstance()\n                [pid=4696][err] #8 0x564759abbcea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4696][err] #9 0x564759abc60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4696][err] #10 0x564759ab8b7b content::BrowserMain()\n                [pid=4696][err] #11 0x56475ba74eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4696][err] #12 0x56475ba74977 content::ContentMainRunnerImpl::Run()\n                [pid=4696][err] #13 0x56475ba721e5 content::RunContentProcess()\n                [pid=4696][err] #14 0x56475ba72cbe content::ContentMain()\n                [pid=4696][err] #15 0x56475880df66 ChromeMain\n                [pid=4696][err] #16 0x7fc7cb77b0b3 __libc_start_main\n                [pid=4696][err] #17 0x56475880dd6a _start\n                [pid=4696][err] Crash keys:\n                [pid=4696][err]   \"io_scheduler_async_stack\" = \"0x5647598DDCC4 0x0\"\n                [pid=4696][err]   \"gwp-asan-partitionalloc\" = \"113800218c00\"\n                [pid=4696][err]   \"gwp-asan-malloc\" = \"113800218d00\"\n                [pid=4696][err]   \"variations\" = \"19ebe09a-4542122,23a898eb-fc93cf74,5f2c0f7c-3f4a17df,e4a357e9-3f4a17df,\"\n                [pid=4696][err]   \"num-experiments\" = \"4\"\n                [pid=4696][err]   \"switch-30\" = \"--enable-crashpad\"\n                [pid=4696][err]   \"switch-29\" = \"--no-startup-window\"\n                [pid=4696][err]   \"switch-28\" = \"--remote-debugging-pipe\"\n                [pid=4696][err]   \"switch-27\" = \"--user-data-dir=/tmp/playwright_chromiumdev_profile-trMEtH\"\n                [pid=4696][err]   \"switch-26\" = \"--no-sandbox\"\n                [pid=4696][err]   \"switch-25\" = \"--no-service-autorun\"\n                [pid=4696][err]   \"switch-24\" = \"--use-mock-keychain\"\n                [pid=4696][err]   \"switch-23\" = \"--password-store=basic\"\n                [pid=4696][err]   \"switch-22\" = \"--enable-automation\"\n                [pid=4696][err]   \"switch-21\" = \"--no-first-run\"\n                [pid=4696][err]   \"switch-20\" = \"--metrics-recording-only\"\n                [pid=4696][err]   \"switch-19\" = \"--force-color-profile=srgb\"\n                [pid=4696][err]   \"switch-18\" = \"--disable-sync\"\n                [pid=4696][err]   \"switch-17\" = \"--disable-renderer-backgrounding\"\n                [pid=4696][err]   \"switch-16\" = \"--disable-prompt-on-repost\"\n                [pid=4696][err]   \"switch-15\" = \"--disable-popup-blocking\"\n                [pid=4696][err]   \"switch-14\" = \"--disable-ipc-flooding-protection\"\n                [pid=4696][err]   \"switch-13\" = \"--disable-hang-monitor\"\n                [pid=4696][err]   \"switch-12\" = \"--allow-pre-commit-input\"\n                [pid=4696][err]   \"switch-11\" = \"--disable-features=ImprovedCookieControls,LazyFrameLoading,Globa\"\n                [pid=4696][err]   \"switch-10\" = \"--disable-extensions\"\n                [pid=4696][err]   \"switch-9\" = \"--disable-dev-shm-usage\"\n                [pid=4696][err]   \"switch-8\" = \"--disable-default-apps\"\n                [pid=4696][err]   \"switch-7\" = \"--disable-component-extensions-with-background-pages\"\n                [pid=4696][err]   \"switch-6\" = \"--disable-client-side-phishing-detection\"\n                [pid=4696][err]   \"switch-5\" = \"--disable-breakpad\"\n                [pid=4696][err]   \"switch-4\" = \"--disable-backgrounding-occluded-windows\"\n                [pid=4696][err]   \"switch-3\" = \"--disable-background-timer-throttling\"\n                [pid=4696][err]   \"switch-2\" = \"--enable-features=NetworkService,NetworkServiceInProcess\"\n                [pid=4696][err]   \"switch-1\" = \"--disable-background-networking\"\n                [pid=4696][err]   \"num-switches\" = \"30\"\n                [pid=4696][err]   \"osarch\" = \"x86_64\"\n                [pid=4696][err]   \"pid\" = \"4696\"\n                [pid=4696][err]   \"ptype\" = \"browser\"\n                [pid=4696][err] \n                [pid=4696][err] [0103/233346.502857:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)\n                [pid=4696][err] [0103/233346.502919:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)\n                [pid=4696][err] Received signal 6\n                [pid=4696][err] #0 0x56475bf73239 base::debug::CollectStackTrace()\n                [pid=4696][err] #1 0x56475bedad63 base::debug::StackTrace::StackTrace()\n                [pid=4696][err] #2 0x56475bf72d11 base::debug::(anonymous namespace)::StackDumpSignalHandler()\n                [pid=4696][err] #3 0x7fc7cc64c3c0 (/usr/lib/x86_64-linux-gnu/libpthread-2.31.so+0x153bf)\n                [pid=4696][err] #4 0x7fc7cb79a18b gsignal\n                [pid=4696][err] #5 0x7fc7cb779859 abort\n                [pid=4696][err] #6 0x56475bf71fa5 base::debug::BreakDebuggerAsyncSafe()\n                [pid=4696][err] #7 0x56475beee43f logging::LogMessage::~LogMessage()\n                [pid=4696][err] #8 0x56475beeeb5e logging::LogMessage::~LogMessage()\n                [pid=4696][err] #9 0x5647591594a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4696][err] #10 0x5647590f5867 ui::OzonePlatform::InitializeForUI()\n                [pid=4696][err] #11 0x56475d65cbde aura::Env::Init()\n                [pid=4696][err] #12 0x56475d65cb7a aura::Env::CreateInstance()\n                [pid=4696][err] #13 0x564759abbcea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4696][err] #14 0x564759abc60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4696][err] #15 0x564759ab8b7b content::BrowserMain()\n                [pid=4696][err] #16 0x56475ba74eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4696][err] #17 0x56475ba74977 content::ContentMainRunnerImpl::Run()\n                [pid=4696][err] #18 0x56475ba721e5 content::RunContentProcess()\n                [pid=4696][err] #19 0x56475ba72cbe content::ContentMain()\n                [pid=4696][err] #20 0x56475880df66 ChromeMain\n                [pid=4696][err] #21 0x7fc7cb77b0b3 __libc_start_main\n                [pid=4696][err] #22 0x56475880dd6a _start\n                [pid=4696][err]   r8: 0000000000000000  r9: 00007ffd948a5760 r10: 0000000000000008 r11: 0000000000000246\n                [pid=4696][err]  r12: 00001138002b8b40 r13: 00007ffd948a59c0 r14: 00001138002b8b50 r15: aaaaaaaaaaaaaaaa\n                [pid=4696][err]   di: 0000000000000002  si: 00007ffd948a5760  bp: 00007ffd948a59b0  bx: 00007fc7ca5b5e00\n                [pid=4696][err]   dx: 0000000000000000  ax: 0000000000000000  cx: 00007fc7cb79a18b  sp: 00007ffd948a5760\n                [pid=4696][err]   ip: 00007fc7cb79a18b efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000\n                [pid=4696][err]  trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000\n                [pid=4696][err] [end of stack trace]\n                =========================== logs ===========================\n                <launching> /home/runner/.cache/ms-playwright/chromium-939194/chrome-linux/chrome --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,AcceptCHFrame --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-trMEtH --remote-debugging-pipe --no-startup-window\n                <launched> pid=4696\n                [pid=4696][err] [4696:4696:0103/233346.334681:FATAL:ozone_platform_x11.cc(238)] Check failed: x11::Connection::Get()->Ready(). Missing X server or $DISPLAY\n                [pid=4696][err] #0 0x56475bf73239 base::debug::CollectStackTrace()\n                [pid=4696][err] #1 0x56475bedad63 base::debug::StackTrace::StackTrace()\n                [pid=4696][err] #2 0x56475beee010 logging::LogMessage::~LogMessage()\n                [pid=4696][err] #3 0x56475beeeb5e logging::LogMessage::~LogMessage()\n                [pid=4696][err] #4 0x5647591594a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4696][err] #5 0x5647590f5867 ui::OzonePlatform::InitializeForUI()\n                [pid=4696][err] #6 0x56475d65cbde aura::Env::Init()\n                [pid=4696][err] #7 0x56475d65cb7a aura::Env::CreateInstance()\n                [pid=4696][err] #8 0x564759abbcea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4696][err] #9 0x564759abc60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4696][err] #10 0x564759ab8b7b content::BrowserMain()\n                [pid=4696][err] #11 0x56475ba74eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4696][err] #12 0x56475ba74977 content::ContentMainRunnerImpl::Run()\n                [pid=4696][err] #13 0x56475ba721e5 content::RunContentProcess()\n                [pid=4696][err] #14 0x56475ba72cbe content::ContentMain()\n                [pid=4696][err] #15 0x56475880df66 ChromeMain\n                [pid=4696][err] #16 0x7fc7cb77b0b3 __libc_start_main\n                [pid=4696][err] #17 0x56475880dd6a _start\n                [pid=4696][err] Crash keys:\n                [pid=4696][err]   \"io_scheduler_async_stack\" = \"0x5647598DDCC4 0x0\"\n                [pid=4696][err]   \"gwp-asan-partitionalloc\" = \"113800218c00\"\n                [pid=4696][err]   \"gwp-asan-malloc\" = \"113800218d00\"\n                [pid=4696][err]   \"variations\" = \"19ebe09a-4542122,23a898eb-fc93cf74,5f2c0f7c-3f4a17df,e4a357e9-3f4a17df,\"\n                [pid=4696][err]   \"num-experiments\" = \"4\"\n                [pid=4696][err]   \"switch-30\" = \"--enable-crashpad\"\n                [pid=4696][err]   \"switch-29\" = \"--no-startup-window\"\n                [pid=4696][err]   \"switch-28\" = \"--remote-debugging-pipe\"\n                [pid=4696][err]   \"switch-27\" = \"--user-data-dir=/tmp/playwright_chromiumdev_profile-trMEtH\"\n                [pid=4696][err]   \"switch-26\" = \"--no-sandbox\"\n                [pid=4696][err]   \"switch-25\" = \"--no-service-autorun\"\n                [pid=4696][err]   \"switch-24\" = \"--use-mock-keychain\"\n                [pid=4696][err]   \"switch-23\" = \"--password-store=basic\"\n                [pid=4696][err]   \"switch-22\" = \"--enable-automation\"\n                [pid=4696][err]   \"switch-21\" = \"--no-first-run\"\n                [pid=4696][err]   \"switch-20\" = \"--metrics-recording-only\"\n                [pid=4696][err]   \"switch-19\" = \"--force-color-profile=srgb\"\n                [pid=4696][err]   \"switch-18\" = \"--disable-sync\"\n                [pid=4696][err]   \"switch-17\" = \"--disable-renderer-backgrounding\"\n                [pid=4696][err]   \"switch-16\" = \"--disable-prompt-on-repost\"\n                [pid=4696][err]   \"switch-15\" = \"--disable-popup-blocking\"\n                [pid=4696][err]   \"switch-14\" = \"--disable-ipc-flooding-protection\"\n                [pid=4696][err]   \"switch-13\" = \"--disable-hang-monitor\"\n                [pid=4696][err]   \"switch-12\" = \"--allow-pre-commit-input\"\n                [pid=4696][err]   \"switch-11\" = \"--disable-features=ImprovedCookieControls,LazyFrameLoading,Globa\"\n                [pid=4696][err]   \"switch-10\" = \"--disable-extensions\"\n                [pid=4696][err]   \"switch-9\" = \"--disable-dev-shm-usage\"\n                [pid=4696][err]   \"switch-8\" = \"--disable-default-apps\"\n                [pid=4696][err]   \"switch-7\" = \"--disable-component-extensions-with-background-pages\"\n                [pid=4696][err]   \"switch-6\" = \"--disable-client-side-phishing-detection\"\n                [pid=4696][err]   \"switch-5\" = \"--disable-breakpad\"\n                [pid=4696][err]   \"switch-4\" = \"--disable-backgrounding-occluded-windows\"\n                [pid=4696][err]   \"switch-3\" = \"--disable-background-timer-throttling\"\n                [pid=4696][err]   \"switch-2\" = \"--enable-features=NetworkService,NetworkServiceInProcess\"\n                [pid=4696][err]   \"switch-1\" = \"--disable-background-networking\"\n                [pid=4696][err]   \"num-switches\" = \"30\"\n                [pid=4696][err]   \"osarch\" = \"x86_64\"\n                [pid=4696][err]   \"pid\" = \"4696\"\n                [pid=4696][err]   \"ptype\" = \"browser\"\n                [pid=4696][err] \n                [pid=4696][err] [0103/233346.502857:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)\n                [pid=4696][err] [0103/233346.502919:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)\n                [pid=4696][err] Received signal 6\n                [pid=4696][err] #0 0x56475bf73239 base::debug::CollectStackTrace()\n                [pid=4696][err] #1 0x56475bedad63 base::debug::StackTrace::StackTrace()\n                [pid=4696][err] #2 0x56475bf72d11 base::debug::(anonymous namespace)::StackDumpSignalHandler()\n                [pid=4696][err] #3 0x7fc7cc64c3c0 (/usr/lib/x86_64-linux-gnu/libpthread-2.31.so+0x153bf)\n                [pid=4696][err] #4 0x7fc7cb79a18b gsignal\n                [pid=4696][err] #5 0x7fc7cb779859 abort\n                [pid=4696][err] #6 0x56475bf71fa5 base::debug::BreakDebuggerAsyncSafe()\n                [pid=4696][err] #7 0x56475beee43f logging::LogMessage::~LogMessage()\n                [pid=4696][err] #8 0x56475beeeb5e logging::LogMessage::~LogMessage()\n                [pid=4696][err] #9 0x5647591594a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4696][err] #10 0x5647590f5867 ui::OzonePlatform::InitializeForUI()\n                [pid=4696][err] #11 0x56475d65cbde aura::Env::Init()\n                [pid=4696][err] #12 0x56475d65cb7a aura::Env::CreateInstance()\n                [pid=4696][err] #13 0x564759abbcea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4696][err] #14 0x564759abc60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4696][err] #15 0x564759ab8b7b content::BrowserMain()\n                [pid=4696][err] #16 0x56475ba74eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4696][err] #17 0x56475ba74977 content::ContentMainRunnerImpl::Run()\n                [pid=4696][err] #18 0x56475ba721e5 content::RunContentProcess()\n                [pid=4696][err] #19 0x56475ba72cbe content::ContentMain()\n                [pid=4696][err] #20 0x56475880df66 ChromeMain\n                [pid=4696][err] #21 0x7fc7cb77b0b3 __libc_start_main\n                [pid=4696][err] #22 0x56475880dd6a _start\n                [pid=4696][err]   r8: 0000000000000000  r9: 00007ffd948a5760 r10: 0000000000000008 r11: 0000000000000246\n                [pid=4696][err]  r12: 00001138002b8b40 r13: 00007ffd948a59c0 r14: 00001138002b8b50 r15: aaaaaaaaaaaaaaaa\n                [pid=4696][err]   di: 0000000000000002  si: 00007ffd948a5760  bp: 00007ffd948a59b0  bx: 00007fc7ca5b5e00\n                [pid=4696][err]   dx: 0000000000000000  ax: 0000000000000000  cx: 00007fc7cb79a18b  sp: 00007ffd948a5760\n                [pid=4696][err]   ip: 00007fc7cb79a18b efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000\n                [pid=4696][err]  trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000\n                [pid=4696][err] [end of stack trace]\n                ============================================================",
+      "uid" : "33e644e6627d9341",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252826903,
-        "stop" : 1641252826903,
-        "duration" : 0
-      }
-    } ]
-  },
-  "12b3ae96baeff220b127e94ff8151d2b" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "da867b66149f341f",
-      "status" : "failed",
-      "statusDetails" : "browserType.launch: Browser closed.\n                ==================== Browser output: ====================\n                <launching> /home/runner/.cache/ms-playwright/chromium-939194/chrome-linux/chrome --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,AcceptCHFrame --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-FHz5MH --remote-debugging-pipe --no-startup-window\n                <launched> pid=4981\n                [pid=4981][err] [4981:4981:0103/233348.049137:FATAL:ozone_platform_x11.cc(238)] Check failed: x11::Connection::Get()->Ready(). Missing X server or $DISPLAY\n                [pid=4981][err] #0 0x55fbd5b86239 base::debug::CollectStackTrace()\n                [pid=4981][err] #1 0x55fbd5aedd63 base::debug::StackTrace::StackTrace()\n                [pid=4981][err] #2 0x55fbd5b01010 logging::LogMessage::~LogMessage()\n                [pid=4981][err] #3 0x55fbd5b01b5e logging::LogMessage::~LogMessage()\n                [pid=4981][err] #4 0x55fbd2d6c4a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4981][err] #5 0x55fbd2d08867 ui::OzonePlatform::InitializeForUI()\n                [pid=4981][err] #6 0x55fbd726fbde aura::Env::Init()\n                [pid=4981][err] #7 0x55fbd726fb7a aura::Env::CreateInstance()\n                [pid=4981][err] #8 0x55fbd36cecea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4981][err] #9 0x55fbd36cf60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4981][err] #10 0x55fbd36cbb7b content::BrowserMain()\n                [pid=4981][err] #11 0x55fbd5687eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4981][err] #12 0x55fbd5687977 content::ContentMainRunnerImpl::Run()\n                [pid=4981][err] #13 0x55fbd56851e5 content::RunContentProcess()\n                [pid=4981][err] #14 0x55fbd5685cbe content::ContentMain()\n                [pid=4981][err] #15 0x55fbd2420f66 ChromeMain\n                [pid=4981][err] #16 0x7f8b4cc2c0b3 __libc_start_main\n                [pid=4981][err] #17 0x55fbd2420d6a _start\n                [pid=4981][err] Crash keys:\n                [pid=4981][err]   \"io_scheduler_async_stack\" = \"0x55FBD34F0CC4 0x0\"\n                [pid=4981][err]   \"variations\" = \"19ebe09a-4542122,23a898eb-fc93cf74,5f2c0f7c-3f4a17df,e4a357e9-3f4a17df,\"\n                [pid=4981][err]   \"num-experiments\" = \"4\"\n                [pid=4981][err]   \"switch-30\" = \"--enable-crashpad\"\n                [pid=4981][err]   \"switch-29\" = \"--no-startup-window\"\n                [pid=4981][err]   \"switch-28\" = \"--remote-debugging-pipe\"\n                [pid=4981][err]   \"switch-27\" = \"--user-data-dir=/tmp/playwright_chromiumdev_profile-FHz5MH\"\n                [pid=4981][err]   \"switch-26\" = \"--no-sandbox\"\n                [pid=4981][err]   \"switch-25\" = \"--no-service-autorun\"\n                [pid=4981][err]   \"switch-24\" = \"--use-mock-keychain\"\n                [pid=4981][err]   \"switch-23\" = \"--password-store=basic\"\n                [pid=4981][err]   \"switch-22\" = \"--enable-automation\"\n                [pid=4981][err]   \"switch-21\" = \"--no-first-run\"\n                [pid=4981][err]   \"switch-20\" = \"--metrics-recording-only\"\n                [pid=4981][err]   \"switch-19\" = \"--force-color-profile=srgb\"\n                [pid=4981][err]   \"switch-18\" = \"--disable-sync\"\n                [pid=4981][err]   \"switch-17\" = \"--disable-renderer-backgrounding\"\n                [pid=4981][err]   \"switch-16\" = \"--disable-prompt-on-repost\"\n                [pid=4981][err]   \"switch-15\" = \"--disable-popup-blocking\"\n                [pid=4981][err]   \"switch-14\" = \"--disable-ipc-flooding-protection\"\n                [pid=4981][err]   \"switch-13\" = \"--disable-hang-monitor\"\n                [pid=4981][err]   \"switch-12\" = \"--allow-pre-commit-input\"\n                [pid=4981][err]   \"switch-11\" = \"--disable-features=ImprovedCookieControls,LazyFrameLoading,Globa\"\n                [pid=4981][err]   \"switch-10\" = \"--disable-extensions\"\n                [pid=4981][err]   \"switch-9\" = \"--disable-dev-shm-usage\"\n                [pid=4981][err]   \"switch-8\" = \"--disable-default-apps\"\n                [pid=4981][err]   \"switch-7\" = \"--disable-component-extensions-with-background-pages\"\n                [pid=4981][err]   \"switch-6\" = \"--disable-client-side-phishing-detection\"\n                [pid=4981][err]   \"switch-5\" = \"--disable-breakpad\"\n                [pid=4981][err]   \"switch-4\" = \"--disable-backgrounding-occluded-windows\"\n                [pid=4981][err]   \"switch-3\" = \"--disable-background-timer-throttling\"\n                [pid=4981][err]   \"switch-2\" = \"--enable-features=NetworkService,NetworkServiceInProcess\"\n                [pid=4981][err]   \"switch-1\" = \"--disable-background-networking\"\n                [pid=4981][err]   \"num-switches\" = \"30\"\n                [pid=4981][err]   \"osarch\" = \"x86_64\"\n                [pid=4981][err]   \"pid\" = \"4981\"\n                [pid=4981][err]   \"ptype\" = \"browser\"\n                [pid=4981][err] \n                [pid=4981][err] [0103/233348.215490:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)\n                [pid=4981][err] [0103/233348.215554:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)\n                [pid=4981][err] Received signal 6\n                [pid=4981][err] #0 0x55fbd5b86239 base::debug::CollectStackTrace()\n                [pid=4981][err] #1 0x55fbd5aedd63 base::debug::StackTrace::StackTrace()\n                [pid=4981][err] #2 0x55fbd5b85d11 base::debug::(anonymous namespace)::StackDumpSignalHandler()\n                [pid=4981][err] #3 0x7f8b4dafd3c0 (/usr/lib/x86_64-linux-gnu/libpthread-2.31.so+0x153bf)\n                [pid=4981][err] #4 0x7f8b4cc4b18b gsignal\n                [pid=4981][err] #5 0x7f8b4cc2a859 abort\n                [pid=4981][err] #6 0x55fbd5b84fa5 base::debug::BreakDebuggerAsyncSafe()\n                [pid=4981][err] #7 0x55fbd5b0143f logging::LogMessage::~LogMessage()\n                [pid=4981][err] #8 0x55fbd5b01b5e logging::LogMessage::~LogMessage()\n                [pid=4981][err] #9 0x55fbd2d6c4a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4981][err] #10 0x55fbd2d08867 ui::OzonePlatform::InitializeForUI()\n                [pid=4981][err] #11 0x55fbd726fbde aura::Env::Init()\n                [pid=4981][err] #12 0x55fbd726fb7a aura::Env::CreateInstance()\n                [pid=4981][err] #13 0x55fbd36cecea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4981][err] #14 0x55fbd36cf60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4981][err] #15 0x55fbd36cbb7b content::BrowserMain()\n                [pid=4981][err] #16 0x55fbd5687eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4981][err] #17 0x55fbd5687977 content::ContentMainRunnerImpl::Run()\n                [pid=4981][err] #18 0x55fbd56851e5 content::RunContentProcess()\n                [pid=4981][err] #19 0x55fbd5685cbe content::ContentMain()\n                [pid=4981][err] #20 0x55fbd2420f66 ChromeMain\n                [pid=4981][err] #21 0x7f8b4cc2c0b3 __libc_start_main\n                [pid=4981][err] #22 0x55fbd2420d6a _start\n                [pid=4981][err]   r8: 0000000000000000  r9: 00007fff74efeca0 r10: 0000000000000008 r11: 0000000000000246\n                [pid=4981][err]  r12: 0000050c002b8b40 r13: 00007fff74efef00 r14: 0000050c002b8b50 r15: aaaaaaaaaaaaaaaa\n                [pid=4981][err]   di: 0000000000000002  si: 00007fff74efeca0  bp: 00007fff74efeef0  bx: 00007f8b4ba66e00\n                [pid=4981][err]   dx: 0000000000000000  ax: 0000000000000000  cx: 00007f8b4cc4b18b  sp: 00007fff74efeca0\n                [pid=4981][err]   ip: 00007f8b4cc4b18b efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000\n                [pid=4981][err]  trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000\n                [pid=4981][err] [end of stack trace]\n                [pid=4981][err] [0103/233348.606845:ERROR:nacl_helper_linux.cc(307)] NaCl helper process running without a sandbox!\n                [pid=4981][err] Most likely you need to configure your SUID sandbox correctly\n                =========================== logs ===========================\n                <launching> /home/runner/.cache/ms-playwright/chromium-939194/chrome-linux/chrome --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,AcceptCHFrame --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-FHz5MH --remote-debugging-pipe --no-startup-window\n                <launched> pid=4981\n                [pid=4981][err] [4981:4981:0103/233348.049137:FATAL:ozone_platform_x11.cc(238)] Check failed: x11::Connection::Get()->Ready(). Missing X server or $DISPLAY\n                [pid=4981][err] #0 0x55fbd5b86239 base::debug::CollectStackTrace()\n                [pid=4981][err] #1 0x55fbd5aedd63 base::debug::StackTrace::StackTrace()\n                [pid=4981][err] #2 0x55fbd5b01010 logging::LogMessage::~LogMessage()\n                [pid=4981][err] #3 0x55fbd5b01b5e logging::LogMessage::~LogMessage()\n                [pid=4981][err] #4 0x55fbd2d6c4a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4981][err] #5 0x55fbd2d08867 ui::OzonePlatform::InitializeForUI()\n                [pid=4981][err] #6 0x55fbd726fbde aura::Env::Init()\n                [pid=4981][err] #7 0x55fbd726fb7a aura::Env::CreateInstance()\n                [pid=4981][err] #8 0x55fbd36cecea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4981][err] #9 0x55fbd36cf60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4981][err] #10 0x55fbd36cbb7b content::BrowserMain()\n                [pid=4981][err] #11 0x55fbd5687eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4981][err] #12 0x55fbd5687977 content::ContentMainRunnerImpl::Run()\n                [pid=4981][err] #13 0x55fbd56851e5 content::RunContentProcess()\n                [pid=4981][err] #14 0x55fbd5685cbe content::ContentMain()\n                [pid=4981][err] #15 0x55fbd2420f66 ChromeMain\n                [pid=4981][err] #16 0x7f8b4cc2c0b3 __libc_start_main\n                [pid=4981][err] #17 0x55fbd2420d6a _start\n                [pid=4981][err] Crash keys:\n                [pid=4981][err]   \"io_scheduler_async_stack\" = \"0x55FBD34F0CC4 0x0\"\n                [pid=4981][err]   \"variations\" = \"19ebe09a-4542122,23a898eb-fc93cf74,5f2c0f7c-3f4a17df,e4a357e9-3f4a17df,\"\n                [pid=4981][err]   \"num-experiments\" = \"4\"\n                [pid=4981][err]   \"switch-30\" = \"--enable-crashpad\"\n                [pid=4981][err]   \"switch-29\" = \"--no-startup-window\"\n                [pid=4981][err]   \"switch-28\" = \"--remote-debugging-pipe\"\n                [pid=4981][err]   \"switch-27\" = \"--user-data-dir=/tmp/playwright_chromiumdev_profile-FHz5MH\"\n                [pid=4981][err]   \"switch-26\" = \"--no-sandbox\"\n                [pid=4981][err]   \"switch-25\" = \"--no-service-autorun\"\n                [pid=4981][err]   \"switch-24\" = \"--use-mock-keychain\"\n                [pid=4981][err]   \"switch-23\" = \"--password-store=basic\"\n                [pid=4981][err]   \"switch-22\" = \"--enable-automation\"\n                [pid=4981][err]   \"switch-21\" = \"--no-first-run\"\n                [pid=4981][err]   \"switch-20\" = \"--metrics-recording-only\"\n                [pid=4981][err]   \"switch-19\" = \"--force-color-profile=srgb\"\n                [pid=4981][err]   \"switch-18\" = \"--disable-sync\"\n                [pid=4981][err]   \"switch-17\" = \"--disable-renderer-backgrounding\"\n                [pid=4981][err]   \"switch-16\" = \"--disable-prompt-on-repost\"\n                [pid=4981][err]   \"switch-15\" = \"--disable-popup-blocking\"\n                [pid=4981][err]   \"switch-14\" = \"--disable-ipc-flooding-protection\"\n                [pid=4981][err]   \"switch-13\" = \"--disable-hang-monitor\"\n                [pid=4981][err]   \"switch-12\" = \"--allow-pre-commit-input\"\n                [pid=4981][err]   \"switch-11\" = \"--disable-features=ImprovedCookieControls,LazyFrameLoading,Globa\"\n                [pid=4981][err]   \"switch-10\" = \"--disable-extensions\"\n                [pid=4981][err]   \"switch-9\" = \"--disable-dev-shm-usage\"\n                [pid=4981][err]   \"switch-8\" = \"--disable-default-apps\"\n                [pid=4981][err]   \"switch-7\" = \"--disable-component-extensions-with-background-pages\"\n                [pid=4981][err]   \"switch-6\" = \"--disable-client-side-phishing-detection\"\n                [pid=4981][err]   \"switch-5\" = \"--disable-breakpad\"\n                [pid=4981][err]   \"switch-4\" = \"--disable-backgrounding-occluded-windows\"\n                [pid=4981][err]   \"switch-3\" = \"--disable-background-timer-throttling\"\n                [pid=4981][err]   \"switch-2\" = \"--enable-features=NetworkService,NetworkServiceInProcess\"\n                [pid=4981][err]   \"switch-1\" = \"--disable-background-networking\"\n                [pid=4981][err]   \"num-switches\" = \"30\"\n                [pid=4981][err]   \"osarch\" = \"x86_64\"\n                [pid=4981][err]   \"pid\" = \"4981\"\n                [pid=4981][err]   \"ptype\" = \"browser\"\n                [pid=4981][err] \n                [pid=4981][err] [0103/233348.215490:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)\n                [pid=4981][err] [0103/233348.215554:ERROR:file_io_posix.cc(144)] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)\n                [pid=4981][err] Received signal 6\n                [pid=4981][err] #0 0x55fbd5b86239 base::debug::CollectStackTrace()\n                [pid=4981][err] #1 0x55fbd5aedd63 base::debug::StackTrace::StackTrace()\n                [pid=4981][err] #2 0x55fbd5b85d11 base::debug::(anonymous namespace)::StackDumpSignalHandler()\n                [pid=4981][err] #3 0x7f8b4dafd3c0 (/usr/lib/x86_64-linux-gnu/libpthread-2.31.so+0x153bf)\n                [pid=4981][err] #4 0x7f8b4cc4b18b gsignal\n                [pid=4981][err] #5 0x7f8b4cc2a859 abort\n                [pid=4981][err] #6 0x55fbd5b84fa5 base::debug::BreakDebuggerAsyncSafe()\n                [pid=4981][err] #7 0x55fbd5b0143f logging::LogMessage::~LogMessage()\n                [pid=4981][err] #8 0x55fbd5b01b5e logging::LogMessage::~LogMessage()\n                [pid=4981][err] #9 0x55fbd2d6c4a9 ui::(anonymous namespace)::OzonePlatformX11::InitializeUI()\n                [pid=4981][err] #10 0x55fbd2d08867 ui::OzonePlatform::InitializeForUI()\n                [pid=4981][err] #11 0x55fbd726fbde aura::Env::Init()\n                [pid=4981][err] #12 0x55fbd726fb7a aura::Env::CreateInstance()\n                [pid=4981][err] #13 0x55fbd36cecea content::BrowserMainLoop::InitializeToolkit()\n                [pid=4981][err] #14 0x55fbd36cf60d content::BrowserMainRunnerImpl::Initialize()\n                [pid=4981][err] #15 0x55fbd36cbb7b content::BrowserMain()\n                [pid=4981][err] #16 0x55fbd5687eb2 content::ContentMainRunnerImpl::RunBrowser()\n                [pid=4981][err] #17 0x55fbd5687977 content::ContentMainRunnerImpl::Run()\n                [pid=4981][err] #18 0x55fbd56851e5 content::RunContentProcess()\n                [pid=4981][err] #19 0x55fbd5685cbe content::ContentMain()\n                [pid=4981][err] #20 0x55fbd2420f66 ChromeMain\n                [pid=4981][err] #21 0x7f8b4cc2c0b3 __libc_start_main\n                [pid=4981][err] #22 0x55fbd2420d6a _start\n                [pid=4981][err]   r8: 0000000000000000  r9: 00007fff74efeca0 r10: 0000000000000008 r11: 0000000000000246\n                [pid=4981][err]  r12: 0000050c002b8b40 r13: 00007fff74efef00 r14: 0000050c002b8b50 r15: aaaaaaaaaaaaaaaa\n                [pid=4981][err]   di: 0000000000000002  si: 00007fff74efeca0  bp: 00007fff74efeef0  bx: 00007f8b4ba66e00\n                [pid=4981][err]   dx: 0000000000000000  ax: 0000000000000000  cx: 00007f8b4cc4b18b  sp: 00007fff74efeca0\n                [pid=4981][err]   ip: 00007f8b4cc4b18b efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000\n                [pid=4981][err]  trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000\n                [pid=4981][err] [end of stack trace]\n                [pid=4981][err] [0103/233348.606845:ERROR:nacl_helper_linux.cc(307)] NaCl helper process running without a sandbox!\n                [pid=4981][err] Most likely you need to configure your SUID sandbox correctly\n                ============================================================",
-      "time" : {
-        "start" : 1641252827777,
-        "stop" : 1641252828615,
-        "duration" : 838
+        "start" : 1641273358489,
+        "stop" : 1641273364190,
+        "duration" : 5701
       }
     } ]
   },
@@ -163,19 +195,18 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "55e9ec932ba0023b",
-      "status" : "skipped",
-      "statusDetails" : "Skipped due to failure in 'before' hook",
+      "uid" : "d8997fb33dcf123c",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252824339,
-        "stop" : 1641252824339,
-        "duration" : 0
+        "start" : 1641273321151,
+        "stop" : 1641273321548,
+        "duration" : 397
       }
     } ]
   },
@@ -183,39 +214,18 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "ab91c40fcfee3ab0",
-      "status" : "skipped",
-      "statusDetails" : "Skipped due to failure in 'before' hook",
-      "time" : {
-        "start" : 1641252824340,
-        "stop" : 1641252824340,
-        "duration" : 0
-      }
-    } ]
-  },
-  "f064e6e3a5146a9d0092125e5ee46e85" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b19767764b05dc9c",
-      "status" : "failed",
-      "statusDetails" : "Database not found with the key testDB",
+      "uid" : "4c341de7990e4f00",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252825187,
-        "stop" : 1641252825200,
-        "duration" : 13
+        "start" : 1641273322193,
+        "stop" : 1641273322583,
+        "duration" : 390
       }
     } ]
   },
@@ -223,19 +233,18 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3822e43044fa3d9c",
-      "status" : "skipped",
-      "statusDetails" : "Skipped due to failure in 'before' hook",
+      "uid" : "48285f350cd9f55d",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252826918,
-        "stop" : 1641252826918,
-        "duration" : 0
+        "start" : 1641273344310,
+        "stop" : 1641273350110,
+        "duration" : 5800
       }
     } ]
   },
@@ -243,19 +252,37 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4b4811001ba82591",
-      "status" : "skipped",
-      "statusDetails" : "Skipped due to failure in 'before' hook",
+      "uid" : "ace31c1c3c8ee462",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252826918,
-        "stop" : 1641252826918,
-        "duration" : 0
+        "start" : 1641273351382,
+        "stop" : 1641273357196,
+        "duration" : 5814
+      }
+    } ]
+  },
+  "3470a3133018070ecb4a4f84a0ca0f5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b2d5bca02c6fd7c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641273330167,
+        "stop" : 1641273335955,
+        "duration" : 5788
       }
     } ]
   },
@@ -263,19 +290,18 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c8b926828e7ca793",
-      "status" : "skipped",
-      "statusDetails" : "Skipped due to failure in 'before' hook",
+      "uid" : "fb5be8b74a7db79f",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252824341,
-        "stop" : 1641252824341,
-        "duration" : 0
+        "start" : 1641273322678,
+        "stop" : 1641273323285,
+        "duration" : 607
       }
     } ]
   },
@@ -283,19 +309,18 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "388664b8e91ea762",
-      "status" : "skipped",
-      "statusDetails" : "Skipped due to failure in 'before' hook",
+      "uid" : "b16fc87bae33c824",
+      "status" : "passed",
       "time" : {
-        "start" : 1641252824342,
-        "stop" : 1641252824342,
-        "duration" : 0
+        "start" : 1641273323438,
+        "stop" : 1641273323914,
+        "duration" : 476
       }
     } ]
   }

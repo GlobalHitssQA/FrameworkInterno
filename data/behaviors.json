@@ -1,14 +1,31 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
-    "name" : "Test of backend REST PUT",
-    "uid" : "e7777e4432a0750b",
+    "name" : "Test of backend REST GET",
+    "uid" : "e4cc23116ea39601",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252824338,
-      "stop" : 1641252824338,
-      "duration" : 0
+      "start" : 1641273320164,
+      "stop" : 1641273320501,
+      "duration" : 337
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Test of backend REST PUT",
+    "uid" : "9c6b3f564a51c460",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1641273320606,
+      "stop" : 1641273321043,
+      "duration" : 437
     },
     "flaky" : false,
     "newFailed" : false,
@@ -19,30 +36,13 @@
     "parameters" : [ ]
   }, {
     "name" : "Test of backend REST PATCH",
-    "uid" : "55e9ec932ba0023b",
+    "uid" : "d8997fb33dcf123c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252824339,
-      "stop" : 1641252824339,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Test of backend REST DELETE",
-    "uid" : "ab91c40fcfee3ab0",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1641252824340,
-      "stop" : 1641252824340,
-      "duration" : 0
+      "start" : 1641273321151,
+      "stop" : 1641273321548,
+      "duration" : 397
     },
     "flaky" : false,
     "newFailed" : false,
@@ -53,13 +53,30 @@
     "parameters" : [ ]
   }, {
     "name" : "Test of backend REST POST",
-    "uid" : "15e17ba8353a371d",
+    "uid" : "ef06075f936ba76f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252824340,
-      "stop" : 1641252824340,
-      "duration" : 0
+      "start" : 1641273321670,
+      "stop" : 1641273322082,
+      "duration" : 412
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Test of backend REST DELETE",
+    "uid" : "4c341de7990e4f00",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1641273322193,
+      "stop" : 1641273322583,
+      "duration" : 390
     },
     "flaky" : false,
     "newFailed" : false,
@@ -70,13 +87,13 @@
     "parameters" : [ ]
   }, {
     "name" : "Test of backend GRAPHQL GET",
-    "uid" : "c8b926828e7ca793",
+    "uid" : "fb5be8b74a7db79f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252824341,
-      "stop" : 1641252824341,
-      "duration" : 0
+      "start" : 1641273322678,
+      "stop" : 1641273323285,
+      "duration" : 607
     },
     "flaky" : false,
     "newFailed" : false,
@@ -87,13 +104,13 @@
     "parameters" : [ ]
   }, {
     "name" : "Test of backend GRAPHQL GET with variables",
-    "uid" : "388664b8e91ea762",
+    "uid" : "b16fc87bae33c824",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252824342,
-      "stop" : 1641252824342,
-      "duration" : 0
+      "start" : 1641273323438,
+      "stop" : 1641273323914,
+      "duration" : 476
     },
     "flaky" : false,
     "newFailed" : false,
@@ -104,12 +121,12 @@
     "parameters" : [ ]
   }, {
     "name" : "Test of backend GRAPHQL Mutation with variables",
-    "uid" : "838a450c3b76539a",
+    "uid" : "a3ba692a72618846",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1641252824342,
-      "stop" : 1641252824342,
+      "start" : 1641273324037,
+      "stop" : 1641273324037,
       "duration" : 0
     },
     "flaky" : false,
@@ -117,17 +134,17 @@
     "newPassed" : false,
     "newBroken" : false,
     "retriesCount" : 1,
-    "retriesStatusChange" : true,
+    "retriesStatusChange" : false,
     "parameters" : [ ]
   }, {
-    "name" : "BeforeSuite of suite Pruebas de bases de datos: failed.",
-    "uid" : "b19767764b05dc9c",
+    "name" : "Validar el Insert de un registro en la base de datos",
+    "uid" : "8aa5a9ed8d7dd1fc",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252825187,
-      "stop" : 1641252825200,
-      "duration" : 13
+      "start" : 1641273324120,
+      "stop" : 1641273325287,
+      "duration" : 1167
     },
     "flaky" : false,
     "newFailed" : false,
@@ -137,14 +154,14 @@
     "retriesStatusChange" : false,
     "parameters" : [ ]
   }, {
-    "name" : "BeforeSuite of suite My First Login with Data Provider: failed.",
-    "uid" : "1549c9fb7a97cbed",
+    "name" : "Validar que se borre la informacion de la base de datos metida en el scenario pasado",
+    "uid" : "71e76e2ef15ee187",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252826029,
-      "stop" : 1641252826029,
-      "duration" : 0
+      "start" : 1641273325569,
+      "stop" : 1641273325974,
+      "duration" : 405
     },
     "flaky" : false,
     "newFailed" : false,
@@ -154,14 +171,31 @@
     "retriesStatusChange" : false,
     "parameters" : [ ]
   }, {
-    "name" : "BeforeSuite of suite Emulacion de dispositivos: failed.",
-    "uid" : "887ebb194f16a40d",
+    "name" : "Test Login | {\"user\":\"username\",\"password\":\"password\"}",
+    "uid" : "9dffee1c67bc448d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252826903,
-      "stop" : 1641252826903,
-      "duration" : 0
+      "start" : 1641273326429,
+      "stop" : 1641273329991,
+      "duration" : 3562
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Emulando Iphone 6 ",
+    "uid" : "b2d5bca02c6fd7c3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1641273330167,
+      "stop" : 1641273335955,
+      "duration" : 5788
     },
     "flaky" : false,
     "newFailed" : false,
@@ -172,30 +206,13 @@
     "parameters" : [ ]
   }, {
     "name" : "Pixel 5",
-    "uid" : "a50879d8c335ac2b",
+    "uid" : "4e6f924b317b5fff",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252826917,
-      "stop" : 1641252826917,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Desktop Safari",
-    "uid" : "4b4811001ba82591",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1641252826918,
-      "stop" : 1641252826918,
-      "duration" : 0
+      "start" : 1641273337213,
+      "stop" : 1641273343029,
+      "duration" : 5816
     },
     "flaky" : false,
     "newFailed" : false,
@@ -206,13 +223,13 @@
     "parameters" : [ ]
   }, {
     "name" : "iPad (gen 6) landscape",
-    "uid" : "3822e43044fa3d9c",
+    "uid" : "48285f350cd9f55d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252826918,
-      "stop" : 1641252826918,
-      "duration" : 0
+      "start" : 1641273344310,
+      "stop" : 1641273350110,
+      "duration" : 5800
     },
     "flaky" : false,
     "newFailed" : false,
@@ -222,14 +239,31 @@
     "retriesStatusChange" : false,
     "parameters" : [ ]
   }, {
-    "name" : "BeforeSuite of suite Prueba para usar la utilidad de mandar email: failed.",
-    "uid" : "7753310c8126d170",
+    "name" : "Desktop Safari",
+    "uid" : "ace31c1c3c8ee462",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
+    "status" : "passed",
     "time" : {
-      "start" : 1641252827762,
-      "stop" : 1641252827762,
-      "duration" : 0
+      "start" : 1641273351382,
+      "stop" : 1641273357196,
+      "duration" : 5814
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Una prueba cualquiera",
+    "uid" : "33e644e6627d9341",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1641273358489,
+      "stop" : 1641273364190,
+      "duration" : 5701
     },
     "flaky" : false,
     "newFailed" : false,
@@ -240,19 +274,19 @@
     "parameters" : [ ]
   }, {
     "name" : "Primer scenario pasando la prueba de visual testing",
-    "uid" : "da867b66149f341f",
+    "uid" : "dd7381340a3baa0b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1641252827777,
-      "stop" : 1641252828615,
-      "duration" : 838
+      "start" : 1641273364338,
+      "stop" : 1641273364338,
+      "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,
     "newPassed" : false,
     "newBroken" : false,
-    "retriesCount" : 0,
+    "retriesCount" : 1,
     "retriesStatusChange" : false,
     "parameters" : [ ]
   } ],

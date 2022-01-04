@@ -1,0 +1,102 @@
+{
+  "uid" : "b2d5bca02c6fd7c3",
+  "name" : "Emulando Iphone 6 ",
+  "fullName" : "Emulacion de dispositivos:.Emulando Iphone 6 ",
+  "historyId" : "3470a3133018070ecb4a4f84a0ca0f5",
+  "time" : {
+    "start" : 1641273330167,
+    "stop" : 1641273335955,
+    "duration" : 5788
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "mobile user iphone 6: I am on page ",
+      "time" : {
+        "start" : 1641273330269,
+        "stop" : 1641273330852,
+        "duration" : 583
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "mobile user iphone 6: I wait 5",
+      "time" : {
+        "start" : 1641273330852,
+        "stop" : 1641273335853,
+        "duration" : 5001
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "aea4fa9a6321589d",
+      "name" : "Execution Video",
+      "source" : "aea4fa9a6321589d.webm",
+      "type" : "video/webm",
+      "size" : 14430
+    }, {
+      "uid" : "2114d8c5089641a",
+      "name" : "TRACE",
+      "source" : "2114d8c5089641a.zip",
+      "type" : "application/zip",
+      "size" : 1515
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "testClass",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Emulando Iphone 6 "
+  }, {
+    "name" : "package",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b2d5bca02c6fd7c3.json",
+  "parameterValues" : [ ]
+}

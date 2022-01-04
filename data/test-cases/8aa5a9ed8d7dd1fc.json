@@ -1,0 +1,177 @@
+{
+  "uid" : "8aa5a9ed8d7dd1fc",
+  "name" : "Validar el Insert de un registro en la base de datos",
+  "fullName" : "Pruebas de bases de datos:.Validar el Insert de un registro en la base de datos",
+  "historyId" : "e94bf5667d57147901d5955f5401bb46",
+  "time" : {
+    "start" : 1641273324120,
+    "stop" : 1641273325287,
+    "duration" : 1167
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "I run \"testDB\", \"DELETE FROM pruebas\"",
+      "time" : {
+        "start" : 1641273324177,
+        "stop" : 1641273324939,
+        "duration" : 762
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I run \"testDB\", \"INSERT INTO pruebas ( nombre, apellidoMaterno,apellidoPaterno ) VALUES ( ?, ? ,?)\", \"juanito\", \"lopez\", \"lopez\"",
+      "time" : {
+        "start" : 1641273324942,
+        "stop" : 1641273325111,
+        "duration" : 169
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal 1, 1",
+      "time" : {
+        "start" : 1641273325112,
+        "stop" : 1641273325113,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I run \"testDB\", \"SELECT * FROM pruebas\"",
+      "time" : {
+        "start" : 1641273325113,
+        "stop" : 1641273325284,
+        "duration" : 171
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal \"juanito\", \"juanito\"",
+      "time" : {
+        "start" : 1641273325285,
+        "stop" : 1641273325286,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal \"lopez\", \"lopez\"",
+      "time" : {
+        "start" : 1641273325286,
+        "stop" : 1641273325287,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal \"lopez\", \"lopez\"",
+      "time" : {
+        "start" : 1641273325287,
+        "stop" : 1641273325287,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "5d3f4a553eaea93f",
+      "name" : "Execution Video",
+      "source" : "5d3f4a553eaea93f.webm",
+      "type" : "video/webm",
+      "size" : 3682
+    }, {
+      "uid" : "9bd176b4ada57491",
+      "name" : "TRACE",
+      "source" : "9bd176b4ada57491.zip",
+      "type" : "application/zip",
+      "size" : 1846
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Pruebas de bases de datos:"
+  }, {
+    "name" : "testClass",
+    "value" : "Pruebas de bases de datos:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Validar el Insert de un registro en la base de datos"
+  }, {
+    "name" : "package",
+    "value" : "Pruebas de bases de datos:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8aa5a9ed8d7dd1fc.json",
+  "parameterValues" : [ ]
+}
