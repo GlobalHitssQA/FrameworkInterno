@@ -1,5 +1,7 @@
+// @ts-ignore-file
 import {
-	mockDataForRicky,
+	mockDataForPokemon,
+	mockIncorrectDataForPokemon,
 	mockForJSON,
 	mockForPutRequest,
 } from './mocksForBackend'
@@ -8,41 +10,35 @@ Feature('Pruebas de backend APIs REST y GRAPHQL con assertions')
 
 Scenario('Test of backend REST GET', async ({ I }) => {
 	const response = await I.sendGetRequest(
-		'https://rickandmortyapi.com/api/character/'
+		'https://pokeapi.co/api/v2/pokemon/ditto'
 	)
 
-	// Validamos el codigo de respuesta correcto
 	I.assertEqual(response?.status, 200)
-
-	// Validacion sobre la data por individual
-	I.assertEqual(response?.data?.results?.[0]?.status, 'Alive')
-	I.assertEqual(response?.data?.results?.[0]?.species, 'Human')
-
-	// Validacion negativa sobre la data por individual
-	I.assertNotEqual(response?.data?.results?.[0]?.name, 'Rick Sanez')
-	I.assertNotEqual(response?.data?.results?.[0]?.status, 'Detached')
-	I.assertNotEqual(response?.data?.results?.[0]?.species, 'Alien')
-
-	// Validacion sobre la data por grupo(objeto)
-	I.assertDeepEqual(response?.data?.results?.[0], mockDataForRicky)
-
-	// Validacion negativa sobre la data por grupo(objeto)
-	I.assertNotDeepEqual(response?.data?.results?.[1], mockDataForRicky)
-
-	// Validacion de solo una parte si contiene esa cadena
-	I.assertContain(response?.data?.results?.[0]?.name, 'Rick')
-
-	// Validacion negativa de solo una parte si contiene esa cadena
-	I.assertNotContain(response?.data?.results?.[0]?.name, 'Javier')
-
-	// Validar todo el JSON
-	I.assertJsonSchema(response?.data, mockForJSON)
+	I.seeResponseCodeIs(200)
+	I.assertEqual(response?.data?.abilities?.[0]?.ability?.name, 'limber')
+	I.assertNotEqual(response?.data?.abilities?.[0]?.ability?.name, 'Rick Sanez')
+	I.assertDeepEqual(response?.data?.abilities, mockDataForPokemon)
+	I.assertNotDeepEqual(response?.data?.results?.[1], mockIncorrectDataForPokemon)
+	I.assertJsonSchema(response?.data, mockIncorrectDataForPokemon)
+// @ts-ignore-start
+	I.seeResponseMatchesJsonSchema(($ : any) => {
+		return $.object(
+				user: $.object({
+				  name: $.string(),
+			    }),	
+			projects: $.array()
+			)
+		});
+// @ts-ignore-end
+/*	
+	
+	
 
 	// Validar tipo de Dato
 	I.assertToBeA(response?.data?.results?.[0]?.name, 'string')
-	I.assertToBeA(response?.data?.results?.[0]?.id, 'number')
+	I.assertToBeA(response?.data?.results?.[0]?.id, 'number')*/
 })
-
+/*
 Scenario('Test of backend REST PUT', async ({ I }) => {
 	const response = await I.sendPutRequest('https://reqres.in/api/users/2', {
 		name: 'javier',
@@ -161,3 +157,4 @@ Scenario.skip(
 		I.assertEqual(response?.status, 204)
 	}
 )
+*/

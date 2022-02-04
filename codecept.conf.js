@@ -27,6 +27,7 @@ exports.config = {
 		GraphQL: {
 			endpoint: 'https://rickandmortyapi.com/graphql',
 		},
+		JSONResponse: {},
 		DbHelper: {
 			require: './node_modules/codeceptjs-dbhelper',
 		},
@@ -80,4 +81,5 @@ exports.config = {
 	},
 	tests: './tests/*_test.ts',
 	name: 'Framework',
+	
 }
