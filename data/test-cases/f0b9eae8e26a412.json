@@ -1,0 +1,147 @@
+{
+  "uid" : "f0b9eae8e26a412",
+  "name" : "Test of backend REST PUT",
+  "fullName" : "Pruebas de backend APIs REST y GRAPHQL con assertions:.Test of backend REST PUT",
+  "historyId" : "b1e25a291323a91b5d4aed7a13acb95b",
+  "time" : {
+    "start" : 1646856837533,
+    "stop" : 1646856837979,
+    "duration" : 446
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "I send put request \"https://reqres.in/api/users/2\", {\"name\":\"javier\",\"job\":\"zion resident\"}",
+      "time" : {
+        "start" : 1646856837597,
+        "stop" : 1646856837976,
+        "duration" : 379
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal 200, 200",
+      "time" : {
+        "start" : 1646856837977,
+        "stop" : 1646856837977,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal \"javier\", \"javier\"",
+      "time" : {
+        "start" : 1646856837977,
+        "stop" : 1646856837978,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal \"zion resident\", \"zion resident\"",
+      "time" : {
+        "start" : 1646856837978,
+        "stop" : 1646856837978,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert json schema {\"name\":\"javier\",\"job\":\"zion resident\",\"updatedAt\":\"2022-03-09T20:13:57.890Z\"}, {\"name\":\"javier\",\"job\":\"zion resident\",\"updatedAt\":\"2021-12-30T06:11:43.610Z\"}",
+      "time" : {
+        "start" : 1646856837979,
+        "stop" : 1646856837979,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "9c4312d89f7ad657",
+      "name" : "Execution Video",
+      "source" : "9c4312d89f7ad657.webm",
+      "type" : "video/webm",
+      "size" : 2225
+    }, {
+      "uid" : "7cb01ccd75efb03c",
+      "name" : "TRACE",
+      "source" : "7cb01ccd75efb03c.zip",
+      "type" : "application/zip",
+      "size" : 1401
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "testClass",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test of backend REST PUT"
+  }, {
+    "name" : "package",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f0b9eae8e26a412.json",
+  "parameterValues" : [ ]
+}

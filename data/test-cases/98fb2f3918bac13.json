@@ -1,0 +1,102 @@
+{
+  "uid" : "98fb2f3918bac13",
+  "name" : "iPad (gen 6) landscape",
+  "fullName" : "Emulacion de dispositivos:.iPad (gen 6) landscape",
+  "historyId" : "bf3dd4be999cdcc4a991e5201d3d75b2",
+  "time" : {
+    "start" : 1646856861188,
+    "stop" : 1646856867030,
+    "duration" : 5842
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "mobile user ipad 6: I am on page ",
+      "time" : {
+        "start" : 1646856861314,
+        "stop" : 1646856861926,
+        "duration" : 612
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "mobile user ipad 6: I wait 5",
+      "time" : {
+        "start" : 1646856861927,
+        "stop" : 1646856866927,
+        "duration" : 5000
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b43c604a35958c1",
+      "name" : "Execution Video",
+      "source" : "b43c604a35958c1.webm",
+      "type" : "video/webm",
+      "size" : 14522
+    }, {
+      "uid" : "ecb92f8a8a0b516a",
+      "name" : "TRACE",
+      "source" : "ecb92f8a8a0b516a.zip",
+      "type" : "application/zip",
+      "size" : 2122
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "testClass",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "testMethod",
+    "value" : "iPad (gen 6) landscape"
+  }, {
+    "name" : "package",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "98fb2f3918bac13.json",
+  "parameterValues" : [ ]
+}

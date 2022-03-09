@@ -1,170 +1,170 @@
 [ {
-  "uid" : "e4cc23116ea39601",
-  "name" : "Test of backend REST GET",
-  "time" : {
-    "start" : 1641273320164,
-    "stop" : 1641273320501,
-    "duration" : 337
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8aa5a9ed8d7dd1fc",
-  "name" : "Validar el Insert de un registro en la base de datos",
-  "time" : {
-    "start" : 1641273324120,
-    "stop" : 1641273325287,
-    "duration" : 1167
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9dffee1c67bc448d",
-  "name" : "Test Login | {\"user\":\"username\",\"password\":\"password\"}",
-  "time" : {
-    "start" : 1641273326429,
-    "stop" : 1641273329991,
-    "duration" : 3562
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4c341de7990e4f00",
-  "name" : "Test of backend REST DELETE",
-  "time" : {
-    "start" : 1641273322193,
-    "stop" : 1641273322583,
-    "duration" : 390
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b2d5bca02c6fd7c3",
-  "name" : "Emulando Iphone 6 ",
-  "time" : {
-    "start" : 1641273330167,
-    "stop" : 1641273335955,
-    "duration" : 5788
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d8997fb33dcf123c",
-  "name" : "Test of backend REST PATCH",
-  "time" : {
-    "start" : 1641273321151,
-    "stop" : 1641273321548,
-    "duration" : 397
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ef06075f936ba76f",
-  "name" : "Test of backend REST POST",
-  "time" : {
-    "start" : 1641273321670,
-    "stop" : 1641273322082,
-    "duration" : 412
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "dd7381340a3baa0b",
-  "name" : "Primer scenario pasando la prueba de visual testing",
-  "time" : {
-    "start" : 1641273364338,
-    "stop" : 1641273364338,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "4e6f924b317b5fff",
-  "name" : "Pixel 5",
-  "time" : {
-    "start" : 1641273337213,
-    "stop" : 1641273343029,
-    "duration" : 5816
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9c6b3f564a51c460",
-  "name" : "Test of backend REST PUT",
-  "time" : {
-    "start" : 1641273320606,
-    "stop" : 1641273321043,
-    "duration" : 437
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "48285f350cd9f55d",
-  "name" : "iPad (gen 6) landscape",
-  "time" : {
-    "start" : 1641273344310,
-    "stop" : 1641273350110,
-    "duration" : 5800
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "fb5be8b74a7db79f",
-  "name" : "Test of backend GRAPHQL GET",
-  "time" : {
-    "start" : 1641273322678,
-    "stop" : 1641273323285,
-    "duration" : 607
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "71e76e2ef15ee187",
-  "name" : "Validar que se borre la informacion de la base de datos metida en el scenario pasado",
-  "time" : {
-    "start" : 1641273325569,
-    "stop" : 1641273325974,
-    "duration" : 405
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b16fc87bae33c824",
-  "name" : "Test of backend GRAPHQL GET with variables",
-  "time" : {
-    "start" : 1641273323438,
-    "stop" : 1641273323914,
-    "duration" : 476
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "33e644e6627d9341",
-  "name" : "Una prueba cualquiera",
-  "time" : {
-    "start" : 1641273358489,
-    "stop" : 1641273364190,
-    "duration" : 5701
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a3ba692a72618846",
-  "name" : "Test of backend GRAPHQL Mutation with variables",
-  "time" : {
-    "start" : 1641273324037,
-    "stop" : 1641273324037,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "ace31c1c3c8ee462",
+  "uid" : "6539656ddd765c",
   "name" : "Desktop Safari",
   "time" : {
-    "start" : 1641273351382,
-    "stop" : 1641273357196,
-    "duration" : 5814
+    "start" : 1646856868255,
+    "stop" : 1646856874093,
+    "duration" : 5838
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "331592bf69bb59de",
+  "name" : "Test Login | {\"user\":\"username\",\"password\":\"password\"}",
+  "time" : {
+    "start" : 1646856843398,
+    "stop" : 1646856846932,
+    "duration" : 3534
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1afcea6cb0ab846",
+  "name" : "Validar que se borre la informacion de la base de datos metida en el scenario pasado",
+  "time" : {
+    "start" : 1646856842503,
+    "stop" : 1646856842925,
+    "duration" : 422
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f856a58dc47c96ad",
+  "name" : "Test of backend REST GET",
+  "time" : {
+    "start" : 1646856836654,
+    "stop" : 1646856837332,
+    "duration" : 678
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a8ee87b92306204",
+  "name" : "Test of backend REST DELETE",
+  "time" : {
+    "start" : 1646856839222,
+    "stop" : 1646856839642,
+    "duration" : 420
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "76ed8226c5df6d20",
+  "name" : "Test of backend GRAPHQL GET with variables",
+  "time" : {
+    "start" : 1646856840217,
+    "stop" : 1646856840634,
+    "duration" : 417
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d805cb9c099b892d",
+  "name" : "Emulando Iphone 6 ",
+  "time" : {
+    "start" : 1646856847120,
+    "stop" : 1646856852960,
+    "duration" : 5840
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4543377009a2c418",
+  "name" : "Una prueba cualquiera",
+  "time" : {
+    "start" : 1646856875240,
+    "stop" : 1646856880943,
+    "duration" : 5703
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc54f0a7d48f4752",
+  "name" : "Validar el Insert de un registro en la base de datos",
+  "time" : {
+    "start" : 1646856840878,
+    "stop" : 1646856842220,
+    "duration" : 1342
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a66149985d52660f",
+  "name" : "Pixel 5",
+  "time" : {
+    "start" : 1646856854149,
+    "stop" : 1646856860000,
+    "duration" : 5851
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28ca45e9d2c077",
+  "name" : "Test of backend REST PATCH",
+  "time" : {
+    "start" : 1646856838091,
+    "stop" : 1646856838554,
+    "duration" : 463
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98fb2f3918bac13",
+  "name" : "iPad (gen 6) landscape",
+  "time" : {
+    "start" : 1646856861188,
+    "stop" : 1646856867030,
+    "duration" : 5842
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f989733859a9412",
+  "name" : "Primer scenario pasando la prueba de visual testing",
+  "time" : {
+    "start" : 1646856881089,
+    "stop" : 1646856881089,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f0b9eae8e26a412",
+  "name" : "Test of backend REST PUT",
+  "time" : {
+    "start" : 1646856837533,
+    "stop" : 1646856837979,
+    "duration" : 446
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4510b6a80d8030d9",
+  "name" : "Test of backend GRAPHQL Mutation with variables",
+  "time" : {
+    "start" : 1646856840729,
+    "stop" : 1646856840729,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f47be6c8896edb7e",
+  "name" : "Test of backend REST POST",
+  "time" : {
+    "start" : 1646856838697,
+    "stop" : 1646856839118,
+    "duration" : 421
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fae3524fb8a6c356",
+  "name" : "Test of backend GRAPHQL GET",
+  "time" : {
+    "start" : 1646856839743,
+    "stop" : 1646856840122,
+    "duration" : 379
   },
   "status" : "passed",
   "severity" : "normal"
