@@ -49,7 +49,7 @@ Scenario('Testing Create and Delete', async ({ I }) => {
 
     //Borrar el documento creado
     response = await Mongo.deleteOne(members, mockFormongo)
-    I.assertEqual(response.deletedCount,1)
+    I.assertEqual(response.deletedCount, 1)
     console.log(response)
 })
 
