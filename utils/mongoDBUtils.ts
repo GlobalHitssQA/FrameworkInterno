@@ -5,10 +5,14 @@ import mongoose from 'mongoose'
  * * Escriba en la variable 'urlDataBase' la URL de conexión a la base de datos.
  */
 export const connect = async (urlDataBase: string) => {
-	await mongoose
-		.connect(urlDataBase)
-		.then(() => console.log('Mongo Data Base connected Succesfully'))
-		.catch((e) => console.log(e))
+	try {
+		await mongoose
+			.connect(urlDataBase)
+			.then(() => console.log('Mongo Data Base connected Succesfully'))
+			.catch((e) => console.log(e))
+	} catch (e) {
+		console.log(e)
+	}
 
 }
 
@@ -20,8 +24,13 @@ export const connect = async (urlDataBase: string) => {
  * * Dejar en null para regresar todos los campos.
  */
 export const find = async (schemaToUse: any, dataToFind: any, keysToFind?: string | string[] | null) => {
-
-	return await schemaToUse.find(dataToFind, keysToFind)
+	try {
+		return await schemaToUse.find(dataToFind, keysToFind)
+	}
+	catch (e) {
+		console.log(e)
+		return e
+	}
 
 }
 
@@ -31,8 +40,12 @@ export const find = async (schemaToUse: any, dataToFind: any, keysToFind?: strin
  * * Dejar en null para regresar todos los campos.
  */
 export const findById = async (schemaToUse: any, id: string, keysToFind: string | string[] | null) => {
-
-	return await schemaToUse.findById(id, keysToFind)
+	try {
+		return await schemaToUse.findById(id, keysToFind)
+	} catch (e) {
+		console.log(e)
+		return e
+	}
 
 }
 
@@ -41,7 +54,12 @@ export const findById = async (schemaToUse: any, id: string, keysToFind: string 
  */
 export const deleteById = async (schemaToUse: any, id: string) => {
 
-	return await schemaToUse.deleteOne({ _id: id })
+	try {
+		return await schemaToUse.deleteOne({ _id: id })
+	} catch (e) {
+		console.log(e)
+		return e
+	}
 
 }
 
@@ -50,7 +68,12 @@ export const deleteById = async (schemaToUse: any, id: string) => {
  */
 export const deleteMany = async (schemaToUse: any, dataToFind: any) => {
 
-	return await schemaToUse.deleteMany(dataToFind)
+	try {
+		return await schemaToUse.deleteMany(dataToFind)
+	} catch (e) {
+		console.log(e)
+		return e
+	}
 
 }
 
@@ -59,8 +82,12 @@ export const deleteMany = async (schemaToUse: any, dataToFind: any) => {
  */
 export const deleteOne = async (schemaToUse: any, dataToFind: any) => {
 
-	return await schemaToUse.deleteOne(dataToFind)
-
+	try {
+		return await schemaToUse.deleteOne(dataToFind)
+	} catch (e) {
+		console.log(e)
+		return e
+	}
 }
 /**
  * update all the documents that match with the mock
@@ -68,8 +95,12 @@ export const deleteOne = async (schemaToUse: any, dataToFind: any) => {
 
 export const updateMany = async (schemaToUse: any, dataToFind: any, dataToReplace: any) => {
 
-	return await schemaToUse.updateMany(dataToFind, dataToReplace)
-
+	try {
+		return await schemaToUse.updateMany(dataToFind, dataToReplace)
+	} catch (e) {
+		console.log(e)
+		return e
+	}
 }
 /**
  * update the first document that match with the mock
@@ -77,8 +108,12 @@ export const updateMany = async (schemaToUse: any, dataToFind: any, dataToReplac
 
 export const updateOne = async (schemaToUse: any, dataToFind: any, dataToReplace: any) => {
 
-	return await schemaToUse.updateOne(dataToFind, dataToReplace)
-
+	try {
+		return await schemaToUse.updateOne(dataToFind, dataToReplace)
+	} catch (e) {
+		console.log(e)
+		return e
+	}
 }
 /**
   * crea un nuevo documento de un determinado schema
@@ -86,18 +121,28 @@ export const updateOne = async (schemaToUse: any, dataToFind: any, dataToReplace
 
 export const create = async (schemaToUse: any, dataToPut: any) => {
 
-	const documentCreated = await schemaToUse.updateMany({ name: "noexist" }, dataToPut, { upsert: true })
-	await schemaToUse.updateOne(dataToPut, { $unset: { __v: "" } })
-	return documentCreated
+	try {
+		const documentCreated = await schemaToUse.updateMany({ name: "noexist" }, dataToPut, { upsert: true })
+		await schemaToUse.updateOne(dataToPut, { $unset: { __v: "" } })
+		return documentCreated
+	} catch (e) {
+		console.log(e)
+		return e
+	}
 }
 /**
  * Desconecta la base de datos
  */
 export const disconnect = async () => {
 
-	await mongoose
-		.disconnect()
-		.then(() => console.log('Disconnected from Mongo Data Base'))
-		.catch((e) => console.log(e))
 
+	try {
+		await mongoose
+			.disconnect()
+			.then(() => console.log('Disconnected from Mongo Data Base'))
+			.catch((e) => console.log(e))
+	} catch (e) {
+		console.log(e)
+		return e
+	}
 }
