@@ -723,3 +723,11 @@ export const mockForPutRequest = {
 	job: 'zion resident',
 	updatedAt: '2021-12-30T06:11:43.610Z',
 }
+
+export const mockFormongo = {
+	name:"Nuevo Integrante",
+	lastName:"Apellido nuevo",
+	nickName:"",
+	instrument:"Oboe"
+
+}
