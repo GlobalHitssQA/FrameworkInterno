@@ -1,0 +1,102 @@
+{
+  "uid" : "7acd3f07c92ac62e",
+  "name" : "Una prueba cualquiera",
+  "fullName" : "Prueba para usar la utilidad de mandar email:.Una prueba cualquiera",
+  "historyId" : "22613722bec4a391ed412b3aae7bb330",
+  "time" : {
+    "start" : 1647538855829,
+    "stop" : 1647538861292,
+    "duration" : 5463
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "I am on page ",
+      "time" : {
+        "start" : 1647538855877,
+        "stop" : 1647538856291,
+        "duration" : 414
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I wait 5",
+      "time" : {
+        "start" : 1647538856291,
+        "stop" : 1647538861291,
+        "duration" : 5000
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3dc46726b02b9b9",
+      "name" : "Execution Video",
+      "source" : "3dc46726b02b9b9.webm",
+      "type" : "video/webm",
+      "size" : 140060
+    }, {
+      "uid" : "eddaf93bc4ba41aa",
+      "name" : "TRACE",
+      "source" : "eddaf93bc4ba41aa.zip",
+      "type" : "application/zip",
+      "size" : 504112
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Prueba para usar la utilidad de mandar email:"
+  }, {
+    "name" : "testClass",
+    "value" : "Prueba para usar la utilidad de mandar email:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Una prueba cualquiera"
+  }, {
+    "name" : "package",
+    "value" : "Prueba para usar la utilidad de mandar email:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7acd3f07c92ac62e.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,132 @@
+{
+  "uid" : "cde030cd772cd0a2",
+  "name" : "Test of backend REST PATCH",
+  "fullName" : "Pruebas de backend APIs REST y GRAPHQL con assertions:.Test of backend REST PATCH",
+  "historyId" : "a28d8d77dc7899562c7b27397d8a6ba4",
+  "time" : {
+    "start" : 1647538823025,
+    "stop" : 1647538823338,
+    "duration" : 313
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "I send patch request \"https://reqres.in/api/users/2\", {\"name\":\"javier\"}",
+      "time" : {
+        "start" : 1647538823079,
+        "stop" : 1647538823335,
+        "duration" : 256
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal 200, 200",
+      "time" : {
+        "start" : 1647538823336,
+        "stop" : 1647538823336,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert equal \"javier\", \"javier\"",
+      "time" : {
+        "start" : 1647538823337,
+        "stop" : 1647538823337,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I assert has property {\"name\":\"javier\",\"updatedAt\":\"2022-03-17T17:40:23.275Z\"}, \"updatedAt\"",
+      "time" : {
+        "start" : 1647538823337,
+        "stop" : 1647538823338,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c37e65d295b19a9d",
+      "name" : "Execution Video",
+      "source" : "c37e65d295b19a9d.webm",
+      "type" : "video/webm",
+      "size" : 1902
+    }, {
+      "uid" : "7a8b8d639771b9cc",
+      "name" : "TRACE",
+      "source" : "7a8b8d639771b9cc.zip",
+      "type" : "application/zip",
+      "size" : 1398
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "testClass",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test of backend REST PATCH"
+  }, {
+    "name" : "package",
+    "value" : "Pruebas de backend APIs REST y GRAPHQL con assertions:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cde030cd772cd0a2.json",
+  "parameterValues" : [ ]
+}

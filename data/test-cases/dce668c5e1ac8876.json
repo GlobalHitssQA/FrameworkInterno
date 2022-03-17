@@ -1,0 +1,102 @@
+{
+  "uid" : "dce668c5e1ac8876",
+  "name" : "Pixel 5",
+  "fullName" : "Emulacion de dispositivos:.Pixel 5",
+  "historyId" : "631c004216ea6c6fc685a16cb2705193",
+  "time" : {
+    "start" : 1647538836789,
+    "stop" : 1647538842368,
+    "duration" : 5579
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "mobile user pixel 5: I am on page ",
+      "time" : {
+        "start" : 1647538836877,
+        "stop" : 1647538837265,
+        "duration" : 388
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "mobile user pixel 5: I wait 5",
+      "time" : {
+        "start" : 1647538837265,
+        "stop" : 1647538842266,
+        "duration" : 5001
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "678793ff6b96d281",
+      "name" : "Execution Video",
+      "source" : "678793ff6b96d281.webm",
+      "type" : "video/webm",
+      "size" : 13970
+    }, {
+      "uid" : "5b894ae0b58a1526",
+      "name" : "TRACE",
+      "source" : "5b894ae0b58a1526.zip",
+      "type" : "application/zip",
+      "size" : 1725
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "testClass",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "testMethod",
+    "value" : "Pixel 5"
+  }, {
+    "name" : "package",
+    "value" : "Emulacion de dispositivos:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dce668c5e1ac8876.json",
+  "parameterValues" : [ ]
+}
