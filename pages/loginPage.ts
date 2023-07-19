@@ -6,14 +6,15 @@ class LoginPage {
 		password: string
 		buttonText: string
 		textInLoginPage: string
+
 	}
 
 	constructor() {
 		this.fields = {
-			username: '#user_login',
-			password: '#user_password',
-			buttonText: 'Sign in',
-			textInLoginPage: 'Log in to ZeroBank',
+			username: 'USER',
+			password: 'PASSWORD',
+			buttonText: '//*[@id="loginFormSubmit"]',
+			textInLoginPage: 'Ingresa a tu cuenta',
 		}
 	}
 
@@ -25,6 +26,13 @@ class LoginPage {
 			I.fillField(this.fields.username, username)
 			I.fillField(this.fields.password, password)
 			I.click(this.fields.buttonText)
+			I.fillField('#MfaCode','111111')
+			I.pressKey('Enter')
+			I.wait(10)
+			I.click('#continueCheckbox')
+			I.click('CONTINUAR')
+			I.click('SEGUIR')
+			
 		}
 	}
 }

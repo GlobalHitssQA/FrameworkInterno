@@ -6,10 +6,10 @@ exports.config = {
 	output: './output',
 	helpers: {
 		Playwright: {
-			url: 'http://zero.webappsecurity.com/login.html',
+			url: 'https://qa.agentes.metlife.mx/',
 			// Ejemplo de emular un dispositvo pero por defecto en todas las pruebas si quiere solo probarse solo en una prueba vease el test de emulacionDeDispositivos
 			// emulate: devices['iPhone 6'],
-			show: false,
+			show: true,
 			browser: 'chromium',
 			waitForNavigation: 'domcontentloaded',
 			video: true,
@@ -42,6 +42,7 @@ exports.config = {
 	include: {
 		I: './steps_file.js',
 		loginPage: './pages/loginPage',
+		awpPage: './pages/awpPage',
 	},
 	mocha: {},
 	bootstrap: null,
