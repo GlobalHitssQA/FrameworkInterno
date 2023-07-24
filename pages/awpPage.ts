@@ -2,7 +2,7 @@ const { I } = inject()
 class AwpPage {
 	fields: {
 		clickTablero: string
-		clickDocumentos:string
+		clickDocumentos: string
 		clickPerfil: string
 		buttonSap: string
 		buttonDap: string
@@ -17,9 +17,9 @@ class AwpPage {
 		urlMedicaLife: string
 		urlFlexiLife: string
 		listSeleccionarCategoria: string
-		CategoriaProductos: string
-		ProductoHorizonte: string
-		FormatoPDF: string
+		optionProducto: string
+		optionHorizonte: string
+		optionFormatoPDF: string
 		fieldRFC: string
 		fieldCedulaA: string
 		fieldVigenciaCedA: string
@@ -40,26 +40,28 @@ class AwpPage {
 			urlSap: 'https://1507.callidusondemand.com/SalesPortal/#!/',
 			urlDap: 'https://metlifedap.niit-mts.com/en/',
 			urlWorkFlow: 'https://www.cloud-asae.com.mx/MetLife/Default.aspx',
-			buttonMetaLife:"//p[text()='MetaLife']",
+			buttonMetaLife: "//p[text()='MetaLife']",
 			buttonMedicaLife: "//p[text()='MedicaLife Primordial']",
 			buttonFlexiLife: "//p[text()='FlexiLife Inversión']",
 			urlMetaLife:
 				'https://qa.agentes.metlife.mx/app/products/seguros/metalife',
-			urlMedicaLife: 'https://qa.agentes.metlife.mx/app/products/medico/medicalife-primordial',
-			urlFlexiLife: 'https://qa.agentes.metlife.mx/app/products/seguros/flexilife-inversion',
-			listSeleccionarCategoria: '//*[@id="root"]/div/div/div/div/div[2]/div[2]/div/div/div/div/div/div[1]/div/div/div[2]/div',
-			CategoriaProductos: '//*[@id="menu-"]/div[3]/ul/li[2]/span[1]',
-			ProductoHorizonte: "//p[text()='Horizonte']",
-			FormatoPDF: "//p[text()='pdf']",
+			urlMedicaLife:
+				'https://qa.agentes.metlife.mx/app/products/medico/medicalife-primordial',
+			urlFlexiLife:
+				'https://qa.agentes.metlife.mx/app/products/seguros/flexilife-inversion',
+			listSeleccionarCategoria:
+				"//label[text()='Seleccione Categoría']/..",
+			optionProducto: "//span[text()='Productos']/..",
+			optionHorizonte: "//p[text()='Horizonte']",
+			optionFormatoPDF: "//p[text()='pdf']",
 			fieldRFC: 'RFC',
 			fieldCedulaA: 'CÉDULA DE AGENTE',
-			fieldVigenciaCedA : 'VIGENCIA DE LA CÉDULA',
-			fieldDireccion : 'DIRECCIÓN',
+			fieldVigenciaCedA: 'VIGENCIA DE LA CÉDULA',
+			fieldDireccion: 'DIRECCIÓN',
 			fieldEmail: 'CORREO ELECTRÓNICO',
 			fieldCelular: 'TELÉFONO CELULAR',
 			selectorInfoAgente: "//p[text()='RFC']/..//p",
-			selectorInfoPersona: "//p[text()='Dirección']/..//p"
-
+			selectorInfoPersona: "//p[text()='Dirección']/..//p",
 		}
 	}
 
@@ -92,13 +94,14 @@ class AwpPage {
 		I.seeCurrentUrlEquals(this.fields.urlFlexiLife)
 		I.click(this.fields.clickTablero)
 	}
+	
 	testDocumentsFilter() {
 		I.click(this.fields.clickDocumentos)
 		I.click(this.fields.listSeleccionarCategoria)
-		I.click(this.fields.CategoriaProductos)
-		I.click(this.fields.ProductoHorizonte)
+		I.click(this.fields.optionProducto)
+		I.click(this.fields.optionHorizonte)
 
-		I.click(this.fields.FormatoPDF)
+		I.click(this.fields.optionFormatoPDF)
 	}
 
 	async validatePerfilFields() {
@@ -109,7 +112,6 @@ class AwpPage {
 		I.assertContain(info, this.fields.fieldVigenciaCedA)
 
 		const infoPer = await I.grabTextFromAll(this.fields.selectorInfoPersona)
-		console.log(infoPer)
 		I.assertContain(infoPer, this.fields.fieldDireccion)
 		I.assertContain(infoPer, this.fields.fieldEmail)
 		I.assertContain(infoPer, this.fields.fieldCelular)
