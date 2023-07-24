@@ -4,7 +4,13 @@ class LoginPage {
 	fields: {
 		username: string
 		password: string
-		buttonText: string
+		button: string
+		campoCodVal: string
+		codigoVal: string
+		idCheckBox: string
+		enter: string
+		continuarButton: string
+		seguirButton: string
 		textInLoginPage: string
 
 	}
@@ -13,7 +19,13 @@ class LoginPage {
 		this.fields = {
 			username: 'USER',
 			password: 'PASSWORD',
-			buttonText: '//*[@id="loginFormSubmit"]',
+			button: 'INGRESAR',
+			campoCodVal: '#MfaCode',
+			codigoVal:'111111',
+			idCheckBox: '#continueCheckbox',
+			enter: 'Enter',
+			continuarButton: 'CONTINUAR',
+			seguirButton: 'SEGUIR',
 			textInLoginPage: 'Ingresa a tu cuenta',
 		}
 	}
@@ -25,13 +37,13 @@ class LoginPage {
 		if (amNotILoggedIn) {
 			I.fillField(this.fields.username, username)
 			I.fillField(this.fields.password, password)
-			I.click(this.fields.buttonText)
-			I.fillField('#MfaCode','111111')
-			I.pressKey('Enter')
+			I.click(this.fields.button)
+			I.fillField(this.fields.campoCodVal,this.fields.codigoVal)
+			I.pressKey(this.fields.enter)
 			I.wait(10)
-			I.click('#continueCheckbox')
-			I.click('CONTINUAR')
-			I.click('SEGUIR')
+			I.click(this.fields.idCheckBox)
+			I.click(this.fields.continuarButton)
+			I.click(this.fields.seguirButton)
 			
 		}
 	}

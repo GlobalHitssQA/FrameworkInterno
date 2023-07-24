@@ -1,104 +1,118 @@
 const { I } = inject()
-class awpPage {
+class AwpPage {
 	fields: {
 		clickTablero: string
 		clickDocumentos:string
 		clickPerfil: string
-		clickSap: string
-		clickDap: string
-		clickWorkFlow: string
-		linkSap: string
-		linkDap: string
-		linkWorkFlow: string
-		clickMetaLife: string
-		clickMedicaLife: string
-		clickFlexiLife
-		dirMetaLife: string
-		dirMedicaLife: string
-		dirFlexiLife: string
-		clickSeleccionarCategoria: string
-		clickCategoriaProductos: string
-		clickProductoHorizonte: string
-		clickFormatoPDF: string
+		buttonSap: string
+		buttonDap: string
+		buttonWorkFlow: string
+		urlSap: string
+		urlDap: string
+		urlWorkFlow: string
+		buttonMetaLife: string
+		buttonMedicaLife: string
+		buttonFlexiLife: string
+		urlMetaLife: string
+		urlMedicaLife: string
+		urlFlexiLife: string
+		listSeleccionarCategoria: string
+		CategoriaProductos: string
+		ProductoHorizonte: string
+		FormatoPDF: string
+		fieldRFC: string
+		fieldCedulaA: string
+		fieldVigenciaCedA: string
+		fieldDireccion: string
+		fieldEmail: string
+		fieldCelular: string
+		selectorInfoAgente: string
+		selectorInfoPersona: string
 	}
 	constructor() {
 		this.fields = {
 			clickTablero: "//p[text()='Tablero']",
 			clickDocumentos: "//p[text()='Documentos']",
-			clickPerfil: '//*[@id="profileID"]/div[2]/p[2]',
-			clickSap: '#quicklinkCardquickLinks1',
-			clickDap: '#quicklinkCardquickLinks2',
-			clickWorkFlow: '#quicklinkCardquickLinks3',
-			linkSap: 'https://1507.callidusondemand.com/SalesPortal/#!/',
-			linkDap: 'https://metlifedap.niit-mts.com/en/',
-			linkWorkFlow: 'https://www.cloud-asae.com.mx/MetLife/Default.aspx',
-			clickMetaLife:"//p[text()='MetaLife']",
-			clickMedicaLife: "//p[text()='MedicaLife Primordial']",
-			clickFlexiLife: "//p[text()='FlexiLife Inversión']",
-			dirMetaLife:
+			clickPerfil: "//p[text()='Perfil']",
+			buttonSap: '#quicklinkCardquickLinks1',
+			buttonDap: '#quicklinkCardquickLinks2',
+			buttonWorkFlow: '#quicklinkCardquickLinks3',
+			urlSap: 'https://1507.callidusondemand.com/SalesPortal/#!/',
+			urlDap: 'https://metlifedap.niit-mts.com/en/',
+			urlWorkFlow: 'https://www.cloud-asae.com.mx/MetLife/Default.aspx',
+			buttonMetaLife:"//p[text()='MetaLife']",
+			buttonMedicaLife: "//p[text()='MedicaLife Primordial']",
+			buttonFlexiLife: "//p[text()='FlexiLife Inversión']",
+			urlMetaLife:
 				'https://qa.agentes.metlife.mx/app/products/seguros/metalife',
-			dirMedicaLife: 'https://qa.agentes.metlife.mx/app/products/medico/medicalife-primordial',
-			dirFlexiLife: 'https://qa.agentes.metlife.mx/app/products/seguros/flexilife-inversion',
-			clickSeleccionarCategoria: '//*[@id="root"]/div/div/div/div/div[2]/div[2]/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div',
-			clickCategoriaProductos: '//*[@id="menu-"]/div[3]/ul/li[2]',
-			clickProductoHorizonte: "//p[text()='Horizonte']",
-			clickFormatoPDF: "//p[text()='pdf']"
+			urlMedicaLife: 'https://qa.agentes.metlife.mx/app/products/medico/medicalife-primordial',
+			urlFlexiLife: 'https://qa.agentes.metlife.mx/app/products/seguros/flexilife-inversion',
+			listSeleccionarCategoria: '//*[@id="root"]/div/div/div/div/div[2]/div[2]/div/div/div/div/div/div[1]/div/div/div[2]/div',
+			CategoriaProductos: '//*[@id="menu-"]/div[3]/ul/li[2]/span[1]',
+			ProductoHorizonte: "//p[text()='Horizonte']",
+			FormatoPDF: "//p[text()='pdf']",
+			fieldRFC: 'RFC',
+			fieldCedulaA: 'CÉDULA DE AGENTE',
+			fieldVigenciaCedA : 'VIGENCIA DE LA CÉDULA',
+			fieldDireccion : 'DIRECCIÓN',
+			fieldEmail: 'CORREO ELECTRÓNICO',
+			fieldCelular: 'TELÉFONO CELULAR',
+			selectorInfoAgente: "//p[text()='RFC']/..//p",
+			selectorInfoPersona: "//p[text()='Dirección']/..//p"
 
 		}
 	}
 
-	async testDashboard() {
+	testDashboardLinks() {
 		I.click(this.fields.clickTablero)
-		I.click(this.fields.clickSap)
+		I.click(this.fields.buttonSap)
 		I.switchToNextTab()
-		I.seeCurrentUrlEquals(this.fields.linkSap)
+		I.seeCurrentUrlEquals(this.fields.urlSap)
 		I.closeCurrentTab()
 
-		I.click(this.fields.clickDap)
+		I.click(this.fields.buttonDap)
 		I.switchToNextTab()
-		I.seeCurrentUrlEquals(this.fields.linkDap)
+		I.seeCurrentUrlEquals(this.fields.urlDap)
 		I.closeCurrentTab()
 
-		I.click(this.fields.clickWorkFlow)
+		I.click(this.fields.buttonWorkFlow)
 		I.switchToNextTab()
-		I.seeCurrentUrlEquals(this.fields.linkWorkFlow)
+		I.seeCurrentUrlEquals(this.fields.urlWorkFlow)
 		I.closeCurrentTab()
 
-		I.click(this.fields.clickMetaLife)
-		I.seeCurrentUrlEquals(this.fields.dirMetaLife)
+		I.click(this.fields.buttonMetaLife)
+		I.seeCurrentUrlEquals(this.fields.urlMetaLife)
 		I.click(this.fields.clickTablero)
 
-		I.click(this.fields.clickMedicaLife)
-		I.seeCurrentUrlEquals(this.fields.dirMedicaLife)
+		I.click(this.fields.buttonMedicaLife)
+		I.seeCurrentUrlEquals(this.fields.urlMedicaLife)
 		I.click(this.fields.clickTablero)
 
-		I.click(this.fields.clickFlexiLife)
-		I.seeCurrentUrlEquals(this.fields.dirFlexiLife)
+		I.click(this.fields.buttonFlexiLife)
+		I.seeCurrentUrlEquals(this.fields.urlFlexiLife)
 		I.click(this.fields.clickTablero)
 	}
-	async testDocuments() {
+	testDocumentsFilter() {
 		I.click(this.fields.clickDocumentos)
-		I.click(this.fields.clickSeleccionarCategoria)
-		I.click(this.fields.clickCategoriaProductos)
-		I.click(this.fields.clickProductoHorizonte)
+		I.click(this.fields.listSeleccionarCategoria)
+		I.click(this.fields.CategoriaProductos)
+		I.click(this.fields.ProductoHorizonte)
 
-		I.click(this.fields.clickFormatoPDF)
+		I.click(this.fields.FormatoPDF)
 	}
 
-	async testPerfil() {
+	async validatePerfilFields() {
 		I.click(this.fields.clickPerfil)
-		const info = await I.grabTextFromAll("//p[text()='RFC']/..//p")
-		I.assertContain(info, 'RFC')
-		I.assertContain(info, 'CÉDULA DE AGENTE')
-		I.assertContain(info, 'VIGENCIA DE LA CÉDULA')
+		const info = await I.grabTextFromAll(this.fields.selectorInfoAgente)
+		I.assertContain(info, this.fields.fieldRFC)
+		I.assertContain(info, this.fields.fieldCedulaA)
+		I.assertContain(info, this.fields.fieldVigenciaCedA)
 
-		const infoPer = await I.grabTextFromAll("//p[text()='Dirección']/..//p")
+		const infoPer = await I.grabTextFromAll(this.fields.selectorInfoPersona)
 		console.log(infoPer)
-		I.assertContain(infoPer, 'DIRECCIÓN')
-		I.assertContain(infoPer, 'CORREO ELECTRÓNICO')
-		I.assertContain(infoPer, 'TELÉFONO CELULAR')
-
-		//I.assertLengthOf(infoPer, 11) console.log(infoPer)
+		I.assertContain(infoPer, this.fields.fieldDireccion)
+		I.assertContain(infoPer, this.fields.fieldEmail)
+		I.assertContain(infoPer, this.fields.fieldCelular)
 	}
 }
-export = new awpPage()
+export = new AwpPage()

@@ -8,9 +8,9 @@ Data(getData('./tests/data.xlsx')).Scenario(
 	async ({ I, current, loginPage, awpPage }) => {
 		I.amOnPage('')
 		await loginPage.fillTheFields(current.user, current.password)
-		await awpPage.testDashboard()
-		await awpPage.testPerfil()
-		await awpPage.testDocuments()
+		await awpPage.testDashboardLinks()
+		await awpPage.validatePerfilFields()
+		await awpPage.testDocumentsFilter()
 
 		
 	}
