@@ -9,7 +9,7 @@ exports.config = {
 			url: 'https://qa.agentes.metlife.mx/',
 			// Ejemplo de emular un dispositvo pero por defecto en todas las pruebas si quiere solo probarse solo en una prueba vease el test de emulacionDeDispositivos
 			// emulate: devices['iPhone 6'],
-			show: true,
+			show: false,
 			browser: 'chromium',
 			waitForNavigation: 'domcontentloaded',
 			video: true,
