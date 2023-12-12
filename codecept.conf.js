@@ -6,10 +6,10 @@ exports.config = {
 	output: './output',
 	helpers: {
 		Playwright: {
-			url: 'http://zero.webappsecurity.com/login.html',
+			url: 'https://apps.pilot.metlife.xperienceagility.me/cx-health',
 			// Ejemplo de emular un dispositvo pero por defecto en todas las pruebas si quiere solo probarse solo en una prueba vease el test de emulacionDeDispositivos
 			// emulate: devices['iPhone 6'],
-			show: false,
+			show: true,
 			browser: 'chromium',
 			waitForNavigation: 'domcontentloaded',
 			video: true,
@@ -42,6 +42,10 @@ exports.config = {
 	include: {
 		I: './steps_file.js',
 		loginPage: './pages/loginPage',
+		homePageML: './pages/homePageML',
+		dashboardPage: './pages/dashboardPage',
+		documentLoadPage: './pages/documentLoadPage',
+		surgeryInfoPage: './pages/surgeryInfoPage',
 	},
 	mocha: {},
 	bootstrap: null,
@@ -82,6 +86,6 @@ exports.config = {
 			enabled: true,
 		},
 	},
-	tests: './tests/*_test.ts',
+	tests: './tests/cirugia_test.ts',
 	name: 'Framework',
 }
