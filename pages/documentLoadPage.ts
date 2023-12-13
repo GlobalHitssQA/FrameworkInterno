@@ -36,7 +36,6 @@ class DocumentLoadPage {
 		)
 		I.attachFile(this.fields.labUploadBox, './documentos_cp/lab.jpg')
 		I.click(this.fields.nextButtonText)
-		I.wait(10)
 	}
 }
 

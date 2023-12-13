@@ -49,37 +49,52 @@ class SurgeryInfoPage {
 		}
 	}
 
-	fillProgramInfo() {
-		// Se usa el siguiente método para seleccionar la opción ya que I.selectOption() manda error
-		I.usePlaywrightTo('seleccionando', async ({ page }) => {
-			await page
-				.locator(this.fields.typeOfClaim)
-				.selectOption('Complementary')
-		})
-		I.click(this.fields.abroadSurgery)
-		I.click(this.fields.noMetEmployee)
-		I.fillField(this.fields.illnessDetails, 'Hombro roto')
+	fillProgramInfo(
+		claimType: string,
+		abroadBool: string,
+		metEmployee: string,
+		illnessDetails: string,
+		email: string,
+		contactNumber: string,
+		hospital: string,
+		doctor: string,
+		adicional: string
+	) {
+		if (claimType === 'Complementary') {
+			// Se usa el siguiente método para seleccionar la opción ya que I.selectOption() manda error
+			I.usePlaywrightTo('seleccionando', async ({ page }) => {
+				await page
+					.locator(this.fields.typeOfClaim)
+					.selectOption('Complementary')
+			})
+		}
+		if (abroadBool === 'Yes') {
+			I.click(this.fields.abroadSurgery)
+		}
+		if (metEmployee === 'No') {
+			I.click(this.fields.noMetEmployee)
+		}
+		I.fillField(this.fields.illnessDetails, illnessDetails)
 		I.usePlaywrightTo('seleccionando', async ({ page }) => {
 			await page
 				.locator(this.fields.typeOfAdmission)
 				.selectOption('Accident')
 		})
-		I.fillField(this.fields.contactEmail, 'isidrocarrasco@prueba.com')
-		I.fillField(this.fields.emergencyNumber, '6730776222')
-		I.fillField(this.fields.hospitalName, 'HOSPITAL ANGELES METROPOLITANO')
+		I.fillField(this.fields.contactEmail, email)
+		I.fillField(this.fields.emergencyNumber, contactNumber)
+		I.fillField(this.fields.hospitalName, hospital)
 		I.click(this.fields.hospitalSearchButton)
 		I.waitForElement(this.fields.hospitalSelection, 5)
 		I.click(this.fields.hospitalSelection)
-		I.fillField(this.fields.doctorName, 'Vianney Roman Garcia')
+		I.fillField(this.fields.doctorName, doctor)
 		I.click(this.fields.doctorSearchButton)
 		I.waitForElement(this.fields.doctorSelection, 5)
 		I.click(this.fields.doctorSelection)
-		I.fillField(this.fields.auxService, 'Laboratorio')
+		I.fillField(this.fields.auxService, adicional)
 		I.click(this.fields.serviceSearchButton)
 		I.waitForElement(this.fields.serviceSelection, 10)
 		I.click(this.fields.serviceSelection)
 		I.click(this.fields.submitButtonText)
-		I.wait(10)
 	}
 }
 

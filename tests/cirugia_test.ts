@@ -22,11 +22,20 @@ Data(getData('./tests/insumoIntake.xlsx')).Scenario(
 		folioPage,
 		current,
 	}) => {
-		homePageML.logIn('metlifecustomeruser', 'MetLifePilot@1234')
+		homePageML.logIn(current.User, current.Password)
 		dashboardPage.searchCertificate(current.Certificado)
-		// folioPage.saveFolio("465465465")
 		documentLoadPage.uploadFiles()
-		surgeryInfoPage.fillProgramInfo()
+		surgeryInfoPage.fillProgramInfo(
+			current.TypeOfClaim,
+			current.Abroad,
+			current.MetEmployee,
+			current.IllnessDetails,
+			current.Email,
+			current.ContactNumber,
+			current.Hospital,
+			current.Doctor,
+			current.Adicional
+		)
 		const folio = await folioPage.getFolio()
 		folioPage.saveFolio(folio)
 	}

@@ -20,6 +20,7 @@ class HomePageML {
 
 	logIn(username: string, password: string) {
 		I.amOnPage('')
+		I.waitForElement(this.fields.username, 5)
 		I.fillField(this.fields.username, username)
 		I.fillField(this.fields.password, password)
 		I.click(this.fields.checkBox)

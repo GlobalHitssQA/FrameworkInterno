@@ -9,7 +9,7 @@ exports.config = {
 			url: 'https://apps.pilot.metlife.xperienceagility.me/cx-health',
 			// Ejemplo de emular un dispositvo pero por defecto en todas las pruebas si quiere solo probarse solo en una prueba vease el test de emulacionDeDispositivos
 			// emulate: devices['iPhone 6'],
-			show: true,
+			show: false,
 			browser: 'chromium',
 			waitForNavigation: 'domcontentloaded',
 			video: true,
@@ -87,6 +87,6 @@ exports.config = {
 			enabled: true,
 		},
 	},
-	tests: './tests/cirugia_test.ts',
+	tests: './tests/*.ts',
 	name: 'Framework',
 }
