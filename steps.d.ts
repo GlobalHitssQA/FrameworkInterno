@@ -6,6 +6,7 @@ type loginPage = typeof import('./pages/loginPage')
 type dashboardPage = typeof import('./pages/dashboardPage')
 type documentLoadPage = typeof import('./pages/documentLoadPage')
 type surgeryInfoPage = typeof import('./pages/surgeryInfoPage')
+type folioPage = typeof import('./pages/folioPage')
 type PlaywrightVideoAllure =
 	typeof import('./utils/playwrightVideoAllure_helper')
 type DbHelper = import('./node_modules/codeceptjs-dbhelper')
@@ -21,6 +22,7 @@ declare namespace CodeceptJS {
 		dashboardPage: dashboardPage
 		documentLoadPage: documentLoadPage
 		surgeryInfoPage: surgeryInfoPage
+		folioPage: folioPage
 	}
 	interface Methods
 		extends Playwright,

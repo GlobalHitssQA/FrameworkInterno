@@ -46,6 +46,7 @@ exports.config = {
 		dashboardPage: './pages/dashboardPage',
 		documentLoadPage: './pages/documentLoadPage',
 		surgeryInfoPage: './pages/surgeryInfoPage',
+		folioPage: './pages/folioPage',
 	},
 	mocha: {},
 	bootstrap: null,
