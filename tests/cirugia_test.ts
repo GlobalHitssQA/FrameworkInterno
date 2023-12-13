@@ -14,7 +14,7 @@ Feature('Cirugía Programada Intake')
 
 Data(getData('./tests/insumoIntake.xlsx')).Scenario(
 	'Cirugía Programada con datos',
-	({
+	async ({
 		homePageML,
 		dashboardPage,
 		documentLoadPage,
@@ -24,9 +24,10 @@ Data(getData('./tests/insumoIntake.xlsx')).Scenario(
 	}) => {
 		homePageML.logIn('metlifecustomeruser', 'MetLifePilot@1234')
 		dashboardPage.searchCertificate(current.Certificado)
+		// folioPage.saveFolio("465465465")
 		documentLoadPage.uploadFiles()
 		surgeryInfoPage.fillProgramInfo()
-		const folio = folioPage.getFolio()
-		console.log(folio)
+		const folio = await folioPage.getFolio()
+		folioPage.saveFolio(folio)
 	}
 )
