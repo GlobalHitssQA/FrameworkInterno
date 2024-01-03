@@ -1,3 +1,4 @@
+import XLSX from 'xlsx'
 import { getData } from '../utils/excel'
 
 Feature('Cirugía Programada Intake')
@@ -11,8 +12,9 @@ Feature('Cirugía Programada Intake')
 		surgeryInfoPage.fillProgramInfo()
 	}
 ) */
+const workbook = XLSX.utils.book_new()
 
-Data(getData('./tests/insumoIntake.xlsx')).Scenario(
+Data(getData('./tests/insumoIntake CP.xlsx')).Scenario(
 	'Cirugía Programada con datos',
 	async ({
 		homePageML,
@@ -23,12 +25,13 @@ Data(getData('./tests/insumoIntake.xlsx')).Scenario(
 		current,
 	}) => {
 		homePageML.logIn(current.User, current.Password)
-		dashboardPage.searchCertificate(current.Certificado)
-		documentLoadPage.uploadFiles()
+		dashboardPage.searchCertificateCP(current.Certificado)
+		documentLoadPage.uploadFilesCP()
 		surgeryInfoPage.fillProgramInfo(
 			current.TypeOfClaim,
 			current.Abroad,
 			current.MetEmployee,
+			current.TypeOfAdmission,
 			current.IllnessDetails,
 			current.Email,
 			current.ContactNumber,
@@ -37,6 +40,6 @@ Data(getData('./tests/insumoIntake.xlsx')).Scenario(
 			current.Adicional
 		)
 		const folio = await folioPage.getFolio()
-		folioPage.saveFolio(folio)
+		folioPage.saveFolio(folio, workbook)
 	}
 )

@@ -54,6 +54,7 @@ class SurgeryInfoPage {
 		abroadBool: string,
 		metEmployee: string,
 		illnessDetails: string,
+		admissionType: string,
 		email: string,
 		contactNumber: string,
 		hospital: string,
@@ -75,11 +76,21 @@ class SurgeryInfoPage {
 			I.click(this.fields.noMetEmployee)
 		}
 		I.fillField(this.fields.illnessDetails, illnessDetails)
-		I.usePlaywrightTo('seleccionando', async ({ page }) => {
-			await page
-				.locator(this.fields.typeOfAdmission)
-				.selectOption('Accident')
-		})
+		switch (admissionType) {
+			case 'Accident':
+				I.usePlaywrightTo('seleccionando', async ({ page }) => {
+					await page
+						.locator(this.fields.typeOfAdmission)
+						.selectOption('Accident')
+				})
+				break
+			default:
+				I.usePlaywrightTo('seleccionando', async ({ page }) => {
+					await page
+						.locator(this.fields.typeOfAdmission)
+						.selectOption('Accident')
+				})
+		}
 		I.fillField(this.fields.contactEmail, email)
 		I.fillField(this.fields.emergencyNumber, contactNumber)
 		I.fillField(this.fields.hospitalName, hospital)

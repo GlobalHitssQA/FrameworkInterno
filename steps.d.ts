@@ -2,11 +2,12 @@
 /// <reference types='codeceptjs' />
 type steps_file = typeof import('./steps_file.js')
 type homePageML = typeof import('./pages/homePageML.js')
-type loginPage = typeof import('./pages/loginPage')
 type dashboardPage = typeof import('./pages/dashboardPage')
 type documentLoadPage = typeof import('./pages/documentLoadPage')
 type surgeryInfoPage = typeof import('./pages/surgeryInfoPage')
 type folioPage = typeof import('./pages/folioPage')
+type dataPage = typeof import('./pages/dataPage')
+type reimbursementInfoPage = typeof import('./pages/reimbursementInfoPage')
 type PlaywrightVideoAllure =
 	typeof import('./utils/playwrightVideoAllure_helper')
 type DbHelper = import('./node_modules/codeceptjs-dbhelper')
@@ -18,11 +19,12 @@ declare namespace CodeceptJS {
 		I: I
 		current: any
 		homePageML: homePageML
-		loginPage: loginPage
 		dashboardPage: dashboardPage
 		documentLoadPage: documentLoadPage
 		surgeryInfoPage: surgeryInfoPage
 		folioPage: folioPage
+		dataPage: dataPage
+		reimbursementInfoPage: reimbursementInfoPage
 	}
 	interface Methods
 		extends Playwright,
