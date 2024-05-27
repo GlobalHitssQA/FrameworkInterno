@@ -1,5 +1,5 @@
 import {
-	mockDataForRicky,
+	mockDataForArmin,
 	mockForJSON,
 	mockForPutRequest,
 } from './mocksForBackend'
@@ -8,32 +8,32 @@ Feature('Pruebas de backend APIs REST y GRAPHQL con assertions')
 
 Scenario('Test of backend REST GET', async ({ I }) => {
 	const response = await I.sendGetRequest(
-		'https://rickandmortyapi.com/api/character/'
+		'https://api.attackontitanapi.com/characters'
 	)
 
 	// Validamos el codigo de respuesta correcto
 	I.assertEqual(response?.status, 200)
 
 	// Validacion sobre la data por individual
-	I.assertEqual(response?.data?.results?.[0]?.status, 'Alive')
-	I.assertEqual(response?.data?.results?.[0]?.species, 'Human')
+	I.assertEqual(response?.data?.results?.[0]?.name, 'Armin Arlelt')
+	I.assertEqual(response?.data?.results?.[0]?.species[1], 'Intelligent Titan')
 
 	// Validacion negativa sobre la data por individual
-	I.assertNotEqual(response?.data?.results?.[0]?.name, 'Rick Sanez')
+	I.assertNotEqual(response?.data?.results?.[0]?.name, 'Armin Arlet')
 	I.assertNotEqual(response?.data?.results?.[0]?.status, 'Detached')
-	I.assertNotEqual(response?.data?.results?.[0]?.species, 'Alien')
+	I.assertNotEqual(response?.data?.results?.[0]?.species[0], 'Alien')
 
 	// Validacion sobre la data por grupo(objeto)
-	I.assertDeepEqual(response?.data?.results?.[0], mockDataForRicky)
+	I.assertDeepEqual(response?.data?.results?.[0], mockDataForArmin)
 
 	// Validacion negativa sobre la data por grupo(objeto)
-	I.assertNotDeepEqual(response?.data?.results?.[1], mockDataForRicky)
+	I.assertNotDeepEqual(response?.data?.results?.[1], mockDataForArmin)
 
 	// Validacion de solo una parte si contiene esa cadena
-	I.assertContain(response?.data?.results?.[0]?.name, 'Rick')
+	I.assertContain(response?.data?.results?.[0]?.name, 'Armin')
 
 	// Validacion negativa de solo una parte si contiene esa cadena
-	I.assertNotContain(response?.data?.results?.[0]?.name, 'Javier')
+	I.assertNotContain(response?.data?.results?.[0]?.name, 'Fernando')
 
 	// Validar todo el JSON
 	I.assertJsonSchema(response?.data, mockForJSON)
@@ -41,6 +41,7 @@ Scenario('Test of backend REST GET', async ({ I }) => {
 	// Validar tipo de Dato
 	I.assertToBeA(response?.data?.results?.[0]?.name, 'string')
 	I.assertToBeA(response?.data?.results?.[0]?.id, 'number')
+
 })
 
 Scenario('Test of backend REST PUT', async ({ I }) => {
@@ -64,7 +65,8 @@ Scenario('Test of backend REST PATCH', async ({ I }) => {
 	const response = await I.sendPatchRequest('https://reqres.in/api/users/2', {
 		name: 'javier',
 	})
-
+	
+	console.log(response)
 	// Validamos el codigo de respuesta correcto
 	I.assertEqual(response?.status, 200)
 
@@ -102,10 +104,11 @@ Scenario('Test of backend GRAPHQL GET', async ({ I }) => {
 	const response = await I.sendQuery(`
 	{episodesByIds(ids: [1, 2]) {
 		name
+    air_date
 		characters {
 		  name
-		}
-  }}`)
+      status
+		}}}`)
 
 	// Validamos el codigo de respuesta correcto y no regresa nada
 	I.assertEqual(response?.status, 200)
