@@ -1,7 +1,11 @@
-const { I } = inject()
+const { I, login } = inject()
 
 Given('Im logged in', async () => {
 	I.wait(10)
+})
+// ejemplo de step para hacer uso del autologin
+Given(/^Im logged in as "([^"]*)"$/, async (profile: profileType) => {
+	await login(profile)
 })
 
 Given(/^I select the contact$/, () => {
