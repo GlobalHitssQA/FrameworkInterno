@@ -2,6 +2,7 @@ Feature: Registro de citas
 
   @probando
   Scenario Outline: Login with credentials
+    #Im logged in as "Banca Privada" es el paso ejemplo para usar el autologin
     Given Im logged in
     And I select the contact
     And I should create the appointment with <Name> , <Surname> , <Phone> , <Email> , <Date> , <Time>

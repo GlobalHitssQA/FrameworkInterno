@@ -7,11 +7,15 @@ type PlaywrightVideoAllure =
 type DbHelper = import('./node_modules/codeceptjs-dbhelper')
 type ResembleHelper = import('codeceptjs-resemblehelper')
 type ChaiWrapper = import('codeceptjs-chai')
+// aca se asocian los perfiles de la plataforma
+type profileType = 'Banca Patrimonial' | 'Banca Privada' | 'Wealth Management'
 
 declare namespace CodeceptJS {
 	interface SupportObject {
 		I: I
 		current: any
+		// aca se le pasan como parametros los perfiles de la plataforma
+		login: (profile: profileType) => Promise<void>
 		loginPage: loginPage
 	}
 	interface Methods
