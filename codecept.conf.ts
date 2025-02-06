@@ -28,16 +28,16 @@ function createLogin(userType: profileType) {
 	// se asocian las cuentas y sus contraseñas
 	const users = {
 		'Banca Patrimonial': {
-			email: 'rfuentes@actinver.com.mx',
-			password: '.RF11QAHitss',
+			email: process.env.BANCA_PATRIMONIAL_EMAIL,
+			password: process.env.BANCA_PATRIMONIAL_PASSWORD,
 		},
 		'Banca Privada': {
-			email: 'eecastaneda@actinver.com.mx',
-			password: 'E24Hitss24!',
+			email: process.env.BANCA_PRIVADA_EMAIL,
+			password: process.env.BANCA_PRIVADA_PASSWORD,
 		},
 		'Wealth Management': {
-			email: 'agamboa@actinver.com.mx',
-			password: '.C0m4sQA07',
+			email: process.env.WEALTH_MANAGEMENT_EMAIL,
+			password: process.env.WEALTH_MANAGEMENT_PASSWORD,
 		},
 	}
 
@@ -45,30 +45,38 @@ function createLogin(userType: profileType) {
 
 	return {
 		login: async (I) => {
-			// aca va todo el proceso para que se haga el login por primera vez y guardar las cookies
-			I.amOnPage('/auth/login')
-			I.waitForElement('button:has-text("Ingresar")', 60)
-			I.click('button:has-text("Ingresar")')
-			I.waitForElement('input[type="email"]', 60)
-			I.fillField('input[type="email"]', email)
-			I.click('text=Siguiente')
-			I.wait(1) // Espera para que no marque error en la contraseña
-			I.fillField('input[type="password"]', password)
-			I.click('text=Iniciar sesión')
+			try {
+				// aca va todo el proceso para que se haga el login por primera vez y guardar las cookies
+				I.amOnPage('/auth/login')
+				I.waitForElement('button:has-text("Ingresar")', 60)
+				I.click('button:has-text("Ingresar")')
+				I.waitForElement('input[type="email"]', 60)
+				I.fillField('input[type="email"]', email)
+				I.click('text=Siguiente')
+				I.wait(1) // Espera para que no marque error en la contraseña
+				I.fillField('input[type="password"]', password)
+				I.click('text=Iniciar sesión')
 
-			// Validar si la sesión requiere confirmación si es tablet, se manejan las vistas de tablet si es que se ocupan
-			const dimensiones = await I.grabDimensionsOfCurrentPage()
-			const isTablet =
-				(dimensiones.width === tabletDescriptor.viewport.width &&
-					dimensiones.height === tabletDescriptor.viewport.height) ||
-				(dimensiones.width === tabletDescriptor.viewport.height &&
-					dimensiones.height === tabletDescriptor.viewport.width)
+				// Validar si la sesión requiere confirmación si es tablet, se manejan las vistas de tablet si es que se ocupan
+				const dimensiones = await I.grabDimensionsOfCurrentPage()
+				const isTablet =
+					(dimensiones.width === tabletDescriptor.viewport.width &&
+						dimensiones.height ===
+							tabletDescriptor.viewport.height) ||
+					(dimensiones.width === tabletDescriptor.viewport.height &&
+						dimensiones.height === tabletDescriptor.viewport.width)
 
-			if (!isTablet) {
-				I.click('text=Sí') // Confirmar "Sí" si no está en tablet
+				if (!isTablet) {
+					I.click('text=Sí') // Confirmar "Sí" si no está en tablet
+				}
+
+				I.waitForElement('span:has-text("Avances y logros")', 60)
+			} catch (error) {
+				console.error('Login failed:', error)
+				throw new Error(
+					`Login failed for user ${email}: ${error.message}`
+				)
 			}
-
-			I.waitForElement('span:has-text("Avances y logros")', 60)
 		},
 		check: (I) => {
 			// Aca se validan pasos extras para entrar en el login y usar los cookies
