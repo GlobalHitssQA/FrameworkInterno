@@ -32,11 +32,11 @@ exports.config = {
 		},
 		// TODO: Revisar o actualizar la librería.
 
-		//ResembleHelper: {
+		// ResembleHelper: {
 		//	require: 'codeceptjs-resemblehelper',
 		//	baseFolder: './tests/screenshots/base/',
 		//	diffFolder: './tests/screenshots/diff/',
-		//},
+		// },
 
 		ChaiWrapper: {
 			require: 'codeceptjs-chai',
@@ -71,6 +71,9 @@ exports.config = {
 		allure: {
 			enabled: true,
 			require: 'allure-codeceptjs',
+			outputDir: `./output/allure-results-worker-${
+				process.env.WORKER_ID || 'default'
+			}`,
 		},
 		selenoid: {
 			enabled: false,
