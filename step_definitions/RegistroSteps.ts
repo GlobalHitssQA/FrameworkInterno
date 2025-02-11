@@ -1,7 +1,21 @@
-const { I } = inject()
+import loginPage from '../pages/loginPage'
+
+const { I, login } = inject()
 
 Given('Im logged in', async () => {
 	I.wait(10)
+})
+// ejemplo de step para hacer uso del autologin
+Given(/^Im logged in as "([^"]*)"$/, async (profile: profileType) => {
+	await login(profile)
+})
+// ejemplo descarga PDF
+Given(/^I download pdf$/, async () => {
+	await loginPage.downloadPDF()
+})
+// ejemplo validacion contenido PDF
+Given(/^I validate pdf$/, async () => {
+	await loginPage.validatePDF()
 })
 
 Given(/^I select the contact$/, () => {
