@@ -74,7 +74,17 @@ module.exports = function () {
 			}
 		},
 
-		async downloadFile(pdfPath, downloadPath, fileName, downloadPDFButton) {
+		async downloadFile({
+			pdfPath,
+			downloadPath,
+			fileName,
+			downloadPDFButton,
+		}: {
+			pdfPath: string
+			downloadPath: string
+			fileName: string
+			downloadPDFButton: string
+		}) {
 			const downloadsPath = `${downloadPath}/${fileName}`
 			const doesFileExist = await this.fileExists(pdfPath)
 			if (doesFileExist) {

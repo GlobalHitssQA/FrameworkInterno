@@ -17,12 +17,17 @@ type steps_file = () => {
 		downloadPDFButton: string
 	): Promise<void>
 	deleteFile(filePath: string): Promise<void>
-	downloadFile(
-		pdfPath: string,
-		downloadPath: string,
-		fileName: string,
+	downloadFile({
+		pdfPath,
+		downloadPath,
+		fileName,
+		downloadPDFButton,
+	}: {
+		pdfPath: string
+		downloadPath: string
+		fileName: string
 		downloadPDFButton: string
-	)
+	})
 	readPdf: (pdfUrl: string) => Promise<string>
 }
 type loginPage = typeof import('./pages/loginPage')

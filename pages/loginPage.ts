@@ -47,12 +47,12 @@ class LoginPage {
 	}
 
 	async downloadPDF() {
-		await I.downloadFile(
-			this.fields.pdfPath,
-			this.fields.folderDownloads,
-			this.fields.fileName,
-			this.fields.downloadPDFButton
-		)
+		await I.downloadFile({
+			pdfPath: this.fields.pdfPath,
+			downloadPath: this.fields.folderDownloads,
+			fileName: this.fields.fileName,
+			downloadPDFButton: this.fields.downloadPDFButton,
+		})
 	}
 
 	async validatePDF() {
