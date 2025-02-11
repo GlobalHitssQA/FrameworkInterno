@@ -10,12 +10,12 @@ Given(/^Im logged in as "([^"]*)"$/, async (profile: profileType) => {
 	await login(profile)
 })
 // ejemplo descarga PDF
-Given(/^I download pdf$/, () => {
-	loginPage.downloadPDF()
+Given(/^I download pdf$/, async () => {
+	await loginPage.downloadPDF()
 })
 // ejemplo validacion contenido PDF
-Given(/^I validate pdf$/, () => {
-	loginPage.validatePDF()
+Given(/^I validate pdf$/, async () => {
+	await loginPage.validatePDF()
 })
 
 Given(/^I select the contact$/, () => {

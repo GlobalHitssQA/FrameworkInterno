@@ -52,11 +52,15 @@ module.exports = function () {
 			}
 		},
 
-		async downloadFileFromSource(
+		async downloadFileFromSource({
 			filePath,
 			downloadPath,
-			downloadPDFButton
-		) {
+			downloadPDFButton,
+		}: {
+			filePath: string
+			downloadPath: string
+			downloadPDFButton: string
+		}) {
 			this.handleDownloads(filePath)
 			this.click(downloadPDFButton)
 			this.amInPath(downloadPath)
@@ -91,11 +95,11 @@ module.exports = function () {
 			if (doesFileExist) {
 				await this.deleteFile(pdfPath)
 			}
-			await this.downloadFileFromSource(
-				downloadsPath,
+			await this.downloadFileFromSource({
+				pdfPath: downloadsPath,
 				downloadPath,
-				downloadPDFButton
-			)
+				downloadPDFButton,
+			})
 		},
 		readPdf(PDFPath) {
 			const dataBuffer = fs.readFileSync(PDFPath)

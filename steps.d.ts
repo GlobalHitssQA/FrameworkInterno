@@ -11,11 +11,15 @@ type steps_file = () => {
 		orientation: string
 	}>
 	fileExists(filePath: string): Promise<boolean>
-	downloadFileFromSource(
-		filePath: string,
-		downloadPath: string,
+	downloadFileFromSource({
+		filePath,
+		downloadPath,
+		downloadPDFButton,
+	}: {
+		filePath: string
+		downloadPath: string
 		downloadPDFButton: string
-	): Promise<void>
+	}): Promise<void>
 	deleteFile(filePath: string): Promise<void>
 	downloadFile({
 		pdfPath,
