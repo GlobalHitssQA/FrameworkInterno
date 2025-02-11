@@ -58,6 +58,15 @@ class LoginPage {
 	async validatePDF() {
 		// Se descarga el contenido del pdf con el metodo readPDF para ser validado
 		const pdfContent = await I.readPdf(this.fields.pdfPath)
+
+		const expectedContent = ['expected text', 'another expected text']
+		expectedContent.forEach((text) => {
+			if (!pdfContent.includes(text)) {
+				throw new Error(
+					`PDF validation failed: Expected text "${text}" not found`
+				)
+			}
+		})
 	}
 }
 
