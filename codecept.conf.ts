@@ -94,7 +94,7 @@ exports.config = {
 			url: 'http://zero.webappsecurity.com/login.html',
 			// Ejemplo de emular un dispositvo pero por defecto en todas las pruebas si quiere solo probarse solo en una prueba vease el test de emulacionDeDispositivos
 			// emulate: tabletDescriptor,
-			show: true,
+			show: false,
 			browser: 'chromium',
 			waitForNavigation: 'domcontentloaded',
 			video: true,
@@ -164,7 +164,7 @@ exports.config = {
 		// Se habilita el plugin, se le inyecta con login y se manda a llamar el metodo createLogin para el perfil del usuario
 		// este perfil se cambia dependiendo de los perfiles de la plataforma
 		autoLogin: {
-			enabled: true,
+			enabled: false,
 			saveToFile: true,
 			inject: 'login',
 			users: {

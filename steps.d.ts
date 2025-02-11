@@ -7,7 +7,7 @@ type steps_file = () => {
 		deviceScaleFactor: number
 	}>
 	checkIfCurrentDeviceIsTablet: () => Promise<{
-		isDeviceTablet: Boolean
+		isDeviceTablet: boolean
 		orientation: string
 	}>
 	fileExists(filePath: string): Promise<boolean>

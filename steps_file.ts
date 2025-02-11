@@ -69,7 +69,8 @@ module.exports = function () {
 				await fd.close()
 				await fs.promises.unlink(filePath)
 			} catch (error) {
-				console.log('Error al borrar el archivo: ', error)
+				const message = `Failed to delete file at ${filePath}: ${error.message}`
+				this.say(message)
 				throw error
 			}
 		},
