@@ -164,8 +164,8 @@ exports.config = {
 		// Se habilita el plugin, se le inyecta con login y se manda a llamar el metodo createLogin para el perfil del usuario
 		// este perfil se cambia dependiendo de los perfiles de la plataforma
 		autoLogin: {
-			enabled: false,
-			saveToFile: true,
+			enabled: false, // habilitar al ocupar
+			saveToFile: false, // habilitar al ocupar
 			inject: 'login',
 			users: {
 				'Banca Patrimonial': createLogin('Banca Patrimonial'),
