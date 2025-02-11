@@ -1,6 +1,30 @@
 /* eslint-disable */
 /// <reference types='codeceptjs' />
-type steps_file = typeof import('./steps_file.js')
+type steps_file = () => {
+	grabDimensionsOfCurrentPage: () => Promise<{
+		width: number
+		height: number
+		deviceScaleFactor: number
+	}>
+	checkIfCurrentDeviceIsTablet: () => Promise<{
+		isDeviceTablet: Boolean
+		orientation: string
+	}>
+	fileExists(filePath: string): Promise<boolean>
+	downloadFileFromSource(
+		filePath: string,
+		downloadPath: string,
+		downloadPDFButton: string
+	): Promise<void>
+	deleteFile(filePath: string): Promise<void>
+	downloadFile(
+		pdfPath: string,
+		downloadPath: string,
+		fileName: string,
+		downloadPDFButton: string
+	)
+	readPdf: (pdfUrl: string) => Promise<string>
+}
 type loginPage = typeof import('./pages/loginPage')
 type PlaywrightVideoAllure =
 	typeof import('./utils/playwrightVideoAllure_helper')

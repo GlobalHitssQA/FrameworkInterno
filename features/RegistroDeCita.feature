@@ -10,5 +10,7 @@ Feature: Registro de citas
       | Name               | Surname              | Phone                                       | Email              | Date | Time |
       | {{internet.email}} | {{person.firstName}} | {{phone.number('+52-55-##-##-##-##')}} | {{internet.email}} | algo | algo |
 
-
-
+  Scenario: ejemplo de uso de descarga de pdf
+        Given Im logged in as "Banca Patrimonial"
+        When I download pdf
+        Then I validate pdf
