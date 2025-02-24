@@ -1,6 +1,15 @@
+import { createMistral } from '@ai-sdk/mistral'
+import { generateText } from 'ai'
+
+require('./heal')
+
 require('ts-node/register')
 // Esto se debe de descomentar si se va a usar el la propiedad de emulate en la configuracion
 // const { devices } = require('playwright')
+
+const mistral = createMistral({
+	apiKey: process.env.MISTRAL_API_KEY,
+})
 
 // vista vertical de tablet
 export const vertical = {
@@ -183,7 +192,24 @@ exports.config = {
 		fakerTransform: {
 			enabled: true,
 		},
+		heal: {
+			enabled: true,
+		},
 	},
 	tests: './tests/*_test.ts',
 	name: 'Framework',
+	ai: {
+		request: async (messages) => {
+			try {
+				const { text } = await generateText({
+					model: mistral('mistral-large-latest'),
+					prompt: messages.map((m) => m.content).join('\n'),
+				})
+				return text
+			} catch (error) {
+				console.error('Error en la generacion de AI:', error)
+				return 'Error en la generacion de AI'
+			}
+		},
+	},
 }
