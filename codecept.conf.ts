@@ -1,3 +1,4 @@
+import { createOpenAI } from '@ai-sdk/openai'
 import { createMistral } from '@ai-sdk/mistral'
 import { generateText } from 'ai'
 
@@ -10,6 +11,13 @@ require('ts-node/register')
 const mistral = createMistral({
 	apiKey: process.env.MISTRAL_API_KEY,
 })
+
+const openai = createOpenAI({
+	apiKey: process.env.OPENAI_API_KEY,
+})
+
+const mistralModel = mistral('mistral-large-latest')
+const openaiModel = openai('gpt-4-turbo')
 
 // vista vertical de tablet
 export const vertical = {
@@ -202,7 +210,7 @@ exports.config = {
 		request: async (messages) => {
 			try {
 				const { text } = await generateText({
-					model: mistral('mistral-large-latest'),
+					model: openaiModel,
 					prompt: messages.map((m) => m.content).join('\n'),
 				})
 				return text
