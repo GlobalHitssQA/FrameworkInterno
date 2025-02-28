@@ -1,8 +1,7 @@
 import { createOpenAI } from '@ai-sdk/openai'
 import { createMistral } from '@ai-sdk/mistral'
 import { generateText } from 'ai'
-
-require('./heal')
+import './heal'
 
 require('ts-node/register')
 // Esto se debe de descomentar si se va a usar el la propiedad de emulate en la configuracion
@@ -209,14 +208,21 @@ exports.config = {
 	ai: {
 		request: async (messages) => {
 			try {
+				const model =
+					process.env.MODEL === 'mistral' ? mistralModel : openaiModel
+				const formattedPrompt = messages
+					.map((m) => `${m.role || 'user'}: ${m.content}`)
+					.join('\n\n')
 				const { text } = await generateText({
-					model: openaiModel,
-					prompt: messages.map((m) => m.content).join('\n'),
+					model,
+					prompt: formattedPrompt,
 				})
 				return text
 			} catch (error) {
-				console.error('Error en la generacion de AI:', error)
-				return 'Error en la generacion de AI'
+				console.error('AI generation error:', error)
+				return `AI generation failed: ${
+					error.message || 'Unknown error'
+				}`
 			}
 		},
 	},
