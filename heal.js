@@ -6,6 +6,7 @@ heal.addRecipe('ai', {
 	prepare: {
 		html: ({ I }) => I.grabHTMLFrom('body'),
 	},
+	suggest: true,
 	steps: [
 		'click',
 		'fillField',
@@ -17,20 +18,4 @@ heal.addRecipe('ai', {
 		'doubleClick',
 	],
 	fn: async (args) => ai.healFailedStep(args),
-})
-
-heal.addRecipe('clickAndType', {
-	priority: 1,
-	steps: ['fillField', 'appendField'],
-	suggest: true,
-	fn: async ({ step }) => {
-		const locator = step.args[0]
-		const text = step.args[1]
-
-		return ({ I }) => {
-			I.click(locator)
-			I.wait(1) // to open modal or something
-			I.type(text)
-		}
-	},
 })

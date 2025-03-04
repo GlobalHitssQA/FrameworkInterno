@@ -56,7 +56,7 @@
 		"@types/nodemailer": "^6.4.4",
 		"ai": "^4.1.45",
 		"allure-codeceptjs": "^2.15.1",
-		"codeceptjs": "^3.6.4",
+		"codeceptjs": "^3.6.10",
 		"codeceptjs-chai": "^2.3.5",
 		"cross-env": "^7.0.3",
 		"D": "^1.0.0",

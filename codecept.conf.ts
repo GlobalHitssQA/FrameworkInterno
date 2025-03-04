@@ -16,7 +16,7 @@ const openai = createOpenAI({
 })
 
 const mistralModel = mistral('mistral-large-latest')
-const openaiModel = openai('gpt-4-turbo')
+const openaiModel = openai('o3-mini')
 
 // vista vertical de tablet
 export const vertical = {
