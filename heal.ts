@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { heal, ai } = require('codeceptjs')
+import { heal, ai } from 'codeceptjs/lib'
 
 heal.addRecipe('ai', {
 	priority: 10,

@@ -7,6 +7,18 @@ require('ts-node/register')
 // Esto se debe de descomentar si se va a usar el la propiedad de emulate en la configuracion
 // const { devices } = require('playwright')
 
+// Validate required environment variables
+if (!process.env.MISTRAL_API_KEY) {
+	console.warn(
+		'Warning: MISTRAL_API_KEY environment variable is not set. Mistral AI features will not work.'
+	)
+}
+if (!process.env.OPENAI_API_KEY) {
+	console.warn(
+		'Warning: OPENAI_API_KEY environment variable is not set. OpenAI features will not work.'
+	)
+}
+
 const mistral = createMistral({
 	apiKey: process.env.MISTRAL_API_KEY,
 })
