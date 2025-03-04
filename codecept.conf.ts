@@ -1,6 +1,34 @@
+import { createOpenAI } from '@ai-sdk/openai'
+import { createMistral } from '@ai-sdk/mistral'
+import { generateText } from 'ai'
+import './heal'
+
 require('ts-node/register')
 // Esto se debe de descomentar si se va a usar el la propiedad de emulate en la configuracion
 // const { devices } = require('playwright')
+
+// Validate required environment variables
+if (!process.env.MISTRAL_API_KEY) {
+	console.warn(
+		'Warning: MISTRAL_API_KEY environment variable is not set. Mistral AI features will not work.'
+	)
+}
+if (!process.env.OPENAI_API_KEY) {
+	console.warn(
+		'Warning: OPENAI_API_KEY environment variable is not set. OpenAI features will not work.'
+	)
+}
+
+const mistral = createMistral({
+	apiKey: process.env.MISTRAL_API_KEY,
+})
+
+const openai = createOpenAI({
+	apiKey: process.env.OPENAI_API_KEY,
+})
+
+const mistralModel = mistral('mistral-large-latest')
+const openaiModel = openai('o3-mini')
 
 // vista vertical de tablet
 export const vertical = {
@@ -183,7 +211,31 @@ exports.config = {
 		fakerTransform: {
 			enabled: true,
 		},
+		heal: {
+			enabled: true,
+		},
 	},
 	tests: './tests/*_test.ts',
 	name: 'Framework',
+	ai: {
+		request: async (messages) => {
+			try {
+				const model =
+					process.env.MODEL === 'mistral' ? mistralModel : openaiModel
+				const formattedPrompt = messages
+					.map((m) => `${m.role || 'user'}: ${m.content}`)
+					.join('\n\n')
+				const { text } = await generateText({
+					model,
+					prompt: formattedPrompt,
+				})
+				return text
+			} catch (error) {
+				console.error('AI generation error:', error)
+				return `AI generation failed: ${
+					error.message || 'Unknown error'
+				}`
+			}
+		},
+	},
 }
