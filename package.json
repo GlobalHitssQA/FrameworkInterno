@@ -7,6 +7,7 @@
 		"test:gherkin": "npx codeceptjs run --features --grep @probando --verbose --debug",
 		"test:gherkin2": "npx codeceptjs run-workers 10 --features",
 		"test:workers": "npx ts-node runWorkers.ts",
+		"test:ai": "npx codeceptjs run --features --grep @probando --ai",
 		"generate:allure:workers": "allure generate ./output/allure-results-worker-* -o ./output/allure-report --clean",
 		"codeceptjs": "codeceptjs run --steps",
 		"codeceptjs:allure": "npx codeceptjs run --plugins allure",

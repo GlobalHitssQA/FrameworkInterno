@@ -176,6 +176,7 @@ exports.config = {
 		},
 		pauseOnFail: {},
 		retryFailedStep: {
+			require: './plugins/retryFailedSteps',
 			enabled: true,
 		},
 		tryTo: {
