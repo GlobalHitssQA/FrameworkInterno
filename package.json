@@ -18,7 +18,14 @@
 		"codeceptjs:ui": "codecept-ui --app",
 		"codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
 		"codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
-		"codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+		"codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples",
+		"k6:smoke": "ts-node performance/runK6.ts smoke",
+		"k6:load": "ts-node performance/runK6.ts load",
+		"k6:stress": "ts-node performance/runK6.ts stress",
+		"k6:spike": "ts-node performance/runK6.ts spike",
+		"k6:soak": "ts-node performance/runK6.ts soak",
+		"k6:api": "ts-node performance/runK6.ts api",
+		"k6:all": "npm run k6:smoke && npm run k6:load && npm run k6:stress && npm run k6:spike"
 	},
 	"husky": {
 		"hooks": {

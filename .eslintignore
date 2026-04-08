@@ -1,1 +1,4 @@
 node_modules/**
+performance/scenarios/**
+performance/lib/**
+performance/config/**
