@@ -54,12 +54,12 @@ function resolveScript(arg: string): string {
 
 function hasK6Installed(): boolean {
 	const probe = spawnSync('k6', ['version'], { stdio: 'ignore' })
-	return probe.status === 0
+	return !probe.error && probe.status === 0
 }
 
 function hasDockerInstalled(): boolean {
 	const probe = spawnSync('docker', ['--version'], { stdio: 'ignore' })
-	return probe.status === 0
+	return !probe.error && probe.status === 0
 }
 
 interface CliArgs {
@@ -122,7 +122,7 @@ function runWithLocalK6(scriptPath: string, env: string, extra: string[]): numbe
 }
 
 function runWithDocker(scriptPath: string, env: string, extra: string[]): number {
-	const summaryJson = `/output/k6/${path.basename(scriptPath, '.js')}.json`
+	const summaryJson = `/work/output/k6/${path.basename(scriptPath, '.js')}.json`
 	const args = [
 		'run',
 		'--rm',

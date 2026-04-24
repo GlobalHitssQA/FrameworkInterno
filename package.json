@@ -25,7 +25,7 @@
 		"k6:spike": "ts-node performance/runK6.ts spike",
 		"k6:soak": "ts-node performance/runK6.ts soak",
 		"k6:api": "ts-node performance/runK6.ts api",
-		"k6:all": "npm run k6:smoke && npm run k6:load && npm run k6:stress && npm run k6:spike"
+		"k6:all": "npm run k6:smoke && npm run k6:load && npm run k6:stress && npm run k6:spike && npm run k6:api"
 	},
 	"husky": {
 		"hooks": {

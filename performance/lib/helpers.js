@@ -120,7 +120,7 @@ export function graphqlQuery(endpoint, query, variables = {}, tagName = 'GRAPHQL
 		[`${tagName} - no GraphQL errors`]: (r) => {
 			try {
 				const body = r.json()
-				return !body.errors
+				return !body.errors || body.errors.length === 0
 			} catch (_e) {
 				return false
 			}
