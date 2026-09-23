@@ -35,10 +35,10 @@ type steps_file = () => {
 	readPdf: (pdfUrl: string) => Promise<string>
 }
 type loginPage = typeof import('./pages/loginPage')
+type colsubsidioPage = typeof import('./pages/colsubsidioPage')
 type PlaywrightVideoAllure =
 	typeof import('./utils/playwrightVideoAllure_helper')
 type DbHelper = import('./node_modules/codeceptjs-dbhelper')
-type ResembleHelper = import('codeceptjs-resemblehelper')
 type ChaiWrapper = import('codeceptjs-chai')
 // aca se asocian los perfiles de la plataforma
 type profileType = 'Banca Patrimonial' | 'Banca Privada' | 'Wealth Management'
@@ -50,6 +50,7 @@ declare namespace CodeceptJS {
 		// aca se le pasan como parametros los perfiles de la plataforma
 		login: (profile: profileType) => Promise<void>
 		loginPage: loginPage
+		colsubsidioPage: colsubsidioPage
 	}
 	interface Methods
 		extends Playwright,
@@ -57,7 +58,6 @@ declare namespace CodeceptJS {
 			REST,
 			GraphQL,
 			DbHelper,
-			ResembleHelper,
 			ChaiWrapper {}
 	interface I extends ReturnType<steps_file>, WithTranslation<Methods> {}
 	namespace Translation {
