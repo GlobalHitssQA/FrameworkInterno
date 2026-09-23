@@ -24,13 +24,13 @@ jobs:
     steps:
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       
       # Runs a single command using the runners shell
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.5.0
+        uses: actions/setup-node@v4
         with:
-          node-version: 12.18.3
+          node-version: 20
 
       # Runs a single command using the runners shell
       - name: Installing dependencies
