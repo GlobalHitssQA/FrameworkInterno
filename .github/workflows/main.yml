@@ -39,7 +39,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Installing dependencies for playwright
-        run: npx playwright install-deps
+        run: npx playwright install --with-deps chromium
 
 
       # Installing allure
@@ -48,7 +48,10 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Running tests
-        run: npm run test
+        run: |
+          npx tsc --noEmit
+          npm run test:colsubsidio:inventory
+          npm run test:colsubsidio:public
 
       # Generates report allure
       - name: Generating allure report tests
