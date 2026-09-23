@@ -43,6 +43,14 @@ module.exports = {
 		],
 	},
 	plugins: ['codeceptjs', '@typescript-eslint'],
+	overrides: [
+		{
+			files: ['tests/colsubsidio_*_test.ts'],
+			rules: {
+				'codeceptjs/no-actor-in-scenario': 'off',
+			},
+		},
+	],
 	globals: {
 		tryTo: true,
 		Given: true,

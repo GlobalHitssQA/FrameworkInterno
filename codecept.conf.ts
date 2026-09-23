@@ -29,6 +29,17 @@ const openai = createOpenAI({
 
 const mistralModel = mistral('mistral-large-latest')
 const openaiModel = openai('o3-mini')
+const playwrightExecutablePath = process.env.PLAYWRIGHT_EXECUTABLE_PATH
+const videoEnabled = process.env.PLAYWRIGHT_VIDEO !== 'false'
+const traceEnabled = process.env.PLAYWRIGHT_TRACE !== 'false'
+const screenshotOnFailEnabled = process.env.SCREENSHOT_ON_FAIL !== 'false'
+const videoHelper: Record<string, { require: string }> = {}
+
+if (videoEnabled) {
+	videoHelper.PlaywrightVideoAllure = {
+		require: './utils/playwrightVideoAllure_helper',
+	}
+}
 
 // vista vertical de tablet
 export const vertical = {
@@ -120,20 +131,21 @@ exports.config = {
 	helpers: {
 		Playwright: {
 			url: 'http://zero.webappsecurity.com/login.html',
+			chromium: playwrightExecutablePath
+				? { executablePath: playwrightExecutablePath }
+				: {},
 			// Ejemplo de emular un dispositvo pero por defecto en todas las pruebas si quiere solo probarse solo en una prueba vease el test de emulacionDeDispositivos
 			// emulate: tabletDescriptor,
 			show: false,
 			browser: 'chromium',
 			waitForNavigation: 'domcontentloaded',
-			video: true,
+			video: videoEnabled,
 			keepVideoForPassedTests: true,
 			pressKeyDelay: 100,
-			trace: true,
+			trace: traceEnabled,
 			keepTraceForPassedTests: true,
 		},
-		PlaywrightVideoAllure: {
-			require: './utils/playwrightVideoAllure_helper',
-		},
+		...videoHelper,
 		REST: {
 			endpoint: 'https://rickandmortyapi.com/api/character/',
 		},
@@ -158,6 +170,7 @@ exports.config = {
 	include: {
 		I: './steps_file.ts',
 		loginPage: './pages/loginPage',
+		colsubsidioPage: './pages/colsubsidioPage',
 	},
 	mocha: {},
 	bootstrap: null,
@@ -172,7 +185,7 @@ exports.config = {
 			enabled: true,
 		},
 		screenshotOnFail: {
-			enabled: true,
+			enabled: screenshotOnFailEnabled,
 		},
 		pauseOnFail: {},
 		retryFailedStep: {
